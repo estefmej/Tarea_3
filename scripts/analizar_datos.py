@@ -36,7 +36,8 @@ CRITERIOS = {"red_publica": "Acceso a red pública",
 SIMPLES = [("red_publica", "uno"), ("acc_en_vivienda", "uno"), ("disp_24h", "uno"),
            ("disp_20h", "uno"), ("disp_12h", "uno"), ("cal_cloro_adecuado", "uno"),
            ("ods611_conjunto", "uno"), ("cloro_adecuado_en_red", "den_red_medido"),
-           ("cloro_inadecuado_en_red", "den_red_medido"), ("sin_cloro_en_red", "den_red_medido")]
+           ("cloro_inadecuado_en_red", "den_red_medido"), ("sin_cloro_en_red", "den_red_medido"),
+           ("red_vecino", "uno"), ("brecha_disp24_menos_cloro", "uno")]
 
 
 def razon(d, y, x):
@@ -88,6 +89,10 @@ def estimar_hogares(h, anio):
 
 
 def estimar(b, anio):
+    # Distancia entre continuidad y cloro dentro de la misma muestra: se estima como
+    # la media de la diferencia por persona, así su error estándar ya incluye la
+    # covarianza entre ambos criterios.
+    b = b.assign(brecha_disp24_menos_cloro=b["disp_24h"] - b["cal_cloro_adecuado"])
     filas, mins = [], {}
     for dom, area, g in dominios(b):
         est = {}
@@ -126,7 +131,29 @@ def estimar(b, anio):
     res = pd.DataFrame(filas)
     res["cv"] = res["ee"] / res["valor"] * 100
     res["confiabilidad"] = np.where(res["cv"] > 15, "referencial (CV>15%)", "aceptable")
+    res["significativo_vs_0"] = res["valor"].abs() > 1.96 * res["ee"]  # útil para las brechas
     return res
+
+
+def descomponer(a0, a1, indicador="red_publica", area="Urbano"):
+    """Reparte el cambio nacional del indicador en el área entre departamentos:
+    efecto tasa = peso poblacional medio x cambio de la tasa del departamento;
+    efecto composición = tasa media x cambio del peso poblacional."""
+    filas = []
+    for anio in (a0, a1):
+        b = pd.read_csv(PROC / f"base_{anio}.csv.gz", usecols=["departamento", "area", "peso", indicador])
+        b = b[b["area"] == area]
+        g = b.groupby("departamento").apply(
+            lambda d: pd.Series({"pob": d["peso"].sum(), "tasa": 100 * (d["peso"] * d[indicador]).sum() / d["peso"].sum()}),
+            include_groups=False)
+        g["peso_pob"] = g["pob"] / g["pob"].sum()
+        filas.append(g.add_suffix(f"_{anio}"))
+    d = pd.concat(filas, axis=1)
+    d["efecto_tasa_pp"] = (d[f"peso_pob_{a0}"] + d[f"peso_pob_{a1}"]) / 2 * (d[f"tasa_{a1}"] - d[f"tasa_{a0}"])
+    d["efecto_composicion_pp"] = (d[f"tasa_{a0}"] + d[f"tasa_{a1}"]) / 2 * (d[f"peso_pob_{a1}"] - d[f"peso_pob_{a0}"])
+    d["contribucion_total_pp"] = d["efecto_tasa_pp"] + d["efecto_composicion_pp"]
+    d["pct_del_cambio_por_tasa"] = 100 * d["efecto_tasa_pp"] / d["efecto_tasa_pp"].sum()
+    return d.reset_index().sort_values("efecto_tasa_pp")
 
 
 def comparar(res, a0, a1):
@@ -228,6 +255,7 @@ def main():
 
     res.round(3).to_csv(PROC / "indicadores.csv", index=False)
     comp.round(3).to_csv(PROC / f"comparacion_{a.base}_{a1}.csv", index=False)
+    descomponer(a.base, a1).round(3).to_csv(PROC / f"descomposicion_red_urbana_{a.base}_{a1}.csv", index=False)
     val.round(3).to_csv(PROC / "validacion.csv", index=False)
     (PROC / "hallazgos_borrador.md").write_text(borrador_hallazgos(res, comp, val, a.base, a1), encoding="utf-8")
 

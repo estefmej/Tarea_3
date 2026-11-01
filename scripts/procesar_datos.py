@@ -111,6 +111,8 @@ def procesar(anio, config_dir=None):
     log["red_vecino_no_contada_como_red"] = int(fuente.isin(_codigos(fa.get("red_vecino", []))).sum())
     out["red_publica"] = red.astype(int)
     out["acc_en_vivienda"] = dentro.astype(int)
+    # Código 9 (2024+): no cuenta como red; se guarda solo para análisis de sensibilidad
+    out["red_vecino"] = fuente.isin(_codigos(fa.get("red_vecino", []))).astype(int)
 
     todos = num(df[c[co["todos_los_dias"]]]).isin(co["codigo_si"])
     for h in cfg["umbrales_horas"]:
