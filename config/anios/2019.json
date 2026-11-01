@@ -1,0 +1,27 @@
+{
+  "anio": 2019,
+  "codigo_encuesta": 684,
+  "modulos": [
+    1490,
+    1491
+  ],
+  "archivo_hogar": "datos/originales/2019/684-Modulo1490/CAP100_URBANO_RURAL_2019.sav",
+  "_modulos_portal": {
+    "1490": "Capítulo 100: Características de la vivienda y del hogar",
+    "1491": "Capítulo 200: Características de los residentes habituales del hogar",
+    "fuente": "proyectos.inei.gob.pe/microdatos, consultado 2026-11-01, período Anual (18)"
+  },
+  "personas": {
+    "archivo": "datos/originales/2019/684-Modulo1491/CAP_200_URBANO_RURAL_4.sav"
+  },
+  "fuente_agua": {
+    "variable": "P129A",
+    "tipo_texto": true,
+    "_nota": "P129A es TEXTO en 2019 y usa códigos 6A (manantial) y 6B (río); en 2022+ la pregunta se llama P129G y es numérica (6, 7). Con num() los 2.303 hogares con 6A/6B quedarían como 'sin fuente' y se excluirían: hay que leer la variable como texto."
+  },
+  "continuidad": {
+    "todos_los_dias": "P130",
+    "horas_dia": "P130A"
+  },
+  "_verificado": "2026-11-01 con etiquetas del .sav y diccionario PDF del año"
+}

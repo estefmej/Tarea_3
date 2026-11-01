@@ -1,0 +1,36 @@
+{
+  "anio": 2024,
+  "codigo_encuesta": 965,
+  "modulos": [
+    1856,
+    1857
+  ],
+  "archivo_hogar": "datos/originales/2024/965-Modulo1856/CAP_100E_URBANO_RURAL_3.sav",
+  "_modulos_portal": {
+    "1856": "Capítulo 100E: Características de la vivienda y del hogar",
+    "1857": "Capítulo 200: Características de los residentes habituales del hogar",
+    "fuente": "proyectos.inei.gob.pe/microdatos, consultado 2026-11-01, período Anual (18)"
+  },
+  "personas": {
+    "archivo": "datos/originales/2024/965-Modulo1857/CAP_200_URBANO_RURAL_4.sav"
+  },
+  "fuente_agua": {
+    "variable": "P135",
+    "red_vecino": [
+      9
+    ],
+    "_nota": "Capítulo 100E renumerado: fuente = P135. Nuevo código 9 = 'Red pública casa del vecino' (1.037 hogares). No cuenta como red (decisión del usuario); antes de 2024 caía en 'Otro' (Otro bajó de ~1.600–1.780 a 723). Ojo: P130 en 2024 es señal de telefonía celular."
+  },
+  "continuidad": {
+    "todos_los_dias": "P138",
+    "horas_dia": "P138_A",
+    "_nota": "P138: 1=Sí, 2=No, 3=No tiene (etiqueta de 2024)."
+  },
+  "cloro": {
+    "variable_entero": "P166_ENT",
+    "variable_decimal": "P166_DEC",
+    "no_realizada": "P166_1",
+    "_nota": "P166_ENT/DEC vienen como TEXTO en 2024 ('' = sin prueba); convertir a número."
+  },
+  "_verificado": "2026-11-01 con etiquetas del .sav y diccionario PDF del año"
+}

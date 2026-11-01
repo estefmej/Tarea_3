@@ -1,0 +1,26 @@
+{
+  "anio": 2023,
+  "codigo_encuesta": 903,
+  "modulos": [
+    1815,
+    1816
+  ],
+  "archivo_hogar": "datos/originales/2023/903-Modulo1815/CAP_100_URBANO_RURAL_3.sav",
+  "_modulos_portal": {
+    "1815": "Capítulo 100: Características de la vivienda y del hogar",
+    "1816": "Capítulo 200: Características de los residentes habituales del hogar",
+    "fuente": "proyectos.inei.gob.pe/microdatos, consultado 2026-11-01, período Anual (18)"
+  },
+  "personas": {
+    "archivo": "datos/originales/2023/903-Modulo1816/CAP_200_URBANO_RURAL_4.sav"
+  },
+  "fuente_agua": {
+    "variable": "P129G"
+  },
+  "continuidad": {
+    "todos_los_dias": "P130Z",
+    "horas_dia": "P130ZA",
+    "_nota": "En 2023 la continuidad se renombró: P130Z (1=Sí, 2=No, 3=No sabe) y P130ZA (horas). P130/P130A no existen."
+  },
+  "_verificado": "2026-11-01 con etiquetas del .sav y diccionario PDF del año"
+}

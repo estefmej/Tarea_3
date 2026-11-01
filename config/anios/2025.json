@@ -1,0 +1,35 @@
+{
+  "anio": 2025,
+  "codigo_encuesta": 1030,
+  "modulos": [
+    2071,
+    2072
+  ],
+  "archivo_hogar": "datos/originales/2025/1030-Modulo2071/CAP_100E_URBANO_RURAL_1.sav",
+  "_modulos_portal": {
+    "2071": "Capítulo 100E: Características de la vivienda y del hogar",
+    "2072": "Capítulo 200: Características de los residentes habituales del hogar",
+    "fuente": "proyectos.inei.gob.pe/microdatos, consultado 2026-11-01, período Anual (18)"
+  },
+  "personas": {
+    "archivo": "datos/originales/2025/1030-Modulo2072/CAP_200_URBANO_RURAL_2.sav"
+  },
+  "fuente_agua": {
+    "variable": "P135",
+    "red_vecino": [
+      9
+    ],
+    "_nota": "Igual que 2024: P135, código 9 = 'Red pública casa del vecino' (1.069 hogares), no cuenta como red. P130 es telefonía celular."
+  },
+  "continuidad": {
+    "todos_los_dias": "P138",
+    "horas_dia": "P138_A",
+    "_nota": "P138: 1=Sí, 2=No, 3=No sabe."
+  },
+  "cloro": {
+    "variable_entero": "P166_ENT",
+    "variable_decimal": "P166_DEC",
+    "no_realizada": "P166_1"
+  },
+  "_verificado": "2026-11-01 con etiquetas del .sav y diccionario PDF del año"
+}

@@ -1,0 +1,8 @@
+# Microdatos del INEI (pesados): se descargan con scripts/obtener_datos.py
+datos/originales/*
+!datos/originales/registro_descargas.csv
+datos/procesados/base_*.csv.gz
+datos/prueba/
+__pycache__/
+*.pyc
+.DS_Store

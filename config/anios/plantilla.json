@@ -1,0 +1,7 @@
+{
+  "anio": 0,
+  "codigo_encuesta": null,
+  "modulos": [],
+  "archivo_hogar": "datos/originales/AAAA/archivo_capitulo_100.sav",
+  "_nota": "codigo_encuesta: número antes de -Modulo en el enlace de descarga del portal del INEI. modulos: el del capítulo 100 (vivienda y hogar) y, si se usa, el del capítulo 200 (personas). Agrega aquí cualquier variable cuyo nombre cambie en este año, p. ej. {\"cloro\": {\"variable\": \"P129D_1\"}}."
+}

@@ -1,0 +1,14 @@
+# Cifras oficiales para validar. tipo=replica: debería coincidir (misma encuesta y definición). tipo=contraste: definición o fuente distinta.
+# Confirma cada valor en el documento original antes de citarlo (año, denominador, población u hogares).
+fuente,tipo,anio,dominio,area,indicador,valor_ref,tolerancia_pp,nota
+MVCS-DGPRCS abr-2025 (ENAPRES),replica,2019,Nacional,Total,ods611_minimo,41.5,2.0,"6.1.1 oficial: menor valor entre acceso, continuidad 24 h y calidad. Si no coincide, comparar con ods611_minimo_directo"
+MVCS-DGPRCS abr-2025 (ENAPRES),replica,2022,Nacional,Total,ods611_minimo,36.5,2.0,"Ídem"
+MVCS-DGPRCS abr-2025 (ENAPRES),replica,2023,Nacional,Total,ods611_minimo,34.5,2.0,"Ídem"
+MVCS-DGPRCS abr-2025 (ENAPRES),replica,2023,Nacional,Urbano,ods611_minimo,42.1,2.0,"Ídem"
+MVCS-DGPRCS abr-2025 (ENAPRES),replica,2023,Nacional,Rural,ods611_minimo,3.0,1.0,"Ídem"
+MVCS-DGPRCS abr-2025 (ENAPRES),contraste,2023,Nacional,Urbano,cal_cloro_adecuado,43.3,2.0,"Personas que consumen agua con cloro adecuado; confirmar denominador"
+INEI boletín agua (ENAPRES),replica,2023,Nacional,Rural,cloro_adecuado_en_red,4.0,1.0,"Población rural con red pública; confirmar período (año calendario vs móvil)"
+INEI boletín agua (ENAPRES),replica,2023,Nacional,Rural,cloro_inadecuado_en_red,7.2,1.0,"Ídem"
+INEI boletín agua (ENAPRES),replica,2023,Nacional,Rural,sin_cloro_en_red,88.8,1.0,"Ídem"
+JMP 2025 (SDG 6 Data),contraste,2024,Nacional,Total,ods611_minimo,49,,"Otra definición de calidad y disponibilidad"
+JMP 2025,contraste,2024,Nacional,Rural,ods611_minimo,23,,"Ídem"

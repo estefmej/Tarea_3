@@ -1,0 +1,86 @@
+{
+  "_nota": "Valores comunes a todos los años, verificados el 2026-11-01 con las etiquetas de los .sav y los diccionarios PDF de 2019, 2022, 2023, 2024 y 2025. Lo que cambia por año está en config/anios/<año>.json.",
+  "llaves_hogar": [
+    "CONGLOMERADO",
+    "NSELV",
+    "VIVIENDA",
+    "HOGAR"
+  ],
+  "factor_hogar": "FACTOR",
+  "miembros_hogar": null,
+  "estrato_diseno": [
+    "CCDD",
+    "AREA"
+  ],
+  "conglomerado": "CONGLOMERADO",
+  "area": {
+    "variable": "AREA",
+    "urbano": [
+      1
+    ],
+    "rural": [
+      2
+    ]
+  },
+  "ubigeo": "CCDD",
+  "filtro_entrevista": {
+    "variable": null,
+    "valores_validos": [
+      1,
+      2
+    ],
+    "_nota": "RESFIN: 1=Completa, 2=Incompleta. NO se filtra: los hogares incompletos sí respondieron agua/cloro y los factores están calibrados sobre todos (residentes con RESFIN 1 y 2 = 32,4 M en 2019 y 34,2 M en 2025; solo RESFIN=1 = 28 M)."
+  },
+  "fuente_agua": {
+    "variable": "P129G",
+    "red_dentro_vivienda": [
+      1
+    ],
+    "red_fuera_vivienda": [
+      2
+    ],
+    "pilon_uso_publico": [
+      3
+    ],
+    "_nota": "Se lee como TEXTO (2019 usa 6A/6B). Red pública = códigos 1, 2, 3 (fichas MVCS). El código 9 de 2024+ ('red pública casa del vecino') NO se cuenta como red (decisión del usuario, 2026-11-01): mantiene la comparabilidad con 2019–2023, cuando esos hogares iban en 'Otro', y además a esos hogares no se les pregunta la continuidad (P138 solo se aplica a los códigos 1–3)."
+  },
+  "continuidad": {
+    "todos_los_dias": "P130",
+    "codigo_si": [
+      1
+    ],
+    "horas_dia": "P130A"
+  },
+  "cloro": {
+    "variable": null,
+    "variable_entero": "P129D_ENT",
+    "variable_decimal": "P129D_DEC",
+    "no_realizada": "P129D_1",
+    "tipo": "numerica",
+    "umbral": 0.5,
+    "maximo_valido": 3.5,
+    "_nota": "El cloro viene en dos partes: mg/L = ENT + DEC/10 (escala 0,0–3,5). Comparado con la categoría oficial P129C en 2019 y 2022 (únicos años con P129C): coincidencia del 100%. P129D_1 = 1: prueba no realizada. maximo_valido sube de 3,0 a 3,5 porque hay lecturas válidas de 3,1–3,5."
+  },
+  "umbrales_horas": [
+    24,
+    20,
+    12
+  ],
+  "_nota_umbrales": "24 h = definición del MVCS (principal). 20 h aparece en indicadores de la MCLCP; 12 h es el mínimo mencionado por el JMP (análisis de sensibilidad).",
+  "personas": {
+    "archivo": null,
+    "factor": "FACTOR",
+    "filtro_residente": {
+      "variable": null,
+      "valores_validos": [
+        1
+      ]
+    },
+    "regla_residente": "(P204 == 1 & P205 == 2) | (P204 == 2 & P206 == 1)",
+    "_nota": "Residente habitual: miembro no ausente 6+ meses, o no miembro presente 6+ meses. FACTOR del capítulo 200 = factor del hogar."
+  },
+  "_nota_llaves": "Con CONGLOMERADO+NSELV+HOGAR aparecen 37 (2022), 17 (2023), 22 (2024) y 36 (2025) duplicados falsos; al agregar VIVIENDA quedan 7 pares por año en 2022, 2024 y 2025, con respuestas o factores distintos. Se excluyen ambos registros de cada par y se listan en reporte_limpieza.csv.",
+  "_nota_miembros": "No existe MIEPERHO en el capítulo 100 de ningún año: el peso de personas sale del capítulo 200.",
+  "_nota_estrato": "ESTRATO del archivo es el estrato SOCIOECONÓMICO (A–E, vacío en todo el área rural), no el de diseño, y no hay variable de estrato de diseño. Decisión (usuario, 2026-11-01): pseudo-estrato = departamento x área (CCDD-AREA), con CONGLOMERADO como unidad primaria de muestreo. Ver Limitaciones del README.",
+  "_nota_ubigeo": "No hay UBIGEO; existen CCDD (departamento, '01'–'25'), CCPP y CCDI. procesar_datos.py lee CCDD con 2 dígitos."
+}
