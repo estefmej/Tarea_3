@@ -61,6 +61,53 @@ def robustez(rob, a1):
         "Diferencia (pp)": (t[("valor", con)] - t[("valor", sin)]).values})
 
 
+def series_departamentos(res, deps, anios):
+    d = res[res.dominio.isin(deps) & res.area.isin(["Total", "Urbano"])
+            & res.indicador.isin(["cal_cloro_adecuado", "disp_24h", "ods611_minimo"])]
+    filas = []
+    for (dep, area, ind), g in d.groupby(["dominio", "area", "indicador"], sort=False):
+        g = g.set_index("anio")
+        fila = {"Departamento": dep, "Área": area, "Indicador": NOMBRES[ind]}
+        for a in anios:
+            fila[f"{a} (%)"] = g.valor.get(a)
+            fila[f"CV {a}"] = g.cv.get(a)
+        if ind == "ods611_minimo":
+            fila["Limitante (todos los años)"] = ", ".join(sorted({NOMBRES.get(x, x) for x in g.criterio_limitante}))
+        filas.append(fila)
+    out = pd.DataFrame(filas)
+    out["o"] = out.Indicador.map({"ODS 6.1.1": 0, "Cloro adecuado": 1, "Continuidad 24 h": 2})
+    return out.sort_values(["Departamento", "Área", "o"]).drop(columns="o")
+
+
+def cloro_vs_inei(val):
+    d = val[(val.dominio != "Nacional") & (val.indicador == "cloro_adecuado_hogares")]
+    return pd.DataFrame({"Departamento": d.dominio, "Año": d.anio, "INEI (% hogares)": d.valor_ref,
+                         "Propio (% hogares)": d.valor, "Diferencia (pp)": d.dif_pp,
+                         "Estado": d.estado, "Fuente": d.fuente}).sort_values(["Departamento", "Año"])
+
+
+def poblacion(pob, a0, a1):
+    p = pob.set_index("area").loc[["Total", "Urbano", "Rural"]].reset_index()
+    return pd.DataFrame({
+        "Área": p.area,
+        f"Población {a0} (millones)": p[f"poblacion_millones_{a0}"], f"6.1.1 {a0} (%)": p[f"ods611_{a0}"],
+        f"Sin agua segura {a0} (millones)": p[f"sin_agua_segura_millones_{a0}"], f"EE {a0} (millones)": p[f"ee_millones_{a0}"],
+        f"Población {a1} (millones)": p[f"poblacion_millones_{a1}"], f"6.1.1 {a1} (%)": p[f"ods611_{a1}"],
+        f"Sin agua segura {a1} (millones)": p[f"sin_agua_segura_millones_{a1}"], f"EE {a1} (millones)": p[f"ee_millones_{a1}"],
+        "Diferencia (millones)": p["dif_millones"], "EE diferencia (millones)": p["ee_dif_millones"],
+        "Significativa al 95%": p["significativo_95"].map(SI_NO)})
+
+
+def descomposicion(d, a0, a1):
+    return pd.DataFrame({
+        "Departamento": d.departamento,
+        f"Peso poblacional {a0} (%)": 100 * d[f"peso_pob_{a0}"], f"Peso poblacional {a1} (%)": 100 * d[f"peso_pob_{a1}"],
+        f"Cloro adecuado {a0} (%)": d[f"tasa_{a0}"], f"Cloro adecuado {a1} (%)": d[f"tasa_{a1}"],
+        "Efecto tasa (pp)": d["efecto_tasa_pp"], "Efecto composición (pp)": d["efecto_composicion_pp"],
+        "Contribución total (pp)": d["contribucion_total_pp"],
+        "% de la caída (efecto tasa)": d["pct_del_cambio_por_tasa"]}).sort_values("Contribución total (pp)")
+
+
 def formato(ws, nota, n_cols, marcar_col=None):
     ws.insert_rows(1, 2)
     ws["A1"] = nota
@@ -94,6 +141,11 @@ def main():
     comp = pd.read_csv(PROC / f"comparacion_{a0}_{a1}.csv")
     val = pd.read_csv(PROC / "validacion.csv")
     rob = pd.read_csv(PROC / f"robustez_codigo9_{a1}.csv")
+    res = pd.read_csv(PROC / "indicadores.csv")
+    rec = pd.read_csv(PROC / f"comparacion_2023_{a1}.csv")
+    pob = pd.read_csv(PROC / f"poblacion_sin_agua_segura_{a0}_{a1}.csv")
+    dsc = pd.read_csv(PROC / f"descomposicion_ods611_{a0}_{a1}.csv")
+    anios = sorted(res.anio.unique())
     hojas = {
         "Nacional": (nacional(comp, a0, a1), None,
                      f"% de población. Fuente: comparacion_{a0}_{a1}.csv (INEI-ENAPRES, cálculo propio). "
@@ -106,6 +158,23 @@ def main():
                               f"Fuente: robustez_codigo9_{a1}.csv. Código 9 = 'red pública casa del vecino' (2024+). "
                               "A esos hogares no se les pregunta la continuidad, que no cambia. "
                               "La definición del proyecto no cuenta el código 9."),
+        "Arequipa y Callao": (series_departamentos(res, ["Arequipa", "Callao"], anios), None,
+                              "% de población (CV). Fuente: indicadores.csv. El Callao es 100% urbano (Total = Urbano). "
+                              "Limitante del 6.1.1: Arequipa = cloro; Callao = continuidad 24 h."),
+        "Cloro dept. vs INEI": (cloro_vs_inei(val), None,
+                                "% de HOGARES con cloro adecuado entre hogares con prueba. Fuente: validacion.csv "
+                                "(cifras INEI en references/valores_referencia.csv)."),
+        "Población sin agua segura": (poblacion(pob, a0, a1), None,
+                                      f"(100 - 6.1.1) x población expandida. Fuente: poblacion_sin_agua_segura_{a0}_{a1}.csv. "
+                                      "La población se trata como fija (calibrada a proyecciones INEI). El total es la suma de urbano y rural. "
+                                      "Ojo: la baja rural se explica sobre todo por la menor población rural, no por una mejora del 6.1.1."),
+        "Recuperación 2023-2025": (nacional(rec, 2023, a1), None,
+                                   f"% de población. Fuente: comparacion_2023_{a1}.csv. Significancia al 95% con valores sin redondear."),
+        "Descomposición 6.1.1": (descomposicion(dsc, a0, a1), None,
+                                 f"Cambio del 6.1.1 nacional {a0}-{a1} repartido por departamento. Como el cloro limita en urbano y rural "
+                                 f"en ambos años, el 6.1.1 nacional = cloro adecuado nacional; se usa la tasa de cloro de cada departamento. "
+                                 f"Efecto tasa = peso medio x cambio de la tasa; composición = tasa media x cambio del peso. "
+                                 f"Fuente: descomposicion_ods611_{a0}_{a1}.csv."),
     }
     out = PROC / "tablas_revision.xlsx"
     with pd.ExcelWriter(out, engine="openpyxl") as xw:

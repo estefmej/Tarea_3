@@ -1,0 +1,4 @@
+anio_2019,area,poblacion_millones_2019,ods611_2019,sin_agua_segura_pct_2019,sin_agua_segura_millones_2019,ee_millones_2019,anio_2025,poblacion_millones_2025,ods611_2025,sin_agua_segura_pct_2025,sin_agua_segura_millones_2025,ee_millones_2025,dif_millones,ee_dif_millones,significativo_95
+2019,Total,32.4186,41.5345,58.4655,18.9537,0.2027,2025,34.2016,36.5768,63.4232,21.6918,0.2276,2.7381,0.3048,True
+2019,Rural,6.9191,3.6061,96.3939,6.6696,0.0347,2025,6.3994,3.0649,96.9351,6.2033,0.0259,-0.4663,0.0433,True
+2019,Urbano,25.4994,51.8262,48.1738,12.2841,0.1998,2025,27.8022,44.2905,55.7095,15.4885,0.2261,3.2044,0.3017,True

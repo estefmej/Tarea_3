@@ -58,3 +58,18 @@ Generado automáticamente. Verifica cada cifra e interprétala antes de usarla.
 - INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Urbano cloro_adecuado_hogares: oficial 47.4 vs propio 47.4 (-0.0 pp) → OK
 - INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Rural red_publica_hogares: oficial 81.2 vs propio 81.2 (-0.0 pp) → OK
 - INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Rural cloro_adecuado_hogares: oficial 3.3 vs propio 3.3 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2013-2019 (ENAPRES, ene-dic), Cuadro 6.3 2019 Total cloro_adecuado_hogares: oficial 68.2 vs propio 68.2 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2024 (ENAPRES, ene-dic), Cuadro 6.2 2022 Total cloro_adecuado_hogares: oficial 51.4 vs propio 51.4 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2023 Total cloro_adecuado_hogares: oficial 37.9 vs propio 37.9 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2024 Total cloro_adecuado_hogares: oficial 40.7 vs propio 40.7 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2025 Total cloro_adecuado_hogares: oficial 44.9 vs propio 44.9 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2013-2019 (ENAPRES, ene-dic), Cuadro 6.3 2019 Total cloro_adecuado_hogares: oficial 58.8 vs propio 58.8 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2024 (ENAPRES, ene-dic), Cuadro 6.2 2022 Total cloro_adecuado_hogares: oficial 46.8 vs propio 46.8 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2023 Total cloro_adecuado_hogares: oficial 48.6 vs propio 48.6 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2024 Total cloro_adecuado_hogares: oficial 49.5 vs propio 49.5 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2025 Total cloro_adecuado_hogares: oficial 58.6 vs propio 58.6 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2013-2019 (ENAPRES, ene-dic), Cuadro 6.3 2019 Total cloro_adecuado_hogares: oficial 78.4 vs propio 78.4 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2024 (ENAPRES, ene-dic), Cuadro 6.2 2022 Total cloro_adecuado_hogares: oficial 72.2 vs propio 72.2 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2023 Total cloro_adecuado_hogares: oficial 67.0 vs propio 67.0 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2024 Total cloro_adecuado_hogares: oficial 75.9 vs propio 75.9 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos 2025 (ENAPRES, ene-dic), Cuadro 6.1 2025 Total cloro_adecuado_hogares: oficial 83.3 vs propio 83.3 (-0.0 pp) → OK

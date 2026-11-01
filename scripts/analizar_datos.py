@@ -136,13 +136,14 @@ def estimar(b, anio):
 
 
 def descomponer(a0, a1, indicador="red_publica", area="Urbano"):
-    """Reparte el cambio nacional del indicador en el área entre departamentos:
+    """Reparte el cambio nacional del indicador en el área (area=None: todas) entre departamentos:
     efecto tasa = peso poblacional medio x cambio de la tasa del departamento;
     efecto composición = tasa media x cambio del peso poblacional."""
     filas = []
     for anio in (a0, a1):
         b = pd.read_csv(PROC / f"base_{anio}.csv.gz", usecols=["departamento", "area", "peso", indicador])
-        b = b[b["area"] == area]
+        if area:
+            b = b[b["area"] == area]
         g = b.groupby("departamento").apply(
             lambda d: pd.Series({"pob": d["peso"].sum(), "tasa": 100 * (d["peso"] * d[indicador]).sum() / d["peso"].sum()}),
             include_groups=False)
@@ -183,6 +184,31 @@ def robustez_codigo9(anio):
     out = pd.DataFrame(filas)
     out["cv"] = out["ee"] / out["valor"] * 100
     return out
+
+
+def poblacion_sin_agua_segura(res, anios):
+    """Personas sin agua gestionada de forma segura = (100 - 6.1.1) % x población.
+    La población expandida está calibrada a las proyecciones del INEI, por lo que se
+    trata como fija: error estándar = población x error estándar del 6.1.1."""
+    filas = []
+    for anio in anios:
+        b = pd.read_csv(PROC / f"base_{anio}.csv.gz", usecols=["area", "peso"])
+        pob = {"Total": b["peso"].sum(), **b.groupby("area")["peso"].sum().to_dict()}
+        for area, n in pob.items():
+            x = res[(res.anio == anio) & (res.dominio == "Nacional") & (res.area == area)
+                    & (res.indicador == "ods611_minimo")].iloc[0]
+            filas.append(dict(anio=anio, area=area, poblacion_millones=n / 1e6,
+                              ods611=x.valor, sin_agua_segura_pct=100 - x.valor,
+                              sin_agua_segura_millones=(100 - x.valor) / 100 * n / 1e6,
+                              ee_millones=x.ee / 100 * n / 1e6))
+    out = pd.DataFrame(filas)
+    # diferencia entre años (muestras independientes)
+    a0, a1 = anios
+    m = out[out.anio == a0].merge(out[out.anio == a1], on="area", suffixes=(f"_{a0}", f"_{a1}"))
+    m["dif_millones"] = m[f"sin_agua_segura_millones_{a1}"] - m[f"sin_agua_segura_millones_{a0}"]
+    m["ee_dif_millones"] = np.sqrt(m[f"ee_millones_{a0}"] ** 2 + m[f"ee_millones_{a1}"] ** 2)
+    m["significativo_95"] = m["dif_millones"].abs() > 1.96 * m["ee_dif_millones"]
+    return m
 
 
 def comparar(res, a0, a1):
@@ -285,6 +311,19 @@ def main():
     res.round(3).to_csv(PROC / "indicadores.csv", index=False)
     comp.round(3).to_csv(PROC / f"comparacion_{a.base}_{a1}.csv", index=False)
     robustez_codigo9(a1).round(3).to_csv(PROC / f"robustez_codigo9_{a1}.csv", index=False)
+    if 2023 in set(res.anio) and a1 != 2023:
+        comparar(res, 2023, a1).round(3).to_csv(PROC / f"comparacion_2023_{a1}.csv", index=False)
+    poblacion_sin_agua_segura(res, [a.base, a1]).round(4).to_csv(
+        PROC / f"poblacion_sin_agua_segura_{a.base}_{a1}.csv", index=False)
+    # Descomposición del 6.1.1 nacional: es exacta solo si el cloro es el criterio limitante
+    # en urbano y rural en ambos años (entonces 6.1.1 nacional = cloro adecuado nacional).
+    lim = res[(res.dominio == "Nacional") & (res.area.isin(["Urbano", "Rural"])) &
+              (res.indicador == "ods611_minimo") & (res.anio.isin([a.base, a1]))]["criterio_limitante"]
+    if set(lim) == {"cal_cloro_adecuado"}:
+        descomponer(a.base, a1, "cal_cloro_adecuado", None).round(3).to_csv(
+            PROC / f"descomposicion_ods611_{a.base}_{a1}.csv", index=False)
+    else:
+        print("Aviso: el criterio limitante no es el cloro en todas las áreas; no se descompone el 6.1.1")
     descomponer(a.base, a1).round(3).to_csv(PROC / f"descomposicion_red_urbana_{a.base}_{a1}.csv", index=False)
     val.round(3).to_csv(PROC / "validacion.csv", index=False)
     (PROC / "hallazgos_borrador.md").write_text(borrador_hallazgos(res, comp, val, a.base, a1), encoding="utf-8")
