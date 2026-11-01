@@ -136,6 +136,11 @@ def procesar(anio, config_dir=None):
     medido = red & (adec | inad | sin)
     log["hogares_con_red_sin_prueba_cloro"] = int((red & ~medido).sum())
     out["cal_cloro_adecuado"] = (red & adec).astype(int)
+    # Sensibilidad: contando el código 9 como red (no cambia la continuidad: a esos
+    # hogares no se les pregunta, así que no cumplen el criterio de 24 h)
+    vecino = out["red_vecino"] == 1
+    out["red_publica_con_vecino"] = (red | vecino).astype(int)
+    out["cal_cloro_adecuado_con_vecino"] = ((red | vecino) & adec).astype(int)
     out["ods611_conjunto"] = (dentro & (out["disp_24h"] == 1) & adec).astype(int)
     out["den_red_medido"] = medido.astype(int)
     out["cloro_adecuado_en_red"] = (medido & adec).astype(int)

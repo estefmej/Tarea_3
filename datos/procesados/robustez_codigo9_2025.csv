@@ -1,0 +1,19 @@
+anio,variante,area,indicador,valor,ee,criterio_limitante,cv
+2025,sin código 9 (definición del proyecto),Urbano,red_publica,92.736,0.413,,0.445
+2025,sin código 9 (definición del proyecto),Urbano,disp_24h,54.073,1.033,,1.91
+2025,sin código 9 (definición del proyecto),Urbano,cal_cloro_adecuado,44.291,0.813,,1.836
+2025,sin código 9 (definición del proyecto),Urbano,ods611_minimo,44.291,0.813,cal_cloro_adecuado,1.836
+2025,sin código 9 (definición del proyecto),Rural,red_publica,80.468,1.066,,1.325
+2025,sin código 9 (definición del proyecto),Rural,disp_24h,63.092,1.393,,2.208
+2025,sin código 9 (definición del proyecto),Rural,cal_cloro_adecuado,3.065,0.405,,13.217
+2025,sin código 9 (definición del proyecto),Rural,ods611_minimo,3.065,0.405,cal_cloro_adecuado,13.217
+2025,sin código 9 (definición del proyecto),Total,ods611_minimo,36.577,0.665,,1.819
+2025,contando código 9 como red,Urbano,red_publica,95.435,0.365,,0.383
+2025,contando código 9 como red,Urbano,disp_24h,54.073,1.033,,1.91
+2025,contando código 9 como red,Urbano,cal_cloro_adecuado,45.191,0.819,,1.811
+2025,contando código 9 como red,Urbano,ods611_minimo,45.191,0.819,cal_cloro_adecuado,1.811
+2025,contando código 9 como red,Rural,red_publica,83.1,1.06,,1.275
+2025,contando código 9 como red,Rural,disp_24h,63.092,1.393,,2.208
+2025,contando código 9 como red,Rural,cal_cloro_adecuado,3.122,0.411,,13.152
+2025,contando código 9 como red,Rural,ods611_minimo,3.122,0.411,cal_cloro_adecuado,13.152
+2025,contando código 9 como red,Total,ods611_minimo,37.319,0.67,,1.795

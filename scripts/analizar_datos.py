@@ -156,6 +156,35 @@ def descomponer(a0, a1, indicador="red_publica", area="Urbano"):
     return d.reset_index().sort_values("efecto_tasa_pp")
 
 
+def robustez_codigo9(anio):
+    """6.1.1 y sus criterios sin contar (definición del proyecto) y contando el
+    código 9 "red pública casa del vecino" como red. Metodología MVCS: mínimo por área;
+    el total es el promedio de urbano y rural ponderado por población."""
+    b = pd.read_csv(PROC / f"base_{anio}.csv.gz", low_memory=False)
+    variantes = {"sin código 9 (definición del proyecto)": ("red_publica", "cal_cloro_adecuado"),
+                 "contando código 9 como red": ("red_publica_con_vecino", "cal_cloro_adecuado_con_vecino")}
+    filas = []
+    for nombre, (red, cloro) in variantes.items():
+        mins = {}
+        for area in ("Urbano", "Rural"):
+            g = b[b["area"] == area]
+            est = {k: razon(g, v, "uno") for k, v in
+                   [("red_publica", red), ("disp_24h", "disp_24h"), ("cal_cloro_adecuado", cloro)]}
+            lim = min(est, key=lambda k: est[k][0])
+            mins[area] = (est[lim][0], est[lim][1], g["peso"].sum())
+            for k, (r, se, n) in est.items():
+                filas.append(dict(anio=anio, variante=nombre, area=area, indicador=k, valor=100 * r, ee=100 * se))
+            filas.append(dict(anio=anio, variante=nombre, area=area, indicador="ods611_minimo",
+                              valor=100 * est[lim][0], ee=100 * est[lim][1], criterio_limitante=lim))
+        tot = sum(m[2] for m in mins.values())
+        filas.append(dict(anio=anio, variante=nombre, area="Total", indicador="ods611_minimo",
+                          valor=100 * sum(m[0] * m[2] for m in mins.values()) / tot,
+                          ee=100 * np.sqrt(sum((m[2] / tot) ** 2 * m[1] ** 2 for m in mins.values()))))
+    out = pd.DataFrame(filas)
+    out["cv"] = out["ee"] / out["valor"] * 100
+    return out
+
+
 def comparar(res, a0, a1):
     k = ["dominio", "area", "indicador"]
     m = res[res.anio == a0].merge(res[res.anio == a1], on=k, suffixes=(f"_{a0}", f"_{a1}"))
@@ -255,6 +284,7 @@ def main():
 
     res.round(3).to_csv(PROC / "indicadores.csv", index=False)
     comp.round(3).to_csv(PROC / f"comparacion_{a.base}_{a1}.csv", index=False)
+    robustez_codigo9(a1).round(3).to_csv(PROC / f"robustez_codigo9_{a1}.csv", index=False)
     descomponer(a.base, a1).round(3).to_csv(PROC / f"descomposicion_red_urbana_{a.base}_{a1}.csv", index=False)
     val.round(3).to_csv(PROC / "validacion.csv", index=False)
     (PROC / "hallazgos_borrador.md").write_text(borrador_hallazgos(res, comp, val, a.base, a1), encoding="utf-8")
