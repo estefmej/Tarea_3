@@ -74,7 +74,7 @@ def procesar(anio, config_dir=None):
         df = df[ok]
     llaves = [c[k] for k in cfg["llaves_hogar"]]
     dup = df.duplicated(subset=llaves, keep=False)
-    claves_dup = df.loc[dup, llaves].drop_duplicates().astype(str).agg("-".join, axis=1)
+    claves_dup = ["-".join(map(str, r)) for r in df.loc[dup, llaves].drop_duplicates().itertuples(index=False)]
     log["duplicados_pares"] = int(len(claves_dup))
     log["duplicados_hogares_excluidos"] = int(dup.sum())
     log["duplicados_llaves"] = "; ".join(claves_dup) + (f" ({'-'.join(cfg['llaves_hogar'])})" if len(claves_dup) else "")

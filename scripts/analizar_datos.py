@@ -4,8 +4,10 @@
   departamento y departamento x área, con error estándar (linealización de
   Taylor con estratos y conglomerados), CV y marca de confiabilidad (CV > 15% =
   referencial, criterio MVCS/INEI).
-- ODS 6.1.1 (aproximación nacional, método JMP): mínimo de los tres criterios
-  en urbano y en rural; el total es su promedio ponderado por población.
+- ODS 6.1.1 (metodología MVCS): mínimo de tres criterios —acceso a red pública
+  (códigos 1, 2 y 3), continuidad 24 h y cloro adecuado— calculado en urbano y
+  en rural; el total es su promedio ponderado por población. El acceso dentro
+  de la vivienda (acc_en_vivienda) se reporta solo como indicador descriptivo.
   Se guarda también el mínimo directo sobre el total (ods611_minimo_directo)
   para ver cuál reproduce mejor la cifra del MVCS. También el indicador conjunto
   y la sensibilidad con 20 h y 12 h de continuidad.
@@ -28,7 +30,7 @@ from comun import RAIZ
 
 PROC = RAIZ / "datos" / "procesados"
 WEB = RAIZ / "web" / "data"
-CRITERIOS = {"acc_en_vivienda": "Accesible en la vivienda",
+CRITERIOS = {"red_publica": "Acceso a red pública",
              "disp_24h": "Disponible 24 h todos los días",
              "cal_cloro_adecuado": "Cloro residual adecuado"}
 SIMPLES = [("red_publica", "uno"), ("acc_en_vivienda", "uno"), ("disp_24h", "uno"),
@@ -81,7 +83,7 @@ def estimar(b, anio):
         for sufijo, disp in [("", "disp_24h"), ("_20h", "disp_20h"), ("_12h", "disp_12h")]:
             if disp not in est:
                 continue
-            crit = {"acc_en_vivienda": est["acc_en_vivienda"], disp: est[disp],
+            crit = {"red_publica": est["red_publica"], disp: est[disp],
                     "cal_cloro_adecuado": est["cal_cloro_adecuado"]}
             lim = min(crit, key=lambda k: crit[k][0])
             mins[(dom, area, sufijo)] = (crit[lim][0], crit[lim][1], lim, g["peso"].sum(), len(g))
@@ -125,9 +127,9 @@ def validar(res):
                   on=["anio", "dominio", "area", "indicador"], how="left")
     m["dif_pp"] = m["valor"] - m["valor_ref"]
     m["estado"] = np.select(
-        [m["valor"].isna(), (m["tipo"] == "replica") & (m["dif_pp"].abs() <= m["tolerancia_pp"]),
+        [m["valor"].isna() & (m["tipo"] == "replica"), m["valor"].isna(), (m["tipo"] == "replica") & (m["dif_pp"].abs() <= m["tolerancia_pp"]),
          m["tipo"] == "replica"],
-        ["sin estimación (año no procesado)", "OK", "REVISAR"], default="contraste")
+        ["sin estimación (año no procesado)", "contraste (sin estimación comparable)", "OK", "REVISAR"], default="contraste")
     return m
 
 

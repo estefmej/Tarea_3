@@ -29,14 +29,14 @@ El indicador ODS 6.1.1 considera que una persona tiene agua "gestionada de forma
 
 ### Construcción de los indicadores
 
-Definiciones de las fichas técnicas del MVCS (capítulo 100 de la ENAPRES):
+Se sigue la **metodología del MVCS** (fichas técnicas y Plan Nacional de Saneamiento), con el capítulo 100 de la ENAPRES:
 
-| Criterio ODS 6.1.1 | Variable | Definición |
+| Criterio ODS 6.1.1 (MVCS) | Variable | Definición |
 |---|---|---|
-| Accesible en la vivienda | P129G | Red pública dentro de la vivienda (código 1) |
-| Disponible cuando se necesita | P130, P130A | Agua todos los días (P130 = 1) y 24 horas (P130A = 24) |
-| Libre de contaminación (proxy) | P129D | Cloro residual libre ≥ 0,5 mg/L en la muestra del hogar |
-| Red pública (cobertura) | P129G | Códigos 1, 2 o 3 (dentro, fuera de la vivienda en la edificación, pilón) |
+| Acceso | P129G | Red pública: códigos 1, 2 o 3 (dentro de la vivienda, fuera de la vivienda pero dentro de la edificación, pilón de uso público) |
+| Continuidad | P130, P130A | Agua todos los días (P130 = 1) y 24 horas (P130A = 24) |
+| Calidad (proxy) | P129D | Cloro residual libre ≥ 0,5 mg/L en la muestra del hogar |
+| Red dentro de la vivienda (descriptivo, no entra en el 6.1.1) | P129G | Código 1 |
 
 Los números de pregunta cambian entre años (verificado con el cuestionario urbano y rural y el diccionario de cada año):
 
@@ -51,7 +51,7 @@ Los números de pregunta cambian entre años (verificado con el cuestionario urb
 - En 2019 la fuente de agua usa los códigos 6A (manantial) y 6B (río); se lee como texto para no excluir esos hogares.
 - El cloro se registra como parte entera y décimas de la lectura del comparador. En 2019 y 2022, únicos años con la categoría oficial P129C, la reconstrucción coincide al 100% con esa categoría.
 
-- **Agregación (método JMP):** el indicador es el mínimo de los tres criterios, calculado por separado en urbano y rural; el total es su promedio ponderado por población. Se reporta además el indicador **conjunto** (hogares que cumplen los tres a la vez).
+- **Agregación (MVCS):** el 6.1.1 es el menor de los tres indicadores (acceso a red pública, continuidad 24 h y calidad), calculado por separado en urbano y rural; el total es su promedio ponderado por población. A diferencia del JMP, el acceso no exige que la fuente esté dentro de la vivienda. Se reporta además el indicador **conjunto** (hogares que cumplen los tres a la vez).
 - **Factor de expansión:** [factor de personas del capítulo 200 / factor del hogar × miembros del hogar]. Resultados en % de población.
 - **Precisión:** error estándar por linealización de Taylor, con departamento × área como estrato y el conglomerado como unidad primaria de muestreo (ver Limitaciones). Estimaciones con CV > 15% se marcan como referenciales (criterio MVCS/INEI).
 - **Comparación 2019 vs [AÑO FINAL]:** diferencia en puntos porcentuales y prueba de significancia al 95%.
@@ -80,7 +80,7 @@ Los números de pregunta cambian entre años (verificado con el cuestionario urb
 - **Continuidad declarada** por el informante, no medida.
 - **2020 y 2021 excluidos:** por la pandemia, el INEI redujo el cuestionario y aplicó entrevistas telefónicas, sin poder medir el cloro en el hogar; el MVCS usó factores de expansión calibrados para esos años.
 - **Precisión:** la ENAPRES tiene inferencia nacional y departamental por área; las cifras con CV > 15% son referenciales.
-- **Diferencias con el JMP:** distintas definiciones de calidad (cloro vs. E. coli) y de disponibilidad (24 h vs. "cuando se necesita"), por lo que las cifras no son directamente comparables.
+- **Diferencias con el JMP:** distintas definiciones de acceso (red pública vs. fuente en la vivienda), de calidad (cloro vs. E. coli) y de disponibilidad (24 h vs. "cuando se necesita"), por lo que las cifras no son directamente comparables.
 - **Urbano/rural:** según el umbral de 2000 habitantes del centro poblado.
 - **Estrato de diseño aproximado:** los microdatos publicados no incluyen la variable de estrato del diseño muestral (la variable ESTRATO es el estrato socioeconómico A–E y está vacía en el área rural). Se usa departamento × área como pseudo-estrato y CONGLOMERADO como unidad primaria. Los errores estándar y CV son una aproximación y podrían diferir algo de los del INEI.
 

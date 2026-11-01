@@ -1,0 +1,17 @@
+{
+  "anios": [
+    2019,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "anio_base": 2019,
+  "anio_final": 2025,
+  "fuente": "INEI - ENAPRES (microdatos); cálculo propio con factor de expansión",
+  "criterios": {
+    "red_publica": "Acceso a red pública",
+    "disp_24h": "Disponible 24 h todos los días",
+    "cal_cloro_adecuado": "Cloro residual adecuado"
+  }
+}

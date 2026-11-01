@@ -1,0 +1,1080 @@
+anio_2019,dominio,area,indicador,valor_2019,ee_2019,n_muestra_2019,criterio_limitante_2019,cv_2019,confiabilidad_2019,anio_2025,valor_2025,ee_2025,n_muestra_2025,criterio_limitante_2025,cv_2025,confiabilidad_2025,dif_pp,ee_dif,significativo_95
+2019,Nacional,Total,red_publica,90.778,0.352,144788,,0.387,aceptable,2025,90.44,0.394,132354,,0.436,aceptable,-0.338,0.528,False
+2019,Nacional,Total,acc_en_vivienda,85.475,0.398,144788,,0.466,aceptable,2025,85.527,0.485,132354,,0.567,aceptable,0.053,0.628,False
+2019,Nacional,Total,disp_24h,56.596,0.787,144788,,1.39,aceptable,2025,55.761,0.877,132354,,1.573,aceptable,-0.836,1.178,False
+2019,Nacional,Total,disp_20h,57.194,0.786,144788,,1.375,aceptable,2025,56.124,0.877,132354,,1.563,aceptable,-1.07,1.178,False
+2019,Nacional,Total,disp_12h,64.912,0.728,144788,,1.121,aceptable,2025,62.783,0.828,132354,,1.318,aceptable,-2.129,1.102,False
+2019,Nacional,Total,cal_cloro_adecuado,41.534,0.659,144788,,1.587,aceptable,2025,36.577,0.695,132354,,1.901,aceptable,-4.958,0.958,True
+2019,Nacional,Total,ods611_conjunto,29.674,0.716,144788,,2.412,aceptable,2025,27.253,0.749,132354,,2.749,aceptable,-2.421,1.036,True
+2019,Nacional,Total,cloro_adecuado_en_red,46.626,0.695,125008,,1.491,aceptable,2025,42.316,0.748,111556,,1.767,aceptable,-4.31,1.021,True
+2019,Nacional,Total,cloro_inadecuado_en_red,15.331,0.442,125008,,2.883,aceptable,2025,16.869,0.525,111556,,3.114,aceptable,1.538,0.687,True
+2019,Nacional,Total,sin_cloro_en_red,38.043,0.622,125008,,1.636,aceptable,2025,40.815,0.694,111556,,1.701,aceptable,2.772,0.932,True
+2019,Nacional,Rural,red_publica,75.642,1.065,50319,,1.408,aceptable,2025,80.468,1.066,46864,,1.325,aceptable,4.826,1.507,True
+2019,Nacional,Rural,acc_en_vivienda,72.78,1.072,50319,,1.473,aceptable,2025,77.568,1.06,46864,,1.367,aceptable,4.788,1.508,True
+2019,Nacional,Rural,disp_24h,58.856,1.369,50319,,2.325,aceptable,2025,63.092,1.393,46864,,2.208,aceptable,4.237,1.953,True
+2019,Nacional,Rural,disp_20h,59.047,1.37,50319,,2.32,aceptable,2025,63.153,1.389,46864,,2.199,aceptable,4.106,1.951,True
+2019,Nacional,Rural,disp_12h,60.489,1.368,50319,,2.262,aceptable,2025,65.232,1.354,46864,,2.075,aceptable,4.743,1.925,True
+2019,Nacional,Rural,cal_cloro_adecuado,3.606,0.501,50319,,13.9,aceptable,2025,3.065,0.405,46864,,13.217,aceptable,-0.541,0.644,False
+2019,Nacional,Rural,ods611_conjunto,3.012,0.463,50319,,15.374,referencial (CV>15%),2025,2.675,0.386,46864,,14.423,aceptable,-0.337,0.603,False
+2019,Nacional,Rural,cloro_adecuado_en_red,4.774,0.659,37290,,13.798,aceptable,2025,3.828,0.505,36104,,13.191,aceptable,-0.946,0.83,False
+2019,Nacional,Rural,cloro_inadecuado_en_red,5.565,0.605,37290,,10.869,aceptable,2025,7.787,0.777,36104,,9.981,aceptable,2.222,0.985,True
+2019,Nacional,Rural,sin_cloro_en_red,89.66,0.995,37290,,1.11,aceptable,2025,88.384,0.994,36104,,1.125,aceptable,-1.276,1.406,False
+2019,Nacional,Urbano,red_publica,94.885,0.334,94469,,0.352,aceptable,2025,92.736,0.413,85490,,0.445,aceptable,-2.149,0.531,True
+2019,Nacional,Urbano,acc_en_vivienda,88.919,0.408,94469,,0.459,aceptable,2025,87.359,0.54,85490,,0.618,aceptable,-1.56,0.677,True
+2019,Nacional,Urbano,disp_24h,55.983,0.93,94469,,1.662,aceptable,2025,54.073,1.033,85490,,1.91,aceptable,-1.91,1.39,False
+2019,Nacional,Urbano,disp_20h,56.691,0.929,94469,,1.639,aceptable,2025,54.506,1.033,85490,,1.895,aceptable,-2.186,1.39,False
+2019,Nacional,Urbano,disp_12h,66.112,0.845,94469,,1.278,aceptable,2025,62.219,0.97,85490,,1.559,aceptable,-3.893,1.286,True
+2019,Nacional,Urbano,cal_cloro_adecuado,51.826,0.783,94469,,1.512,aceptable,2025,44.291,0.813,85490,,1.836,aceptable,-7.536,1.129,True
+2019,Nacional,Urbano,ods611_conjunto,36.909,0.872,94469,,2.362,aceptable,2025,32.911,0.897,85490,,2.725,aceptable,-3.998,1.251,True
+2019,Nacional,Urbano,cloro_adecuado_en_red,55.874,0.789,87718,,1.413,aceptable,2025,50.384,0.852,75452,,1.692,aceptable,-5.489,1.162,True
+2019,Nacional,Urbano,cloro_inadecuado_en_red,17.489,0.525,87718,,3.002,aceptable,2025,18.773,0.614,75452,,3.273,aceptable,1.284,0.808,False
+2019,Nacional,Urbano,sin_cloro_en_red,26.637,0.669,87718,,2.511,aceptable,2025,30.843,0.751,75452,,2.434,aceptable,4.206,1.005,True
+2019,Amazonas,Total,red_publica,89.229,1.924,5749,,2.157,aceptable,2025,90.064,1.968,5215,,2.185,aceptable,0.835,2.752,False
+2019,Amazonas,Total,acc_en_vivienda,87.12,1.958,5749,,2.248,aceptable,2025,88.665,1.959,5215,,2.21,aceptable,1.546,2.77,False
+2019,Amazonas,Total,disp_24h,59.16,3.852,5749,,6.512,aceptable,2025,59.594,3.613,5215,,6.063,aceptable,0.434,5.281,False
+2019,Amazonas,Total,disp_20h,59.598,3.809,5749,,6.392,aceptable,2025,59.749,3.594,5215,,6.015,aceptable,0.151,5.237,False
+2019,Amazonas,Total,disp_12h,62.256,3.774,5749,,6.062,aceptable,2025,62.033,3.54,5215,,5.706,aceptable,-0.223,5.174,False
+2019,Amazonas,Total,cal_cloro_adecuado,11.037,1.394,5749,,12.635,aceptable,2025,11.461,1.7,5215,,14.83,aceptable,0.424,2.199,False
+2019,Amazonas,Total,ods611_conjunto,8.318,1.262,5749,,15.171,referencial (CV>15%),2025,9.221,1.625,5215,,17.625,referencial (CV>15%),0.902,2.058,False
+2019,Amazonas,Total,cloro_adecuado_en_red,12.409,1.577,5161,,12.705,aceptable,2025,12.818,1.896,4585,,14.795,aceptable,0.409,2.466,False
+2019,Amazonas,Total,cloro_inadecuado_en_red,3.935,1.109,5161,,28.195,referencial (CV>15%),2025,3.008,0.912,4585,,30.332,referencial (CV>15%),-0.927,1.436,False
+2019,Amazonas,Total,sin_cloro_en_red,83.656,1.968,5161,,2.352,aceptable,2025,84.175,2.091,4585,,2.484,aceptable,0.518,2.871,False
+2019,Amazonas,Rural,red_publica,81.194,3.73,2710,,4.593,aceptable,2025,82.36,4.208,2494,,5.109,aceptable,1.166,5.623,False
+2019,Amazonas,Rural,acc_en_vivienda,80.95,3.723,2710,,4.6,aceptable,2025,81.443,4.162,2494,,5.11,aceptable,0.493,5.584,False
+2019,Amazonas,Rural,disp_24h,62.98,6.054,2710,,9.613,aceptable,2025,73.533,4.84,2494,,6.583,aceptable,10.554,7.751,False
+2019,Amazonas,Rural,disp_20h,63.48,5.973,2710,,9.409,aceptable,2025,73.835,4.746,2494,,6.427,aceptable,10.355,7.628,False
+2019,Amazonas,Rural,disp_12h,66.679,5.909,2710,,8.862,aceptable,2025,75.488,4.589,2494,,6.079,aceptable,8.809,7.481,False
+2019,Amazonas,Rural,cal_cloro_adecuado,0.346,0.346,2710,,99.879,referencial (CV>15%),2025,1.363,0.859,2494,,63.038,referencial (CV>15%),1.017,0.926,False
+2019,Amazonas,Rural,ods611_conjunto,0.0,0.0,2710,,,aceptable,2025,1.363,0.859,2494,,63.038,referencial (CV>15%),1.363,0.859,False
+2019,Amazonas,Rural,cloro_adecuado_en_red,0.427,0.425,2213,,99.65,referencial (CV>15%),2025,1.655,1.037,2033,,62.631,referencial (CV>15%),1.228,1.12,False
+2019,Amazonas,Rural,cloro_inadecuado_en_red,2.181,1.914,2213,,87.772,referencial (CV>15%),2025,0.412,0.219,2033,,53.064,referencial (CV>15%),-1.769,1.927,False
+2019,Amazonas,Rural,sin_cloro_en_red,97.392,2.012,2213,,2.066,aceptable,2025,97.933,1.155,2033,,1.18,aceptable,0.541,2.32,False
+2019,Amazonas,Urbano,red_publica,97.058,0.647,3039,,0.667,aceptable,2025,95.47,1.371,2721,,1.436,aceptable,-1.589,1.516,False
+2019,Amazonas,Urbano,acc_en_vivienda,93.132,1.038,3039,,1.114,aceptable,2025,93.733,1.407,2721,,1.501,aceptable,0.601,1.748,False
+2019,Amazonas,Urbano,disp_24h,55.437,4.844,3039,,8.738,aceptable,2025,49.814,4.991,2721,,10.02,aceptable,-5.623,6.956,False
+2019,Amazonas,Urbano,disp_20h,55.815,4.809,3039,,8.615,aceptable,2025,49.866,4.995,2721,,10.016,aceptable,-5.949,6.933,False
+2019,Amazonas,Urbano,disp_12h,57.946,4.785,3039,,8.257,aceptable,2025,52.593,4.954,2721,,9.42,aceptable,-5.353,6.888,False
+2019,Amazonas,Urbano,cal_cloro_adecuado,21.454,2.976,3039,,13.873,aceptable,2025,18.546,2.972,2721,,16.025,referencial (CV>15%),-2.909,4.206,False
+2019,Amazonas,Urbano,ods611_conjunto,16.425,2.685,3039,,16.349,referencial (CV>15%),2025,14.734,2.827,2721,,19.185,referencial (CV>15%),-1.691,3.899,False
+2019,Amazonas,Urbano,cloro_adecuado_en_red,22.234,3.069,2948,,13.802,aceptable,2025,19.653,3.13,2552,,15.927,referencial (CV>15%),-2.581,4.384,False
+2019,Amazonas,Urbano,cloro_inadecuado_en_red,5.373,1.264,2948,,23.53,referencial (CV>15%),2025,4.597,1.451,2552,,31.56,referencial (CV>15%),-0.776,1.924,False
+2019,Amazonas,Urbano,sin_cloro_en_red,72.393,3.389,2948,,4.682,aceptable,2025,75.749,3.421,2552,,4.516,aceptable,3.356,4.815,False
+2019,Apurímac,Total,red_publica,96.889,0.731,4815,,0.755,aceptable,2025,96.99,0.625,4378,,0.644,aceptable,0.102,0.962,False
+2019,Apurímac,Total,acc_en_vivienda,88.121,1.068,4815,,1.211,aceptable,2025,90.404,1.123,4378,,1.242,aceptable,2.283,1.549,False
+2019,Apurímac,Total,disp_24h,75.947,2.705,4815,,3.561,aceptable,2025,81.136,2.7,4378,,3.328,aceptable,5.189,3.822,False
+2019,Apurímac,Total,disp_20h,78.665,2.678,4815,,3.404,aceptable,2025,82.848,2.613,4378,,3.155,aceptable,4.182,3.742,False
+2019,Apurímac,Total,disp_12h,85.841,2.363,4815,,2.753,aceptable,2025,89.377,1.848,4378,,2.068,aceptable,3.537,3.0,False
+2019,Apurímac,Total,cal_cloro_adecuado,12.095,1.534,4815,,12.68,aceptable,2025,10.126,1.645,4378,,16.249,referencial (CV>15%),-1.969,2.249,False
+2019,Apurímac,Total,ods611_conjunto,6.259,1.113,4815,,17.779,referencial (CV>15%),2025,8.952,1.615,4378,,18.038,referencial (CV>15%),2.693,1.961,False
+2019,Apurímac,Total,cloro_adecuado_en_red,12.506,1.586,4694,,12.684,aceptable,2025,10.49,1.706,4236,,16.265,referencial (CV>15%),-2.017,2.33,False
+2019,Apurímac,Total,cloro_inadecuado_en_red,23.851,2.783,4694,,11.67,aceptable,2025,24.946,2.951,4236,,11.83,aceptable,1.095,4.057,False
+2019,Apurímac,Total,sin_cloro_en_red,63.643,2.964,4694,,4.657,aceptable,2025,64.564,3.439,4236,,5.326,aceptable,0.921,4.54,False
+2019,Apurímac,Rural,red_publica,94.745,1.296,1903,,1.368,aceptable,2025,95.298,1.154,1829,,1.211,aceptable,0.553,1.735,False
+2019,Apurímac,Rural,acc_en_vivienda,94.167,1.337,1903,,1.42,aceptable,2025,95.025,1.173,1829,,1.235,aceptable,0.857,1.779,False
+2019,Apurímac,Rural,disp_24h,84.603,3.776,1903,,4.463,aceptable,2025,85.839,3.667,1829,,4.272,aceptable,1.236,5.263,False
+2019,Apurímac,Rural,disp_20h,85.181,3.766,1903,,4.422,aceptable,2025,85.839,3.667,1829,,4.272,aceptable,0.658,5.257,False
+2019,Apurímac,Rural,disp_12h,86.81,3.606,1903,,4.154,aceptable,2025,87.425,3.098,1829,,3.544,aceptable,0.615,4.754,False
+2019,Apurímac,Rural,cal_cloro_adecuado,1.892,1.202,1903,,63.517,referencial (CV>15%),2025,5.249,2.17,1829,,41.348,referencial (CV>15%),3.357,2.481,False
+2019,Apurímac,Rural,ods611_conjunto,1.892,1.202,1903,,63.517,referencial (CV>15%),2025,5.249,2.17,1829,,41.348,referencial (CV>15%),3.357,2.481,False
+2019,Apurímac,Rural,cloro_adecuado_en_red,1.997,1.266,1803,,63.393,referencial (CV>15%),2025,5.524,2.289,1738,,41.447,referencial (CV>15%),3.527,2.616,False
+2019,Apurímac,Rural,cloro_inadecuado_en_red,15.53,4.091,1803,,26.341,referencial (CV>15%),2025,12.658,4.611,1738,,36.43,referencial (CV>15%),-2.871,6.164,False
+2019,Apurímac,Rural,sin_cloro_en_red,82.474,4.173,1803,,5.06,aceptable,2025,81.818,5.433,1738,,6.64,aceptable,-0.655,6.851,False
+2019,Apurímac,Urbano,red_publica,99.652,0.167,2912,,0.168,aceptable,2025,98.762,0.417,2549,,0.423,aceptable,-0.89,0.45,True
+2019,Apurímac,Urbano,acc_en_vivienda,80.326,1.713,2912,,2.132,aceptable,2025,85.565,1.919,2549,,2.243,aceptable,5.239,2.572,True
+2019,Apurímac,Urbano,disp_24h,64.789,3.93,2912,,6.065,aceptable,2025,76.211,3.912,2549,,5.133,aceptable,11.423,5.545,True
+2019,Apurímac,Urbano,disp_20h,70.265,3.789,2912,,5.392,aceptable,2025,79.715,3.714,2549,,4.659,aceptable,9.45,5.305,False
+2019,Apurímac,Urbano,disp_12h,84.591,2.774,2912,,3.28,aceptable,2025,91.421,1.948,2549,,2.13,aceptable,6.831,3.39,True
+2019,Apurímac,Urbano,cal_cloro_adecuado,25.249,3.228,2912,,12.783,aceptable,2025,15.233,2.495,2549,,16.381,referencial (CV>15%),-10.016,4.08,True
+2019,Apurímac,Urbano,ods611_conjunto,11.889,2.036,2912,,17.127,referencial (CV>15%),2025,12.829,2.407,2549,,18.761,referencial (CV>15%),0.94,3.153,False
+2019,Apurímac,Urbano,cloro_adecuado_en_red,25.439,3.254,2891,,12.792,aceptable,2025,15.526,2.533,2498,,16.316,referencial (CV>15%),-9.914,4.124,True
+2019,Apurímac,Urbano,cloro_inadecuado_en_red,34.09,3.47,2891,,10.178,aceptable,2025,37.407,3.711,2498,,9.922,aceptable,3.316,5.081,False
+2019,Apurímac,Urbano,sin_cloro_en_red,40.47,3.948,2891,,9.756,aceptable,2025,47.068,4.248,2498,,9.025,aceptable,6.598,5.799,False
+2019,Arequipa,Total,red_publica,96.808,0.605,5135,,0.625,aceptable,2025,93.669,2.274,4818,,2.427,aceptable,-3.139,2.353,False
+2019,Arequipa,Total,acc_en_vivienda,92.606,0.971,5135,,1.049,aceptable,2025,81.93,3.148,4818,,3.843,aceptable,-10.675,3.295,True
+2019,Arequipa,Total,disp_24h,87.1,2.182,5135,,2.506,aceptable,2025,85.622,2.933,4818,,3.425,aceptable,-1.479,3.656,False
+2019,Arequipa,Total,disp_20h,87.1,2.182,5135,,2.506,aceptable,2025,85.622,2.933,4818,,3.425,aceptable,-1.479,3.656,False
+2019,Arequipa,Total,disp_12h,88.052,2.031,5135,,2.306,aceptable,2025,86.262,2.915,4818,,3.379,aceptable,-1.789,3.552,False
+2019,Arequipa,Total,cal_cloro_adecuado,69.698,2.426,5135,,3.481,aceptable,2025,44.52,3.049,4818,,6.848,aceptable,-25.178,3.896,True
+2019,Arequipa,Total,ods611_conjunto,64.382,2.637,5135,,4.096,aceptable,2025,42.594,3.078,4818,,7.226,aceptable,-21.788,4.053,True
+2019,Arequipa,Total,cloro_adecuado_en_red,72.168,2.481,4604,,3.437,aceptable,2025,48.559,3.09,4143,,6.364,aceptable,-23.609,3.963,True
+2019,Arequipa,Total,cloro_inadecuado_en_red,14.474,1.626,4604,,11.234,aceptable,2025,34.123,2.722,4143,,7.978,aceptable,19.649,3.171,True
+2019,Arequipa,Total,sin_cloro_en_red,13.358,1.725,4604,,12.915,aceptable,2025,17.318,2.556,4143,,14.761,aceptable,3.961,3.084,False
+2019,Arequipa,Rural,red_publica,74.524,5.626,1853,,7.55,aceptable,2025,79.324,5.153,1759,,6.496,aceptable,4.8,7.629,False
+2019,Arequipa,Rural,acc_en_vivienda,73.152,5.534,1853,,7.565,aceptable,2025,74.031,5.75,1759,,7.768,aceptable,0.879,7.981,False
+2019,Arequipa,Rural,disp_24h,55.964,7.038,1853,,12.576,aceptable,2025,67.563,6.281,1759,,9.297,aceptable,11.599,9.433,False
+2019,Arequipa,Rural,disp_20h,55.964,7.038,1853,,12.576,aceptable,2025,67.563,6.281,1759,,9.297,aceptable,11.599,9.433,False
+2019,Arequipa,Rural,disp_12h,56.65,6.927,1853,,12.228,aceptable,2025,68.315,6.089,1759,,8.913,aceptable,11.665,9.223,False
+2019,Arequipa,Rural,cal_cloro_adecuado,7.874,2.584,1853,,32.811,referencial (CV>15%),2025,5.549,2.031,1759,,36.601,referencial (CV>15%),-2.326,3.286,False
+2019,Arequipa,Rural,ods611_conjunto,6.223,2.366,1853,,38.031,referencial (CV>15%),2025,4.732,1.987,1759,,41.989,referencial (CV>15%),-1.49,3.09,False
+2019,Arequipa,Rural,cloro_adecuado_en_red,10.566,3.421,1370,,32.382,referencial (CV>15%),2025,6.998,2.626,1294,,37.526,referencial (CV>15%),-3.568,4.313,False
+2019,Arequipa,Rural,cloro_inadecuado_en_red,30.849,5.051,1370,,16.372,referencial (CV>15%),2025,35.317,6.523,1294,,18.47,referencial (CV>15%),4.468,8.25,False
+2019,Arequipa,Rural,sin_cloro_en_red,58.585,6.293,1370,,10.742,aceptable,2025,57.685,7.016,1294,,12.162,aceptable,-0.9,9.425,False
+2019,Arequipa,Urbano,red_publica,98.908,0.387,3282,,0.392,aceptable,2025,94.742,2.428,3059,,2.563,aceptable,-4.166,2.459,False
+2019,Arequipa,Urbano,acc_en_vivienda,94.439,0.916,3282,,0.969,aceptable,2025,82.521,3.357,3059,,4.068,aceptable,-11.918,3.479,True
+2019,Arequipa,Urbano,disp_24h,90.034,2.278,3282,,2.53,aceptable,2025,86.972,3.125,3059,,3.593,aceptable,-3.062,3.867,False
+2019,Arequipa,Urbano,disp_20h,90.034,2.278,3282,,2.53,aceptable,2025,86.972,3.125,3059,,3.593,aceptable,-3.062,3.867,False
+2019,Arequipa,Urbano,disp_12h,91.01,2.106,3282,,2.314,aceptable,2025,87.604,3.109,3059,,3.549,aceptable,-3.406,3.755,False
+2019,Arequipa,Urbano,cal_cloro_adecuado,75.523,2.59,3282,,3.429,aceptable,2025,47.435,3.261,3059,,6.874,aceptable,-28.088,4.164,True
+2019,Arequipa,Urbano,ods611_conjunto,69.862,2.822,3282,,4.04,aceptable,2025,45.425,3.288,3059,,7.239,aceptable,-24.437,4.333,True
+2019,Arequipa,Urbano,cloro_adecuado_en_red,76.553,2.594,3234,,3.389,aceptable,2025,51.22,3.253,2849,,6.351,aceptable,-25.333,4.161,True
+2019,Arequipa,Urbano,cloro_inadecuado_en_red,13.309,1.7,3234,,12.774,aceptable,2025,34.046,2.866,2849,,8.419,aceptable,20.738,3.332,True
+2019,Arequipa,Urbano,sin_cloro_en_red,10.139,1.748,3234,,17.238,referencial (CV>15%),2025,14.734,2.646,2849,,17.958,referencial (CV>15%),4.595,3.171,False
+2019,Ayacucho,Total,red_publica,94.661,1.108,6130,,1.171,aceptable,2025,95.437,0.893,5249,,0.936,aceptable,0.775,1.423,False
+2019,Ayacucho,Total,acc_en_vivienda,82.87,1.761,6130,,2.125,aceptable,2025,88.269,1.165,5249,,1.32,aceptable,5.399,2.112,True
+2019,Ayacucho,Total,disp_24h,76.024,2.868,6130,,3.773,aceptable,2025,79.644,2.732,5249,,3.431,aceptable,3.62,3.962,False
+2019,Ayacucho,Total,disp_20h,76.132,2.867,6130,,3.766,aceptable,2025,79.686,2.73,5249,,3.426,aceptable,3.554,3.959,False
+2019,Ayacucho,Total,disp_12h,78.891,2.757,6130,,3.495,aceptable,2025,85.494,2.124,5249,,2.485,aceptable,6.603,3.481,False
+2019,Ayacucho,Total,cal_cloro_adecuado,37.977,2.451,6130,,6.454,aceptable,2025,39.344,2.978,5249,,7.568,aceptable,1.368,3.857,False
+2019,Ayacucho,Total,ods611_conjunto,29.186,2.277,6130,,7.803,aceptable,2025,33.235,2.85,5249,,8.577,aceptable,4.049,3.648,False
+2019,Ayacucho,Total,cloro_adecuado_en_red,40.222,2.576,5815,,6.405,aceptable,2025,41.712,3.089,4927,,7.405,aceptable,1.489,4.022,False
+2019,Ayacucho,Total,cloro_inadecuado_en_red,10.653,1.783,5815,,16.74,referencial (CV>15%),2025,28.186,2.869,4927,,10.18,aceptable,17.533,3.378,True
+2019,Ayacucho,Total,sin_cloro_en_red,49.124,2.998,5815,,6.103,aceptable,2025,30.103,3.376,4927,,11.214,aceptable,-19.022,4.515,True
+2019,Ayacucho,Rural,red_publica,88.526,2.544,2363,,2.874,aceptable,2025,93.25,1.958,2056,,2.1,aceptable,4.724,3.21,False
+2019,Ayacucho,Rural,acc_en_vivienda,82.657,3.577,2363,,4.327,aceptable,2025,90.948,1.99,2056,,2.188,aceptable,8.291,4.093,True
+2019,Ayacucho,Rural,disp_24h,78.886,4.309,2363,,5.462,aceptable,2025,89.165,2.968,2056,,3.329,aceptable,10.28,5.232,True
+2019,Ayacucho,Rural,disp_20h,78.886,4.309,2363,,5.462,aceptable,2025,89.165,2.968,2056,,3.329,aceptable,10.28,5.232,True
+2019,Ayacucho,Rural,disp_12h,79.48,4.313,2363,,5.427,aceptable,2025,89.863,2.944,2056,,3.276,aceptable,10.383,5.222,True
+2019,Ayacucho,Rural,cal_cloro_adecuado,7.202,2.673,2363,,37.117,referencial (CV>15%),2025,20.972,4.771,2056,,22.75,referencial (CV>15%),13.77,5.469,True
+2019,Ayacucho,Rural,ods611_conjunto,5.489,2.478,2363,,45.146,referencial (CV>15%),2025,19.926,4.692,2056,,23.545,referencial (CV>15%),14.437,5.306,True
+2019,Ayacucho,Rural,cloro_adecuado_en_red,8.135,2.983,2101,,36.663,referencial (CV>15%),2025,22.526,5.015,1913,,22.262,referencial (CV>15%),14.391,5.835,True
+2019,Ayacucho,Rural,cloro_inadecuado_en_red,12.821,3.773,2101,,29.428,referencial (CV>15%),2025,31.107,5.179,1913,,16.649,referencial (CV>15%),18.287,6.408,True
+2019,Ayacucho,Rural,sin_cloro_en_red,79.044,4.881,2101,,6.175,aceptable,2025,46.366,6.665,1913,,14.375,aceptable,-32.678,8.261,True
+2019,Ayacucho,Urbano,red_publica,99.124,0.298,3767,,0.3,aceptable,2025,96.737,0.816,3193,,0.843,aceptable,-2.387,0.868,True
+2019,Ayacucho,Urbano,acc_en_vivienda,83.025,1.574,3767,,1.895,aceptable,2025,86.676,1.421,3193,,1.639,aceptable,3.651,2.12,False
+2019,Ayacucho,Urbano,disp_24h,73.943,3.825,3767,,5.173,aceptable,2025,73.982,3.92,3193,,5.299,aceptable,0.039,5.477,False
+2019,Ayacucho,Urbano,disp_20h,74.129,3.823,3767,,5.157,aceptable,2025,74.049,3.916,3193,,5.289,aceptable,-0.081,5.473,False
+2019,Ayacucho,Urbano,disp_12h,78.463,3.581,3767,,4.564,aceptable,2025,82.896,2.9,3193,,3.498,aceptable,4.433,4.608,False
+2019,Ayacucho,Urbano,cal_cloro_adecuado,60.361,3.846,3767,,6.372,aceptable,2025,50.27,3.926,3193,,7.81,aceptable,-10.091,5.496,False
+2019,Ayacucho,Urbano,ods611_conjunto,46.422,3.503,3767,,7.546,aceptable,2025,41.149,3.681,3193,,8.946,aceptable,-5.273,5.082,False
+2019,Ayacucho,Urbano,cloro_adecuado_en_red,61.155,3.896,3714,,6.37,aceptable,2025,52.886,4.074,3014,,7.704,aceptable,-8.268,5.637,False
+2019,Ayacucho,Urbano,cloro_inadecuado_en_red,9.24,1.629,3714,,17.63,referencial (CV>15%),2025,26.484,3.415,3014,,12.896,aceptable,17.245,3.784,True
+2019,Ayacucho,Urbano,sin_cloro_en_red,29.606,3.847,3714,,12.995,aceptable,2025,20.629,3.699,3014,,17.931,referencial (CV>15%),-8.976,5.337,False
+2019,Cajamarca,Total,red_publica,89.677,1.358,5803,,1.514,aceptable,2025,91.029,1.923,4516,,2.112,aceptable,1.352,2.354,False
+2019,Cajamarca,Total,acc_en_vivienda,86.243,1.501,5803,,1.74,aceptable,2025,87.461,1.974,4516,,2.257,aceptable,1.218,2.479,False
+2019,Cajamarca,Total,disp_24h,66.196,3.226,5803,,4.873,aceptable,2025,66.55,3.653,4516,,5.489,aceptable,0.354,4.873,False
+2019,Cajamarca,Total,disp_20h,66.515,3.219,5803,,4.84,aceptable,2025,66.655,3.653,4516,,5.481,aceptable,0.14,4.869,False
+2019,Cajamarca,Total,disp_12h,71.327,3.088,5803,,4.329,aceptable,2025,72.078,3.553,4516,,4.93,aceptable,0.751,4.707,False
+2019,Cajamarca,Total,cal_cloro_adecuado,15.456,1.809,5803,,11.707,aceptable,2025,9.658,2.262,4516,,23.419,referencial (CV>15%),-5.798,2.897,True
+2019,Cajamarca,Total,ods611_conjunto,11.88,1.689,5803,,14.214,aceptable,2025,7.42,1.828,4516,,24.635,referencial (CV>15%),-4.46,2.489,False
+2019,Cajamarca,Total,cloro_adecuado_en_red,17.434,2.029,5233,,11.64,aceptable,2025,10.903,2.544,4013,,23.331,referencial (CV>15%),-6.531,3.254,True
+2019,Cajamarca,Total,cloro_inadecuado_en_red,12.761,1.572,5233,,12.315,aceptable,2025,17.585,2.588,4013,,14.718,aceptable,4.824,3.028,False
+2019,Cajamarca,Total,sin_cloro_en_red,69.806,2.615,5233,,3.746,aceptable,2025,71.512,3.229,4013,,4.515,aceptable,1.707,4.155,False
+2019,Cajamarca,Rural,red_publica,84.826,2.152,2608,,2.537,aceptable,2025,85.015,3.376,2124,,3.971,aceptable,0.189,4.004,False
+2019,Cajamarca,Rural,acc_en_vivienda,84.086,2.254,2608,,2.681,aceptable,2025,83.606,3.361,2124,,4.02,aceptable,-0.48,4.047,False
+2019,Cajamarca,Rural,disp_24h,69.909,4.6,2608,,6.581,aceptable,2025,74.381,5.265,2124,,7.078,aceptable,4.471,6.992,False
+2019,Cajamarca,Rural,disp_20h,69.909,4.6,2608,,6.581,aceptable,2025,74.381,5.265,2124,,7.078,aceptable,4.471,6.992,False
+2019,Cajamarca,Rural,disp_12h,70.6,4.522,2608,,6.405,aceptable,2025,75.948,5.248,2124,,6.91,aceptable,5.348,6.928,False
+2019,Cajamarca,Rural,cal_cloro_adecuado,4.434,1.923,2608,,43.372,referencial (CV>15%),2025,1.359,0.885,2124,,65.151,referencial (CV>15%),-3.075,2.117,False
+2019,Cajamarca,Rural,ods611_conjunto,4.107,1.822,2608,,44.367,referencial (CV>15%),2025,1.15,0.867,2124,,75.454,referencial (CV>15%),-2.957,2.018,False
+2019,Cajamarca,Rural,cloro_adecuado_en_red,5.227,2.254,2203,,43.125,referencial (CV>15%),2025,1.62,1.056,1773,,65.158,referencial (CV>15%),-3.607,2.489,False
+2019,Cajamarca,Rural,cloro_inadecuado_en_red,2.87,1.462,2203,,50.931,referencial (CV>15%),2025,5.545,2.705,1773,,48.773,referencial (CV>15%),2.675,3.074,False
+2019,Cajamarca,Rural,sin_cloro_en_red,91.903,3.341,2203,,3.635,aceptable,2025,92.835,3.19,1773,,3.437,aceptable,0.932,4.62,False
+2019,Cajamarca,Urbano,red_publica,97.709,0.801,3195,,0.819,aceptable,2025,98.976,0.429,2392,,0.434,aceptable,1.268,0.908,False
+2019,Cajamarca,Urbano,acc_en_vivienda,89.814,1.457,3195,,1.623,aceptable,2025,92.555,1.337,2392,,1.445,aceptable,2.741,1.978,False
+2019,Cajamarca,Urbano,disp_24h,60.049,3.953,3195,,6.583,aceptable,2025,56.202,5.092,2392,,9.061,aceptable,-3.848,6.447,False
+2019,Cajamarca,Urbano,disp_20h,60.895,3.91,3195,,6.421,aceptable,2025,56.445,5.09,2392,,9.018,aceptable,-4.45,6.418,False
+2019,Cajamarca,Urbano,disp_12h,72.532,3.338,3195,,4.602,aceptable,2025,66.964,4.566,2392,,6.819,aceptable,-5.567,5.656,False
+2019,Cajamarca,Urbano,cal_cloro_adecuado,33.703,3.405,3195,,10.104,aceptable,2025,20.626,4.735,2392,,22.955,referencial (CV>15%),-13.077,5.832,True
+2019,Cajamarca,Urbano,ods611_conjunto,24.749,3.154,3195,,12.743,aceptable,2025,15.707,3.806,2392,,24.23,referencial (CV>15%),-9.042,4.943,False
+2019,Cajamarca,Urbano,cloro_adecuado_en_red,35.478,3.54,3030,,9.979,aceptable,2025,21.75,4.966,2240,,22.834,referencial (CV>15%),-13.727,6.099,True
+2019,Cajamarca,Urbano,cloro_inadecuado_en_red,27.38,3.078,3030,,11.243,aceptable,2025,31.654,4.541,2240,,14.346,aceptable,4.274,5.486,False
+2019,Cajamarca,Urbano,sin_cloro_en_red,37.142,3.511,3030,,9.453,aceptable,2025,46.596,4.879,2240,,10.471,aceptable,9.454,6.011,False
+2019,Callao,Total,red_publica,97.614,0.512,6670,,0.524,aceptable,2025,95.023,0.903,5786,,0.95,aceptable,-2.591,1.038,True
+2019,Callao,Total,acc_en_vivienda,94.232,0.897,6670,,0.952,aceptable,2025,91.069,1.319,5786,,1.448,aceptable,-3.163,1.595,True
+2019,Callao,Total,disp_24h,52.693,3.097,6670,,5.877,aceptable,2025,73.058,2.697,5786,,3.692,aceptable,20.365,4.107,True
+2019,Callao,Total,disp_20h,53.408,3.088,6670,,5.782,aceptable,2025,73.385,2.678,5786,,3.65,aceptable,19.977,4.088,True
+2019,Callao,Total,disp_12h,82.581,2.116,6670,,2.562,aceptable,2025,90.323,1.494,5786,,1.655,aceptable,7.742,2.59,True
+2019,Callao,Total,cal_cloro_adecuado,76.021,1.664,6670,,2.189,aceptable,2025,76.129,1.655,5786,,2.174,aceptable,0.107,2.347,False
+2019,Callao,Total,ods611_conjunto,43.695,2.769,6670,,6.338,aceptable,2025,58.871,2.524,5786,,4.288,aceptable,15.176,3.747,True
+2019,Callao,Total,cloro_adecuado_en_red,79.871,1.673,6323,,2.094,aceptable,2025,86.243,1.448,5063,,1.679,aceptable,6.372,2.212,True
+2019,Callao,Total,cloro_inadecuado_en_red,13.26,1.24,6323,,9.35,aceptable,2025,8.772,1.133,5063,,12.916,aceptable,-4.489,1.679,True
+2019,Callao,Total,sin_cloro_en_red,6.869,1.072,6323,,15.607,referencial (CV>15%),2025,4.985,0.916,5063,,18.37,referencial (CV>15%),-1.883,1.41,False
+2019,Callao,Urbano,red_publica,97.614,0.512,6670,,0.524,aceptable,2025,95.023,0.903,5786,,0.95,aceptable,-2.591,1.038,True
+2019,Callao,Urbano,acc_en_vivienda,94.232,0.897,6670,,0.952,aceptable,2025,91.069,1.319,5786,,1.448,aceptable,-3.163,1.595,True
+2019,Callao,Urbano,disp_24h,52.693,3.097,6670,,5.877,aceptable,2025,73.058,2.697,5786,,3.692,aceptable,20.365,4.107,True
+2019,Callao,Urbano,disp_20h,53.408,3.088,6670,,5.782,aceptable,2025,73.385,2.678,5786,,3.65,aceptable,19.977,4.088,True
+2019,Callao,Urbano,disp_12h,82.581,2.116,6670,,2.562,aceptable,2025,90.323,1.494,5786,,1.655,aceptable,7.742,2.59,True
+2019,Callao,Urbano,cal_cloro_adecuado,76.021,1.664,6670,,2.189,aceptable,2025,76.129,1.655,5786,,2.174,aceptable,0.107,2.347,False
+2019,Callao,Urbano,ods611_conjunto,43.695,2.769,6670,,6.338,aceptable,2025,58.871,2.524,5786,,4.288,aceptable,15.176,3.747,True
+2019,Callao,Urbano,cloro_adecuado_en_red,79.871,1.673,6323,,2.094,aceptable,2025,86.243,1.448,5063,,1.679,aceptable,6.372,2.212,True
+2019,Callao,Urbano,cloro_inadecuado_en_red,13.26,1.24,6323,,9.35,aceptable,2025,8.772,1.133,5063,,12.916,aceptable,-4.489,1.679,True
+2019,Callao,Urbano,sin_cloro_en_red,6.869,1.072,6323,,15.607,referencial (CV>15%),2025,4.985,0.916,5063,,18.37,referencial (CV>15%),-1.883,1.41,False
+2019,Cusco,Total,red_publica,94.478,1.255,5121,,1.328,aceptable,2025,96.128,0.755,4769,,0.786,aceptable,1.649,1.465,False
+2019,Cusco,Total,acc_en_vivienda,75.788,1.809,5121,,2.388,aceptable,2025,82.973,1.368,4769,,1.648,aceptable,7.184,2.268,True
+2019,Cusco,Total,disp_24h,65.17,2.883,5121,,4.424,aceptable,2025,62.701,3.365,4769,,5.367,aceptable,-2.469,4.431,False
+2019,Cusco,Total,disp_20h,67.64,2.86,5121,,4.228,aceptable,2025,64.881,3.397,4769,,5.236,aceptable,-2.759,4.441,False
+2019,Cusco,Total,disp_12h,77.481,2.613,5121,,3.372,aceptable,2025,77.749,2.863,4769,,3.682,aceptable,0.268,3.876,False
+2019,Cusco,Total,cal_cloro_adecuado,42.473,2.671,5121,,6.288,aceptable,2025,39.535,2.633,4769,,6.66,aceptable,-2.939,3.75,False
+2019,Cusco,Total,ods611_conjunto,22.974,2.451,5121,,10.667,aceptable,2025,19.523,2.274,4769,,11.646,aceptable,-3.451,3.343,False
+2019,Cusco,Total,cloro_adecuado_en_red,45.692,2.818,4749,,6.168,aceptable,2025,42.872,2.805,4395,,6.543,aceptable,-2.82,3.976,False
+2019,Cusco,Total,cloro_inadecuado_en_red,15.305,1.783,4749,,11.652,aceptable,2025,14.586,1.891,4395,,12.967,aceptable,-0.719,2.599,False
+2019,Cusco,Total,sin_cloro_en_red,39.003,2.735,4749,,7.011,aceptable,2025,42.542,2.863,4395,,6.73,aceptable,3.539,3.959,False
+2019,Cusco,Rural,red_publica,87.067,3.066,2210,,3.521,aceptable,2025,92.612,1.791,1989,,1.934,aceptable,5.545,3.55,False
+2019,Cusco,Rural,acc_en_vivienda,84.502,3.012,2210,,3.565,aceptable,2025,87.758,1.953,1989,,2.226,aceptable,3.256,3.59,False
+2019,Cusco,Rural,disp_24h,80.637,4.204,2210,,5.214,aceptable,2025,83.122,4.389,1989,,5.28,aceptable,2.484,6.078,False
+2019,Cusco,Rural,disp_20h,80.637,4.204,2210,,5.214,aceptable,2025,83.122,4.389,1989,,5.28,aceptable,2.484,6.078,False
+2019,Cusco,Rural,disp_12h,80.637,4.204,2210,,5.214,aceptable,2025,85.178,4.024,1989,,4.724,aceptable,4.541,5.819,False
+2019,Cusco,Rural,cal_cloro_adecuado,14.521,4.066,2210,,27.998,referencial (CV>15%),2025,9.221,3.112,1989,,33.754,referencial (CV>15%),-5.3,5.12,False
+2019,Cusco,Rural,ods611_conjunto,13.68,3.797,2210,,27.76,referencial (CV>15%),2025,8.734,3.036,1989,,34.757,referencial (CV>15%),-4.946,4.862,False
+2019,Cusco,Rural,cloro_adecuado_en_red,16.696,4.55,1921,,27.25,referencial (CV>15%),2025,10.062,3.358,1807,,33.37,referencial (CV>15%),-6.633,5.655,False
+2019,Cusco,Rural,cloro_inadecuado_en_red,9.343,2.359,1921,,25.255,referencial (CV>15%),2025,14.756,3.671,1807,,24.877,referencial (CV>15%),5.413,4.364,False
+2019,Cusco,Rural,sin_cloro_en_red,73.962,5.377,1921,,7.27,aceptable,2025,75.182,5.6,1807,,7.449,aceptable,1.22,7.764,False
+2019,Cusco,Urbano,red_publica,99.655,0.189,2911,,0.19,aceptable,2025,98.174,0.624,2780,,0.635,aceptable,-1.481,0.652,True
+2019,Cusco,Urbano,acc_en_vivienda,69.702,2.191,2911,,3.144,aceptable,2025,80.187,1.817,2780,,2.266,aceptable,10.485,2.847,True
+2019,Cusco,Urbano,disp_24h,54.366,3.902,2911,,7.177,aceptable,2025,50.813,4.546,2780,,8.947,aceptable,-3.553,5.991,False
+2019,Cusco,Urbano,disp_20h,58.561,3.858,2911,,6.588,aceptable,2025,54.261,4.621,2780,,8.515,aceptable,-4.299,6.019,False
+2019,Cusco,Urbano,disp_12h,75.276,3.326,2911,,4.419,aceptable,2025,73.424,3.879,2780,,5.283,aceptable,-1.852,5.11,False
+2019,Cusco,Urbano,cal_cloro_adecuado,61.998,3.452,2911,,5.568,aceptable,2025,57.183,3.657,2780,,6.395,aceptable,-4.815,5.029,False
+2019,Cusco,Urbano,ods611_conjunto,29.467,3.199,2911,,10.856,aceptable,2025,25.805,3.163,2780,,12.258,aceptable,-3.662,4.499,False
+2019,Cusco,Urbano,cloro_adecuado_en_red,63.828,3.503,2828,,5.487,aceptable,2025,61.784,3.835,2588,,6.207,aceptable,-2.044,5.194,False
+2019,Cusco,Urbano,cloro_inadecuado_en_red,19.034,2.495,2828,,13.111,aceptable,2025,14.488,2.1,2588,,14.492,aceptable,-4.546,3.261,False
+2019,Cusco,Urbano,sin_cloro_en_red,17.138,2.777,2828,,16.206,referencial (CV>15%),2025,23.728,3.105,2588,,13.086,aceptable,6.59,4.166,False
+2019,Huancavelica,Total,red_publica,90.56,2.294,5153,,2.533,aceptable,2025,93.556,1.79,4503,,1.913,aceptable,2.996,2.91,False
+2019,Huancavelica,Total,acc_en_vivienda,82.529,2.35,5153,,2.848,aceptable,2025,91.951,1.941,4503,,2.111,aceptable,9.422,3.048,True
+2019,Huancavelica,Total,disp_24h,75.348,3.866,5153,,5.131,aceptable,2025,72.04,3.223,4503,,4.475,aceptable,-3.308,5.034,False
+2019,Huancavelica,Total,disp_20h,75.391,3.865,5153,,5.126,aceptable,2025,72.89,3.223,4503,,4.422,aceptable,-2.5,5.032,False
+2019,Huancavelica,Total,disp_12h,77.288,3.813,5153,,4.933,aceptable,2025,75.594,3.213,4503,,4.25,aceptable,-1.695,4.986,False
+2019,Huancavelica,Total,cal_cloro_adecuado,18.746,2.728,5153,,14.552,aceptable,2025,14.149,1.765,4503,,12.476,aceptable,-4.596,3.249,False
+2019,Huancavelica,Total,ods611_conjunto,13.758,2.501,5153,,18.18,referencial (CV>15%),2025,11.198,1.539,4503,,13.74,aceptable,-2.56,2.937,False
+2019,Huancavelica,Total,cloro_adecuado_en_red,20.742,2.973,4819,,14.331,aceptable,2025,15.259,1.958,4234,,12.831,aceptable,-5.483,3.56,False
+2019,Huancavelica,Total,cloro_inadecuado_en_red,3.016,0.7,4819,,23.201,referencial (CV>15%),2025,3.635,0.851,4234,,23.421,referencial (CV>15%),0.619,1.102,False
+2019,Huancavelica,Total,sin_cloro_en_red,76.242,3.064,4819,,4.018,aceptable,2025,81.106,2.078,4234,,2.562,aceptable,4.864,3.702,False
+2019,Huancavelica,Rural,red_publica,87.659,3.094,2285,,3.53,aceptable,2025,91.583,2.508,1996,,2.738,aceptable,3.925,3.983,False
+2019,Huancavelica,Rural,acc_en_vivienda,85.602,3.081,2285,,3.599,aceptable,2025,90.13,2.698,1996,,2.993,aceptable,4.529,4.095,False
+2019,Huancavelica,Rural,disp_24h,74.705,4.989,2285,,6.679,aceptable,2025,74.8,4.203,1996,,5.619,aceptable,0.095,6.523,False
+2019,Huancavelica,Rural,disp_20h,74.705,4.989,2285,,6.679,aceptable,2025,74.8,4.203,1996,,5.619,aceptable,0.095,6.523,False
+2019,Huancavelica,Rural,disp_12h,74.836,4.984,2285,,6.659,aceptable,2025,75.601,4.191,1996,,5.544,aceptable,0.765,6.512,False
+2019,Huancavelica,Rural,cal_cloro_adecuado,9.847,3.291,2285,,33.426,referencial (CV>15%),2025,3.457,1.807,1996,,52.285,referencial (CV>15%),-6.39,3.755,False
+2019,Huancavelica,Rural,ods611_conjunto,8.228,3.151,2285,,38.301,referencial (CV>15%),2025,2.705,1.403,1996,,51.873,referencial (CV>15%),-5.522,3.45,False
+2019,Huancavelica,Rural,cloro_adecuado_en_red,11.233,3.701,2003,,32.943,referencial (CV>15%),2025,3.789,2.003,1821,,52.852,referencial (CV>15%),-7.444,4.208,False
+2019,Huancavelica,Rural,cloro_inadecuado_en_red,0.899,0.569,2003,,63.274,referencial (CV>15%),2025,2.636,0.987,1821,,37.45,referencial (CV>15%),1.737,1.139,False
+2019,Huancavelica,Rural,sin_cloro_en_red,87.868,3.819,2003,,4.346,aceptable,2025,93.575,2.207,1821,,2.358,aceptable,5.707,4.41,False
+2019,Huancavelica,Urbano,red_publica,98.933,0.401,2868,,0.405,aceptable,2025,98.337,0.552,2507,,0.561,aceptable,-0.596,0.682,False
+2019,Huancavelica,Urbano,acc_en_vivienda,73.661,2.02,2868,,2.743,aceptable,2025,96.365,1.057,2507,,1.097,aceptable,22.704,2.28,True
+2019,Huancavelica,Urbano,disp_24h,77.205,4.349,2868,,5.633,aceptable,2025,65.351,4.372,2507,,6.69,aceptable,-11.854,6.167,False
+2019,Huancavelica,Urbano,disp_20h,77.371,4.332,2868,,5.598,aceptable,2025,68.262,4.331,2507,,6.345,aceptable,-9.109,6.125,False
+2019,Huancavelica,Urbano,disp_12h,84.367,3.799,2868,,4.503,aceptable,2025,75.575,4.22,2507,,5.584,aceptable,-8.791,5.679,False
+2019,Huancavelica,Urbano,cal_cloro_adecuado,44.43,4.593,2868,,10.337,aceptable,2025,40.068,4.327,2507,,10.798,aceptable,-4.362,6.31,False
+2019,Huancavelica,Urbano,ods611_conjunto,29.721,3.338,2868,,11.231,aceptable,2025,31.785,4.132,2507,,12.999,aceptable,2.064,5.312,False
+2019,Huancavelica,Urbano,cloro_adecuado_en_red,45.237,4.686,2816,,10.358,aceptable,2025,41.589,4.497,2413,,10.813,aceptable,-3.648,6.495,False
+2019,Huancavelica,Urbano,cloro_inadecuado_en_red,8.47,1.958,2816,,23.12,referencial (CV>15%),2025,5.928,1.631,2413,,27.516,referencial (CV>15%),-2.542,2.549,False
+2019,Huancavelica,Urbano,sin_cloro_en_red,46.293,4.639,2816,,10.02,aceptable,2025,52.483,4.472,2413,,8.52,aceptable,6.19,6.443,False
+2019,Huánuco,Total,red_publica,73.085,3.113,5136,,4.26,aceptable,2025,86.306,2.163,4764,,2.506,aceptable,13.222,3.791,True
+2019,Huánuco,Total,acc_en_vivienda,67.088,3.082,5136,,4.594,aceptable,2025,81.781,2.228,4764,,2.724,aceptable,14.694,3.803,True
+2019,Huánuco,Total,disp_24h,60.126,3.446,5136,,5.731,aceptable,2025,61.956,3.967,4764,,6.403,aceptable,1.83,5.255,False
+2019,Huánuco,Total,disp_20h,60.277,3.446,5136,,5.717,aceptable,2025,62.223,3.906,4764,,6.278,aceptable,1.946,5.209,False
+2019,Huánuco,Total,disp_12h,61.56,3.41,5136,,5.539,aceptable,2025,65.606,3.703,4764,,5.644,aceptable,4.046,5.034,False
+2019,Huánuco,Total,cal_cloro_adecuado,24.558,1.69,5136,,6.882,aceptable,2025,23.716,2.143,4764,,9.036,aceptable,-0.842,2.729,False
+2019,Huánuco,Total,ods611_conjunto,21.632,1.539,5136,,7.113,aceptable,2025,20.998,2.136,4764,,10.172,aceptable,-0.634,2.632,False
+2019,Huánuco,Total,cloro_adecuado_en_red,33.67,2.473,4052,,7.346,aceptable,2025,27.703,2.537,4143,,9.159,aceptable,-5.967,3.543,False
+2019,Huánuco,Total,cloro_inadecuado_en_red,4.798,1.744,4052,,36.344,referencial (CV>15%),2025,3.514,0.812,4143,,23.112,referencial (CV>15%),-1.284,1.924,False
+2019,Huánuco,Total,sin_cloro_en_red,61.532,2.903,4052,,4.717,aceptable,2025,68.784,2.77,4143,,4.027,aceptable,7.251,4.012,False
+2019,Huánuco,Rural,red_publica,57.91,5.076,2218,,8.766,aceptable,2025,79.891,3.592,2121,,4.497,aceptable,21.981,6.219,True
+2019,Huánuco,Rural,acc_en_vivienda,54.694,4.973,2218,,9.093,aceptable,2025,77.159,3.568,2121,,4.625,aceptable,22.465,6.121,True
+2019,Huánuco,Rural,disp_24h,49.425,5.226,2218,,10.574,aceptable,2025,58.462,5.786,2121,,9.897,aceptable,9.037,7.797,False
+2019,Huánuco,Rural,disp_20h,49.425,5.226,2218,,10.574,aceptable,2025,58.927,5.661,2121,,9.607,aceptable,9.502,7.705,False
+2019,Huánuco,Rural,disp_12h,49.804,5.21,2218,,10.46,aceptable,2025,61.871,5.388,2121,,8.708,aceptable,12.067,7.495,False
+2019,Huánuco,Rural,cal_cloro_adecuado,0.699,0.487,2218,,69.599,referencial (CV>15%),2025,0.785,0.483,2121,,61.545,referencial (CV>15%),0.086,0.686,False
+2019,Huánuco,Rural,ods611_conjunto,0.699,0.487,2218,,69.599,referencial (CV>15%),2025,0.475,0.43,2121,,90.405,referencial (CV>15%),-0.224,0.649,False
+2019,Huánuco,Rural,cloro_adecuado_en_red,1.208,0.821,1273,,67.954,referencial (CV>15%),2025,0.989,0.607,1684,,61.357,referencial (CV>15%),-0.219,1.02,False
+2019,Huánuco,Rural,cloro_inadecuado_en_red,3.999,3.408,1273,,85.212,referencial (CV>15%),2025,1.923,1.097,1684,,57.026,referencial (CV>15%),-2.076,3.58,False
+2019,Huánuco,Rural,sin_cloro_en_red,94.794,3.443,1273,,3.632,aceptable,2025,97.088,1.494,1684,,1.539,aceptable,2.295,3.753,False
+2019,Huánuco,Urbano,red_publica,95.637,1.22,2918,,1.275,aceptable,2025,94.97,1.393,2643,,1.466,aceptable,-0.667,1.851,False
+2019,Huánuco,Urbano,acc_en_vivienda,85.508,1.791,2918,,2.095,aceptable,2025,88.024,1.957,2643,,2.223,aceptable,2.516,2.653,False
+2019,Huánuco,Urbano,disp_24h,76.03,3.565,2918,,4.689,aceptable,2025,66.675,5.076,2643,,7.613,aceptable,-9.355,6.203,False
+2019,Huánuco,Urbano,disp_20h,76.406,3.568,2918,,4.669,aceptable,2025,66.675,5.076,2643,,7.613,aceptable,-9.731,6.205,False
+2019,Huánuco,Urbano,disp_12h,79.031,3.392,2918,,4.293,aceptable,2025,70.649,4.784,2643,,6.772,aceptable,-8.382,5.865,False
+2019,Huánuco,Urbano,cal_cloro_adecuado,60.019,4.146,2918,,6.908,aceptable,2025,54.685,4.871,2643,,8.907,aceptable,-5.334,6.397,False
+2019,Huánuco,Urbano,ods611_conjunto,52.742,3.753,2918,,7.117,aceptable,2025,48.714,4.913,2643,,10.085,aceptable,-4.027,6.183,False
+2019,Huánuco,Urbano,cloro_adecuado_en_red,62.995,4.199,2779,,6.665,aceptable,2025,58.216,5.103,2459,,8.765,aceptable,-4.778,6.608,False
+2019,Huánuco,Urbano,cloro_inadecuado_en_red,5.52,1.249,2779,,22.619,referencial (CV>15%),2025,5.331,1.176,2459,,22.057,referencial (CV>15%),-0.189,1.715,False
+2019,Huánuco,Urbano,sin_cloro_en_red,31.485,4.187,2779,,13.299,aceptable,2025,36.453,5.268,2459,,14.451,aceptable,4.967,6.729,False
+2019,Ica,Total,red_publica,93.802,1.05,4975,,1.119,aceptable,2025,89.117,2.229,4761,,2.501,aceptable,-4.685,2.464,False
+2019,Ica,Total,acc_en_vivienda,92.56,1.189,4975,,1.285,aceptable,2025,87.988,2.261,4761,,2.57,aceptable,-4.572,2.555,False
+2019,Ica,Total,disp_24h,20.666,3.111,4975,,15.054,referencial (CV>15%),2025,22.925,3.738,4761,,16.304,referencial (CV>15%),2.259,4.863,False
+2019,Ica,Total,disp_20h,20.823,3.115,4975,,14.961,aceptable,2025,22.95,3.738,4761,,16.286,referencial (CV>15%),2.127,4.866,False
+2019,Ica,Total,disp_12h,26.424,3.529,4975,,13.355,aceptable,2025,28.303,4.153,4761,,14.672,aceptable,1.879,5.45,False
+2019,Ica,Total,cal_cloro_adecuado,17.084,2.399,4975,,14.042,aceptable,2025,15.794,2.675,4761,,16.939,referencial (CV>15%),-1.29,3.593,False
+2019,Ica,Total,ods611_conjunto,8.112,1.807,4975,,22.275,referencial (CV>15%),2025,7.384,2.028,4761,,27.461,referencial (CV>15%),-0.728,2.716,False
+2019,Ica,Total,cloro_adecuado_en_red,18.586,2.592,4411,,13.949,aceptable,2025,19.27,3.246,3862,,16.845,referencial (CV>15%),0.684,4.154,False
+2019,Ica,Total,cloro_inadecuado_en_red,15.714,2.269,4411,,14.441,aceptable,2025,17.017,2.55,3862,,14.985,aceptable,1.302,3.413,False
+2019,Ica,Total,sin_cloro_en_red,65.7,3.298,4411,,5.02,aceptable,2025,63.714,3.804,3862,,5.971,aceptable,-1.986,5.035,False
+2019,Ica,Rural,red_publica,83.128,3.84,1803,,4.62,aceptable,2025,82.235,4.21,1677,,5.119,aceptable,-0.893,5.698,False
+2019,Ica,Rural,acc_en_vivienda,83.128,3.84,1803,,4.62,aceptable,2025,81.825,4.238,1677,,5.179,aceptable,-1.302,5.719,False
+2019,Ica,Rural,disp_24h,15.826,5.63,1803,,35.577,referencial (CV>15%),2025,12.564,5.228,1677,,41.608,referencial (CV>15%),-3.262,7.683,False
+2019,Ica,Rural,disp_20h,15.826,5.63,1803,,35.577,referencial (CV>15%),2025,13.149,5.256,1677,,39.97,referencial (CV>15%),-2.677,7.702,False
+2019,Ica,Rural,disp_12h,16.584,5.643,1803,,34.028,referencial (CV>15%),2025,13.792,5.243,1677,,38.011,referencial (CV>15%),-2.792,7.703,False
+2019,Ica,Rural,cal_cloro_adecuado,4.444,1.592,1803,,35.817,referencial (CV>15%),2025,2.867,1.336,1677,,46.59,referencial (CV>15%),-1.577,2.078,False
+2019,Ica,Rural,ods611_conjunto,0.325,0.275,1803,,84.422,referencial (CV>15%),2025,0.0,0.0,1677,,,aceptable,-0.325,0.275,False
+2019,Ica,Rural,cloro_adecuado_en_red,5.456,1.955,1472,,35.83,referencial (CV>15%),2025,3.604,1.664,1339,,46.166,referencial (CV>15%),-1.852,2.567,False
+2019,Ica,Rural,cloro_inadecuado_en_red,7.985,2.748,1472,,34.409,referencial (CV>15%),2025,7.43,2.893,1339,,38.934,referencial (CV>15%),-0.556,3.99,False
+2019,Ica,Rural,sin_cloro_en_red,86.558,4.276,1472,,4.94,aceptable,2025,88.966,3.691,1339,,4.149,aceptable,2.408,5.648,False
+2019,Ica,Urbano,red_publica,94.519,1.092,3172,,1.156,aceptable,2025,89.433,2.324,3084,,2.598,aceptable,-5.087,2.568,True
+2019,Ica,Urbano,acc_en_vivienda,93.193,1.242,3172,,1.333,aceptable,2025,88.271,2.357,3084,,2.67,aceptable,-4.923,2.664,False
+2019,Ica,Urbano,disp_24h,20.991,3.301,3172,,15.726,referencial (CV>15%),2025,23.4,3.901,3084,,16.673,referencial (CV>15%),2.408,5.111,False
+2019,Ica,Urbano,disp_20h,21.159,3.306,3172,,15.624,referencial (CV>15%),2025,23.4,3.901,3084,,16.673,referencial (CV>15%),2.24,5.114,False
+2019,Ica,Urbano,disp_12h,27.085,3.751,3172,,13.85,aceptable,2025,28.968,4.336,3084,,14.969,aceptable,1.883,5.734,False
+2019,Ica,Urbano,cal_cloro_adecuado,17.933,2.555,3172,,14.249,aceptable,2025,16.387,2.792,3084,,17.039,referencial (CV>15%),-1.546,3.785,False
+2019,Ica,Urbano,ods611_conjunto,8.635,1.929,3172,,22.344,referencial (CV>15%),2025,7.723,2.12,3084,,27.452,referencial (CV>15%),-0.913,2.867,False
+2019,Ica,Urbano,cloro_adecuado_en_red,19.362,2.74,2939,,14.153,aceptable,2025,19.966,3.384,2523,,16.947,referencial (CV>15%),0.604,4.354,False
+2019,Ica,Urbano,cloro_inadecuado_en_red,16.171,2.397,2939,,14.821,aceptable,2025,17.443,2.656,2523,,15.229,referencial (CV>15%),1.272,3.578,False
+2019,Ica,Urbano,sin_cloro_en_red,64.467,3.478,2939,,5.394,aceptable,2025,62.592,3.955,2523,,6.319,aceptable,-1.876,5.267,False
+2019,Junín,Total,red_publica,91.455,1.744,5181,,1.907,aceptable,2025,92.562,1.519,4976,,1.641,aceptable,1.107,2.312,False
+2019,Junín,Total,acc_en_vivienda,76.676,1.986,5181,,2.59,aceptable,2025,82.413,1.62,4976,,1.966,aceptable,5.737,2.563,True
+2019,Junín,Total,disp_24h,54.493,3.193,5181,,5.86,aceptable,2025,55.923,3.385,4976,,6.052,aceptable,1.431,4.653,False
+2019,Junín,Total,disp_20h,56.529,3.215,5181,,5.688,aceptable,2025,57.009,3.365,4976,,5.902,aceptable,0.48,4.654,False
+2019,Junín,Total,disp_12h,70.92,2.861,5181,,4.034,aceptable,2025,67.848,3.194,4976,,4.707,aceptable,-3.072,4.288,False
+2019,Junín,Total,cal_cloro_adecuado,22.597,2.195,5181,,9.712,aceptable,2025,20.594,2.611,4976,,12.678,aceptable,-2.003,3.411,False
+2019,Junín,Total,ods611_conjunto,9.998,1.57,5181,,15.7,referencial (CV>15%),2025,9.974,1.866,4976,,18.705,referencial (CV>15%),-0.024,2.438,False
+2019,Junín,Total,cloro_adecuado_en_red,24.735,2.371,4740,,9.587,aceptable,2025,22.461,2.821,4475,,12.559,aceptable,-2.274,3.685,False
+2019,Junín,Total,cloro_inadecuado_en_red,20.653,2.09,4740,,10.121,aceptable,2025,28.183,2.553,4475,,9.058,aceptable,7.53,3.299,True
+2019,Junín,Total,sin_cloro_en_red,54.612,2.971,4740,,5.44,aceptable,2025,49.356,3.199,4475,,6.481,aceptable,-5.256,4.365,False
+2019,Junín,Rural,red_publica,78.5,4.794,2122,,6.107,aceptable,2025,80.392,4.651,1972,,5.786,aceptable,1.892,6.679,False
+2019,Junín,Rural,acc_en_vivienda,75.643,4.622,2122,,6.111,aceptable,2025,75.577,4.486,1972,,5.935,aceptable,-0.066,6.441,False
+2019,Junín,Rural,disp_24h,66.326,5.06,2122,,7.63,aceptable,2025,74.807,5.017,1972,,6.706,aceptable,8.481,7.126,False
+2019,Junín,Rural,disp_20h,67.194,5.185,2122,,7.716,aceptable,2025,74.807,5.017,1972,,6.706,aceptable,7.614,7.214,False
+2019,Junín,Rural,disp_12h,71.875,5.252,2122,,7.306,aceptable,2025,76.942,4.773,1972,,6.203,aceptable,5.067,7.096,False
+2019,Junín,Rural,cal_cloro_adecuado,1.645,1.119,2122,,68.033,referencial (CV>15%),2025,2.916,1.648,1972,,56.518,referencial (CV>15%),1.271,1.992,False
+2019,Junín,Rural,ods611_conjunto,1.044,0.714,2122,,68.401,referencial (CV>15%),2025,2.518,1.46,1972,,57.979,referencial (CV>15%),1.474,1.625,False
+2019,Junín,Rural,cloro_adecuado_en_red,2.096,1.403,1753,,66.944,referencial (CV>15%),2025,3.637,2.054,1577,,56.491,referencial (CV>15%),1.541,2.488,False
+2019,Junín,Rural,cloro_inadecuado_en_red,6.336,3.597,1753,,56.77,referencial (CV>15%),2025,8.109,3.681,1577,,45.387,referencial (CV>15%),1.773,5.146,False
+2019,Junín,Rural,sin_cloro_en_red,91.568,4.872,1753,,5.32,aceptable,2025,88.254,4.72,1577,,5.348,aceptable,-3.314,6.783,False
+2019,Junín,Urbano,red_publica,97.724,0.647,3059,,0.662,aceptable,2025,97.778,0.55,3004,,0.562,aceptable,0.055,0.849,False
+2019,Junín,Urbano,acc_en_vivienda,77.175,1.911,3059,,2.476,aceptable,2025,85.343,1.2,3004,,1.406,aceptable,8.167,2.256,True
+2019,Junín,Urbano,disp_24h,48.766,4.102,3059,,8.412,aceptable,2025,47.828,4.395,3004,,9.19,aceptable,-0.938,6.012,False
+2019,Junín,Urbano,disp_20h,51.368,4.098,3059,,7.978,aceptable,2025,49.38,4.356,3004,,8.82,aceptable,-1.988,5.981,False
+2019,Junín,Urbano,disp_12h,70.458,3.406,3059,,4.834,aceptable,2025,63.95,4.118,3004,,6.439,aceptable,-6.508,5.344,False
+2019,Junín,Urbano,cal_cloro_adecuado,32.736,3.124,3059,,9.544,aceptable,2025,28.173,3.587,3004,,12.734,aceptable,-4.564,4.757,False
+2019,Junín,Urbano,ods611_conjunto,14.331,2.262,3059,,15.782,referencial (CV>15%),2025,13.171,2.573,3004,,19.539,referencial (CV>15%),-1.161,3.426,False
+2019,Junín,Urbano,cloro_adecuado_en_red,33.549,3.209,2987,,9.566,aceptable,2025,29.158,3.677,2898,,12.611,aceptable,-4.391,4.881,False
+2019,Junín,Urbano,cloro_inadecuado_en_red,26.226,2.611,2987,,9.957,aceptable,2025,35.324,3.256,2898,,9.218,aceptable,9.098,4.174,True
+2019,Junín,Urbano,sin_cloro_en_red,40.225,3.73,2987,,9.273,aceptable,2025,35.518,3.933,2898,,11.072,aceptable,-4.707,5.42,False
+2019,La Libertad,Total,red_publica,91.56,1.253,6684,,1.368,aceptable,2025,90.97,1.281,5826,,1.408,aceptable,-0.589,1.792,False
+2019,La Libertad,Total,acc_en_vivienda,90.281,1.313,6684,,1.455,aceptable,2025,90.79,1.292,5826,,1.423,aceptable,0.51,1.842,False
+2019,La Libertad,Total,disp_24h,28.009,2.666,6684,,9.52,aceptable,2025,27.029,2.92,5826,,10.803,aceptable,-0.98,3.954,False
+2019,La Libertad,Total,disp_20h,29.544,2.742,6684,,9.281,aceptable,2025,27.194,2.939,5826,,10.806,aceptable,-2.35,4.019,False
+2019,La Libertad,Total,disp_12h,35.125,3.084,6684,,8.78,aceptable,2025,30.913,3.151,5826,,10.192,aceptable,-4.212,4.409,False
+2019,La Libertad,Total,cal_cloro_adecuado,24.591,2.008,6684,,8.164,aceptable,2025,15.139,1.826,5826,,12.063,aceptable,-9.452,2.714,True
+2019,La Libertad,Total,ods611_conjunto,8.059,1.502,6684,,18.634,referencial (CV>15%),2025,4.232,1.072,5826,,25.333,referencial (CV>15%),-3.826,1.845,True
+2019,La Libertad,Total,cloro_adecuado_en_red,27.529,2.217,5865,,8.052,aceptable,2025,17.075,2.044,4979,,11.972,aceptable,-10.454,3.015,True
+2019,La Libertad,Total,cloro_inadecuado_en_red,21.162,1.805,5865,,8.528,aceptable,2025,28.794,2.521,4979,,8.757,aceptable,7.632,3.101,True
+2019,La Libertad,Total,sin_cloro_en_red,51.308,2.672,5865,,5.209,aceptable,2025,54.131,3.157,4979,,5.832,aceptable,2.823,4.136,False
+2019,La Libertad,Rural,red_publica,83.66,4.309,2416,,5.151,aceptable,2025,87.045,3.312,2051,,3.805,aceptable,3.385,5.435,False
+2019,La Libertad,Rural,acc_en_vivienda,82.73,4.299,2416,,5.197,aceptable,2025,86.939,3.302,2051,,3.798,aceptable,4.21,5.421,False
+2019,La Libertad,Rural,disp_24h,55.142,6.243,2416,,11.322,aceptable,2025,57.227,6.228,2051,,10.882,aceptable,2.084,8.818,False
+2019,La Libertad,Rural,disp_20h,55.547,6.198,2416,,11.159,aceptable,2025,57.227,6.228,2051,,10.882,aceptable,1.68,8.787,False
+2019,La Libertad,Rural,disp_12h,56.392,6.234,2416,,11.054,aceptable,2025,60.088,5.905,2051,,9.827,aceptable,3.696,8.586,False
+2019,La Libertad,Rural,cal_cloro_adecuado,1.31,1.315,2416,,100.381,referencial (CV>15%),2025,0.469,0.374,2051,,79.754,referencial (CV>15%),-0.841,1.367,False
+2019,La Libertad,Rural,ods611_conjunto,0.0,0.0,2416,,,aceptable,2025,0.0,0.0,2051,,,aceptable,0.0,0.0,False
+2019,La Libertad,Rural,cloro_adecuado_en_red,1.572,1.576,2006,,100.295,referencial (CV>15%),2025,0.539,0.428,1775,,79.493,referencial (CV>15%),-1.033,1.634,False
+2019,La Libertad,Rural,cloro_inadecuado_en_red,3.212,2.104,2006,,65.501,referencial (CV>15%),2025,4.004,1.643,1775,,41.043,referencial (CV>15%),0.792,2.67,False
+2019,La Libertad,Rural,sin_cloro_en_red,95.216,2.576,2006,,2.705,aceptable,2025,95.458,1.783,1775,,1.868,aceptable,0.241,3.133,False
+2019,La Libertad,Urbano,red_publica,93.488,1.15,4268,,1.23,aceptable,2025,91.763,1.379,3775,,1.503,aceptable,-1.725,1.796,False
+2019,La Libertad,Urbano,acc_en_vivienda,92.124,1.248,4268,,1.355,aceptable,2025,91.569,1.394,3775,,1.523,aceptable,-0.556,1.871,False
+2019,La Libertad,Urbano,disp_24h,21.384,2.871,4268,,13.427,aceptable,2025,20.927,3.221,3775,,15.392,referencial (CV>15%),-0.457,4.315,False
+2019,La Libertad,Urbano,disp_20h,23.195,2.99,4268,,12.891,aceptable,2025,21.126,3.245,3775,,15.362,referencial (CV>15%),-2.069,4.413,False
+2019,La Libertad,Urbano,disp_12h,29.932,3.474,4268,,11.608,aceptable,2025,25.018,3.541,3775,,14.155,aceptable,-4.914,4.961,False
+2019,La Libertad,Urbano,cal_cloro_adecuado,30.275,2.489,4268,,8.222,aceptable,2025,18.103,2.19,3775,,12.098,aceptable,-12.173,3.316,True
+2019,La Libertad,Urbano,ods611_conjunto,10.026,1.877,4268,,18.721,referencial (CV>15%),2025,5.088,1.295,3775,,25.447,referencial (CV>15%),-4.939,2.28,True
+2019,La Libertad,Urbano,cloro_adecuado_en_red,33.349,2.689,3859,,8.063,aceptable,2025,20.343,2.447,3204,,12.027,aceptable,-13.005,3.636,True
+2019,La Libertad,Urbano,cloro_inadecuado_en_red,25.187,2.171,3859,,8.62,aceptable,2025,33.693,3.014,3204,,8.946,aceptable,8.507,3.715,True
+2019,La Libertad,Urbano,sin_cloro_en_red,41.464,3.239,3859,,7.811,aceptable,2025,45.963,3.78,3204,,8.225,aceptable,4.499,4.978,False
+2019,Lambayeque,Total,red_publica,95.1,1.001,5868,,1.052,aceptable,2025,92.037,1.172,5423,,1.274,aceptable,-3.063,1.541,True
+2019,Lambayeque,Total,acc_en_vivienda,92.658,1.329,5868,,1.434,aceptable,2025,87.915,1.744,5423,,1.984,aceptable,-4.743,2.192,True
+2019,Lambayeque,Total,disp_24h,41.298,3.447,5868,,8.347,aceptable,2025,24.002,3.634,5423,,15.141,referencial (CV>15%),-17.296,5.009,True
+2019,Lambayeque,Total,disp_20h,41.777,3.436,5868,,8.225,aceptable,2025,24.804,3.675,5423,,14.817,aceptable,-16.973,5.031,True
+2019,Lambayeque,Total,disp_12h,47.972,3.489,5868,,7.272,aceptable,2025,32.915,3.963,5423,,12.039,aceptable,-15.057,5.28,True
+2019,Lambayeque,Total,cal_cloro_adecuado,20.867,2.418,5868,,11.589,aceptable,2025,9.327,2.675,5423,,28.677,referencial (CV>15%),-11.54,3.606,True
+2019,Lambayeque,Total,ods611_conjunto,10.51,1.759,5868,,16.739,referencial (CV>15%),2025,4.689,2.522,5423,,53.784,referencial (CV>15%),-5.821,3.075,False
+2019,Lambayeque,Total,cloro_adecuado_en_red,22.075,2.529,5460,,11.457,aceptable,2025,10.157,2.891,4722,,28.462,referencial (CV>15%),-11.918,3.841,True
+2019,Lambayeque,Total,cloro_inadecuado_en_red,17.125,1.819,5460,,10.621,aceptable,2025,21.404,2.5,4722,,11.68,aceptable,4.279,3.092,False
+2019,Lambayeque,Total,sin_cloro_en_red,60.8,2.805,5460,,4.613,aceptable,2025,68.439,3.651,4722,,5.334,aceptable,7.639,4.604,False
+2019,Lambayeque,Rural,red_publica,88.351,2.561,2141,,2.898,aceptable,2025,75.078,4.291,1981,,5.716,aceptable,-13.273,4.997,True
+2019,Lambayeque,Rural,acc_en_vivienda,85.988,3.121,2141,,3.63,aceptable,2025,72.688,5.038,1981,,6.931,aceptable,-13.3,5.927,True
+2019,Lambayeque,Rural,disp_24h,20.424,6.669,2141,,32.651,referencial (CV>15%),2025,20.472,5.379,1981,,26.276,referencial (CV>15%),0.048,8.568,False
+2019,Lambayeque,Rural,disp_20h,20.424,6.669,2141,,32.651,referencial (CV>15%),2025,20.472,5.379,1981,,26.276,referencial (CV>15%),0.048,8.568,False
+2019,Lambayeque,Rural,disp_12h,28.346,6.791,2141,,23.957,referencial (CV>15%),2025,29.27,6.203,1981,,21.193,referencial (CV>15%),0.924,9.197,False
+2019,Lambayeque,Rural,cal_cloro_adecuado,0.569,0.359,2141,,63.052,referencial (CV>15%),2025,0.203,0.203,1981,,99.711,referencial (CV>15%),-0.366,0.412,False
+2019,Lambayeque,Rural,ods611_conjunto,0.175,0.176,2141,,100.353,referencial (CV>15%),2025,0.0,0.0,1981,,,aceptable,-0.175,0.176,False
+2019,Lambayeque,Rural,cloro_adecuado_en_red,0.644,0.407,1905,,63.162,referencial (CV>15%),2025,0.271,0.272,1486,,100.534,referencial (CV>15%),-0.373,0.49,False
+2019,Lambayeque,Rural,cloro_inadecuado_en_red,2.923,1.787,1905,,61.143,referencial (CV>15%),2025,5.622,3.527,1486,,62.732,referencial (CV>15%),2.699,3.954,False
+2019,Lambayeque,Rural,sin_cloro_en_red,96.433,2.003,1905,,2.077,aceptable,2025,94.107,3.554,1486,,3.777,aceptable,-2.326,4.08,False
+2019,Lambayeque,Urbano,red_publica,96.431,1.081,3727,,1.121,aceptable,2025,94.944,1.114,3442,,1.173,aceptable,-1.487,1.552,False
+2019,Lambayeque,Urbano,acc_en_vivienda,93.972,1.468,3727,,1.562,aceptable,2025,90.525,1.807,3442,,1.996,aceptable,-3.448,2.328,False
+2019,Lambayeque,Urbano,disp_24h,45.413,3.957,3727,,8.713,aceptable,2025,24.607,4.154,3442,,16.883,referencial (CV>15%),-20.806,5.737,True
+2019,Lambayeque,Urbano,disp_20h,45.987,3.945,3727,,8.578,aceptable,2025,25.547,4.203,3442,,16.454,referencial (CV>15%),-20.44,5.764,True
+2019,Lambayeque,Urbano,disp_12h,51.841,3.986,3727,,7.689,aceptable,2025,33.54,4.52,3442,,13.476,aceptable,-18.301,6.027,True
+2019,Lambayeque,Urbano,cal_cloro_adecuado,24.868,2.877,3727,,11.57,aceptable,2025,10.891,3.097,3442,,28.439,referencial (CV>15%),-13.977,4.227,True
+2019,Lambayeque,Urbano,ods611_conjunto,12.547,2.108,3727,,16.801,referencial (CV>15%),2025,5.493,2.94,3442,,53.517,referencial (CV>15%),-7.054,3.617,False
+2019,Lambayeque,Urbano,cloro_adecuado_en_red,25.974,2.968,3555,,11.426,aceptable,2025,11.5,3.25,3236,,28.263,referencial (CV>15%),-14.474,4.401,True
+2019,Lambayeque,Urbano,cloro_inadecuado_en_red,19.708,2.112,3555,,10.718,aceptable,2025,23.548,2.793,3236,,11.863,aceptable,3.84,3.502,False
+2019,Lambayeque,Urbano,sin_cloro_en_red,54.318,3.243,3555,,5.971,aceptable,2025,64.952,4.043,3236,,6.225,aceptable,10.634,5.183,True
+2019,Lima,Total,red_publica,96.236,0.634,14564,,0.659,aceptable,2025,93.605,0.779,12479,,0.832,aceptable,-2.63,1.005,True
+2019,Lima,Total,acc_en_vivienda,92.486,0.778,14564,,0.841,aceptable,2025,88.781,1.071,12479,,1.207,aceptable,-3.706,1.324,True
+2019,Lima,Total,disp_24h,78.313,1.761,14564,,2.249,aceptable,2025,75.887,2.071,12479,,2.729,aceptable,-2.426,2.719,False
+2019,Lima,Total,disp_20h,78.406,1.759,14564,,2.243,aceptable,2025,75.979,2.071,12479,,2.725,aceptable,-2.428,2.717,False
+2019,Lima,Total,disp_12h,84.838,1.499,14564,,1.766,aceptable,2025,80.988,1.858,12479,,2.294,aceptable,-3.85,2.387,False
+2019,Lima,Total,cal_cloro_adecuado,68.225,1.438,14564,,2.108,aceptable,2025,65.711,1.536,12479,,2.338,aceptable,-2.514,2.105,False
+2019,Lima,Total,ods611_conjunto,58.248,1.749,14564,,3.003,aceptable,2025,54.677,1.895,12479,,3.467,aceptable,-3.571,2.579,False
+2019,Lima,Total,cloro_adecuado_en_red,73.562,1.383,13075,,1.88,aceptable,2025,76.935,1.546,10354,,2.009,aceptable,3.374,2.074,False
+2019,Lima,Total,cloro_inadecuado_en_red,14.782,0.986,13075,,6.668,aceptable,2025,13.391,1.157,10354,,8.637,aceptable,-1.391,1.52,False
+2019,Lima,Total,sin_cloro_en_red,11.657,0.98,13075,,8.409,aceptable,2025,9.674,1.012,10354,,10.463,aceptable,-1.983,1.409,False
+2019,Lima,Rural,red_publica,75.517,5.35,1964,,7.085,aceptable,2025,77.653,4.812,1590,,6.197,aceptable,2.136,7.196,False
+2019,Lima,Rural,acc_en_vivienda,62.71,7.03,1964,,11.21,aceptable,2025,77.466,4.81,1590,,6.209,aceptable,14.756,8.518,False
+2019,Lima,Rural,disp_24h,56.142,6.822,1964,,12.151,aceptable,2025,58.502,6.791,1590,,11.607,aceptable,2.36,9.625,False
+2019,Lima,Rural,disp_20h,56.142,6.822,1964,,12.151,aceptable,2025,58.502,6.791,1590,,11.607,aceptable,2.36,9.625,False
+2019,Lima,Rural,disp_12h,57.19,6.893,1964,,12.052,aceptable,2025,58.502,6.791,1590,,11.607,aceptable,1.312,9.676,False
+2019,Lima,Rural,cal_cloro_adecuado,3.494,2.218,1964,,63.472,referencial (CV>15%),2025,2.218,1.41,1590,,63.596,referencial (CV>15%),-1.277,2.628,False
+2019,Lima,Rural,ods611_conjunto,2.834,2.202,1964,,77.683,referencial (CV>15%),2025,1.013,0.777,1590,,76.656,referencial (CV>15%),-1.821,2.335,False
+2019,Lima,Rural,cloro_adecuado_en_red,4.734,3.013,1404,,63.647,referencial (CV>15%),2025,2.856,1.847,1235,,64.676,referencial (CV>15%),-1.878,3.534,False
+2019,Lima,Rural,cloro_inadecuado_en_red,10.392,3.902,1404,,37.553,referencial (CV>15%),2025,4.88,2.757,1235,,56.505,referencial (CV>15%),-5.512,4.778,False
+2019,Lima,Rural,sin_cloro_en_red,84.875,5.091,1404,,5.999,aceptable,2025,92.264,3.368,1235,,3.651,aceptable,7.39,6.105,False
+2019,Lima,Urbano,red_publica,96.592,0.638,12600,,0.66,aceptable,2025,93.823,0.786,10889,,0.838,aceptable,-2.768,1.012,True
+2019,Lima,Urbano,acc_en_vivienda,92.998,0.78,12600,,0.838,aceptable,2025,88.935,1.083,10889,,1.218,aceptable,-4.062,1.334,True
+2019,Lima,Urbano,disp_24h,78.694,1.786,12600,,2.269,aceptable,2025,76.125,2.097,10889,,2.755,aceptable,-2.569,2.755,False
+2019,Lima,Urbano,disp_20h,78.789,1.784,12600,,2.264,aceptable,2025,76.218,2.097,10889,,2.751,aceptable,-2.571,2.753,False
+2019,Lima,Urbano,disp_12h,85.313,1.519,12600,,1.78,aceptable,2025,81.295,1.881,10889,,2.313,aceptable,-4.018,2.417,False
+2019,Lima,Urbano,cal_cloro_adecuado,69.337,1.453,12600,,2.096,aceptable,2025,66.58,1.554,10889,,2.334,aceptable,-2.758,2.127,False
+2019,Lima,Urbano,ods611_conjunto,59.2,1.772,12600,,2.993,aceptable,2025,55.41,1.92,10889,,3.465,aceptable,-3.789,2.612,False
+2019,Lima,Urbano,cloro_adecuado_en_red,74.499,1.392,11671,,1.868,aceptable,2025,77.855,1.562,9119,,2.006,aceptable,3.356,2.092,False
+2019,Lima,Urbano,cloro_inadecuado_en_red,14.841,0.998,11671,,6.724,aceptable,2025,13.497,1.17,9119,,8.671,aceptable,-1.345,1.538,False
+2019,Lima,Urbano,sin_cloro_en_red,10.659,0.98,11671,,9.196,aceptable,2025,8.648,1.016,9119,,11.753,aceptable,-2.011,1.412,False
+2019,Loreto,Total,red_publica,56.322,2.815,7033,,4.999,aceptable,2025,70.353,2.896,6697,,4.116,aceptable,14.031,4.039,True
+2019,Loreto,Total,acc_en_vivienda,52.398,2.787,7033,,5.319,aceptable,2025,62.642,2.987,6697,,4.769,aceptable,10.244,4.086,True
+2019,Loreto,Total,disp_24h,8.188,1.727,7033,,21.091,referencial (CV>15%),2025,12.399,2.38,6697,,19.193,referencial (CV>15%),4.21,2.94,False
+2019,Loreto,Total,disp_20h,8.696,1.75,7033,,20.123,referencial (CV>15%),2025,12.638,2.46,6697,,19.464,referencial (CV>15%),3.942,3.019,False
+2019,Loreto,Total,disp_12h,10.667,1.828,7033,,17.134,referencial (CV>15%),2025,16.773,2.704,6697,,16.12,referencial (CV>15%),6.106,3.264,False
+2019,Loreto,Total,cal_cloro_adecuado,16.074,1.773,7033,,11.028,aceptable,2025,6.052,1.336,6697,,22.076,referencial (CV>15%),-10.022,2.22,True
+2019,Loreto,Total,ods611_conjunto,4.637,1.264,7033,,27.251,referencial (CV>15%),2025,3.144,1.076,6697,,34.23,referencial (CV>15%),-1.492,1.66,False
+2019,Loreto,Total,cloro_adecuado_en_red,28.674,2.725,3480,,9.504,aceptable,2025,8.692,1.882,4149,,21.656,referencial (CV>15%),-19.982,3.312,True
+2019,Loreto,Total,cloro_inadecuado_en_red,14.189,1.775,3480,,12.511,aceptable,2025,6.884,1.151,4149,,16.717,referencial (CV>15%),-7.305,2.116,True
+2019,Loreto,Total,sin_cloro_en_red,57.137,3.089,3480,,5.406,aceptable,2025,84.424,2.58,4149,,3.056,aceptable,27.287,4.025,True
+2019,Loreto,Rural,red_publica,18.652,4.892,3131,,26.225,referencial (CV>15%),2025,41.028,6.741,3054,,16.431,referencial (CV>15%),22.376,8.329,True
+2019,Loreto,Rural,acc_en_vivienda,10.859,4.041,3131,,37.211,referencial (CV>15%),2025,22.397,5.925,3054,,26.457,referencial (CV>15%),11.538,7.172,False
+2019,Loreto,Rural,disp_24h,4.919,2.503,3131,,50.889,referencial (CV>15%),2025,14.113,4.711,3054,,33.381,referencial (CV>15%),9.194,5.335,False
+2019,Loreto,Rural,disp_20h,4.919,2.503,3131,,50.889,referencial (CV>15%),2025,14.113,4.711,3054,,33.381,referencial (CV>15%),9.194,5.335,False
+2019,Loreto,Rural,disp_12h,5.398,2.524,3131,,46.766,referencial (CV>15%),2025,14.113,4.711,3054,,33.381,referencial (CV>15%),8.715,5.345,False
+2019,Loreto,Rural,cal_cloro_adecuado,0.128,0.128,3131,,100.072,referencial (CV>15%),2025,0.0,0.0,3054,,,aceptable,-0.128,0.128,False
+2019,Loreto,Rural,ods611_conjunto,0.0,0.0,3131,,,aceptable,2025,0.0,0.0,3054,,,aceptable,0.0,0.0,False
+2019,Loreto,Rural,cloro_adecuado_en_red,0.691,0.731,579,,105.77,referencial (CV>15%),2025,0.0,0.0,1253,,,aceptable,-0.691,0.731,False
+2019,Loreto,Rural,cloro_inadecuado_en_red,1.9,1.361,579,,71.622,referencial (CV>15%),2025,1.437,0.783,1253,,54.476,referencial (CV>15%),-0.463,1.57,False
+2019,Loreto,Rural,sin_cloro_en_red,97.409,1.504,579,,1.544,aceptable,2025,98.563,0.783,1253,,0.794,aceptable,1.154,1.695,False
+2019,Loreto,Urbano,red_publica,73.362,3.44,3902,,4.69,aceptable,2025,81.538,2.982,3643,,3.658,aceptable,8.176,4.553,False
+2019,Loreto,Urbano,acc_en_vivienda,71.189,3.589,3902,,5.042,aceptable,2025,77.993,3.373,3643,,4.324,aceptable,6.803,4.925,False
+2019,Loreto,Urbano,disp_24h,9.667,2.236,3902,,23.133,referencial (CV>15%),2025,11.745,2.759,3643,,23.488,referencial (CV>15%),2.077,3.551,False
+2019,Loreto,Urbano,disp_20h,10.405,2.274,3902,,21.851,referencial (CV>15%),2025,12.075,2.889,3643,,23.928,referencial (CV>15%),1.671,3.677,False
+2019,Loreto,Urbano,disp_12h,13.051,2.396,3902,,18.356,referencial (CV>15%),2025,17.788,3.268,3643,,18.373,referencial (CV>15%),4.737,4.052,False
+2019,Loreto,Urbano,cal_cloro_adecuado,23.287,2.576,3902,,11.06,aceptable,2025,8.36,1.836,3643,,21.966,referencial (CV>15%),-14.927,3.163,True
+2019,Loreto,Urbano,ods611_conjunto,6.734,1.825,3902,,27.106,referencial (CV>15%),2025,4.344,1.479,3643,,34.056,referencial (CV>15%),-2.39,2.349,False
+2019,Loreto,Urbano,cloro_adecuado_en_red,31.878,2.97,2901,,9.318,aceptable,2025,10.381,2.234,2896,,21.518,referencial (CV>15%),-21.497,3.717,True
+2019,Loreto,Urbano,cloro_inadecuado_en_red,15.597,1.967,2901,,12.614,aceptable,2025,7.943,1.36,2896,,17.117,referencial (CV>15%),-7.654,2.391,True
+2019,Loreto,Urbano,sin_cloro_en_red,52.525,3.345,2901,,6.368,aceptable,2025,81.676,3.053,2896,,3.738,aceptable,29.151,4.529,True
+2019,Madre de Dios,Total,red_publica,87.883,1.934,4933,,2.2,aceptable,2025,88.847,1.915,4419,,2.156,aceptable,0.964,2.722,False
+2019,Madre de Dios,Total,acc_en_vivienda,75.991,2.092,4933,,2.754,aceptable,2025,75.424,2.171,4419,,2.878,aceptable,-0.567,3.015,False
+2019,Madre de Dios,Total,disp_24h,71.596,3.206,4933,,4.478,aceptable,2025,76.689,3.425,4419,,4.466,aceptable,5.094,4.692,False
+2019,Madre de Dios,Total,disp_20h,71.596,3.206,4933,,4.478,aceptable,2025,76.689,3.425,4419,,4.466,aceptable,5.094,4.692,False
+2019,Madre de Dios,Total,disp_12h,72.993,3.111,4933,,4.262,aceptable,2025,80.179,2.877,4419,,3.588,aceptable,7.186,4.237,False
+2019,Madre de Dios,Total,cal_cloro_adecuado,66.486,2.975,4933,,4.474,aceptable,2025,67.817,3.128,4419,,4.612,aceptable,1.331,4.316,False
+2019,Madre de Dios,Total,ods611_conjunto,53.159,3.054,4933,,5.745,aceptable,2025,54.723,3.397,4419,,6.207,aceptable,1.565,4.568,False
+2019,Madre de Dios,Total,cloro_adecuado_en_red,76.176,2.823,3999,,3.706,aceptable,2025,78.808,2.85,3530,,3.617,aceptable,2.632,4.012,False
+2019,Madre de Dios,Total,cloro_inadecuado_en_red,3.519,0.879,3999,,24.98,referencial (CV>15%),2025,3.201,0.881,3530,,27.528,referencial (CV>15%),-0.319,1.245,False
+2019,Madre de Dios,Total,sin_cloro_en_red,20.304,2.574,3999,,12.675,aceptable,2025,17.991,2.611,3530,,14.511,aceptable,-2.313,3.666,False
+2019,Madre de Dios,Rural,red_publica,50.108,8.389,1619,,16.741,referencial (CV>15%),2025,64.491,7.416,1590,,11.499,aceptable,14.383,11.197,False
+2019,Madre de Dios,Rural,acc_en_vivienda,49.045,8.188,1619,,16.695,referencial (CV>15%),2025,60.108,7.013,1590,,11.667,aceptable,11.063,10.781,False
+2019,Madre de Dios,Rural,disp_24h,37.353,7.48,1619,,20.026,referencial (CV>15%),2025,52.654,8.569,1590,,16.275,referencial (CV>15%),15.301,11.375,False
+2019,Madre de Dios,Rural,disp_20h,37.353,7.48,1619,,20.026,referencial (CV>15%),2025,52.654,8.569,1590,,16.275,referencial (CV>15%),15.301,11.375,False
+2019,Madre de Dios,Rural,disp_12h,37.465,7.486,1619,,19.981,referencial (CV>15%),2025,54.089,8.693,1590,,16.072,referencial (CV>15%),16.624,11.472,False
+2019,Madre de Dios,Rural,cal_cloro_adecuado,13.279,4.934,1619,,37.156,referencial (CV>15%),2025,17.544,6.407,1590,,36.518,referencial (CV>15%),4.266,8.086,False
+2019,Madre de Dios,Rural,ods611_conjunto,11.671,4.567,1619,,39.129,referencial (CV>15%),2025,15.512,6.315,1590,,40.709,referencial (CV>15%),3.84,7.793,False
+2019,Madre de Dios,Rural,cloro_adecuado_en_red,26.5,8.325,882,,31.416,referencial (CV>15%),2025,27.562,9.723,1044,,35.279,referencial (CV>15%),1.062,12.801,False
+2019,Madre de Dios,Rural,cloro_inadecuado_en_red,8.252,2.785,882,,33.744,referencial (CV>15%),2025,13.026,4.135,1044,,31.747,referencial (CV>15%),4.773,4.985,False
+2019,Madre de Dios,Rural,sin_cloro_en_red,65.248,8.754,882,,13.416,aceptable,2025,59.412,9.165,1044,,15.426,referencial (CV>15%),-5.835,12.673,False
+2019,Madre de Dios,Urbano,red_publica,95.713,0.82,3314,,0.857,aceptable,2025,92.321,1.899,2829,,2.057,aceptable,-3.392,2.068,False
+2019,Madre de Dios,Urbano,acc_en_vivienda,81.576,1.529,3314,,1.874,aceptable,2025,77.609,2.247,2829,,2.895,aceptable,-3.968,2.718,False
+2019,Madre de Dios,Urbano,disp_24h,78.693,3.326,3314,,4.226,aceptable,2025,80.117,3.703,2829,,4.622,aceptable,1.424,4.977,False
+2019,Madre de Dios,Urbano,disp_20h,78.693,3.326,3314,,4.226,aceptable,2025,80.117,3.703,2829,,4.622,aceptable,1.424,4.977,False
+2019,Madre de Dios,Urbano,disp_12h,80.357,3.182,3314,,3.96,aceptable,2025,83.9,3.003,2829,,3.58,aceptable,3.543,4.375,False
+2019,Madre de Dios,Urbano,cal_cloro_adecuado,77.515,3.187,3314,,4.111,aceptable,2025,74.988,3.34,2829,,4.454,aceptable,-2.527,4.617,False
+2019,Madre de Dios,Urbano,ods611_conjunto,61.758,3.39,3314,,5.489,aceptable,2025,60.316,3.706,2829,,6.144,aceptable,-1.442,5.023,False
+2019,Madre de Dios,Urbano,cloro_adecuado_en_red,81.608,2.952,3117,,3.618,aceptable,2025,84.021,2.846,2486,,3.388,aceptable,2.413,4.101,False
+2019,Madre de Dios,Urbano,cloro_inadecuado_en_red,3.002,0.921,3117,,30.689,referencial (CV>15%),2025,2.201,0.861,2486,,39.092,referencial (CV>15%),-0.801,1.261,False
+2019,Madre de Dios,Urbano,sin_cloro_en_red,15.39,2.663,3117,,17.303,referencial (CV>15%),2025,13.777,2.623,2486,,19.035,referencial (CV>15%),-1.613,3.737,False
+2019,Moquegua,Total,red_publica,97.894,0.556,3808,,0.568,aceptable,2025,98.096,0.543,3849,,0.553,aceptable,0.202,0.777,False
+2019,Moquegua,Total,acc_en_vivienda,95.085,0.964,3808,,1.014,aceptable,2025,94.141,1.054,3849,,1.12,aceptable,-0.944,1.428,False
+2019,Moquegua,Total,disp_24h,72.768,4.077,3808,,5.603,aceptable,2025,64.41,4.306,3849,,6.686,aceptable,-8.358,5.93,False
+2019,Moquegua,Total,disp_20h,73.041,4.082,3808,,5.589,aceptable,2025,64.662,4.29,3849,,6.634,aceptable,-8.379,5.921,False
+2019,Moquegua,Total,disp_12h,76.732,3.976,3808,,5.181,aceptable,2025,73.194,4.178,3849,,5.708,aceptable,-3.538,5.767,False
+2019,Moquegua,Total,cal_cloro_adecuado,55.913,3.333,3808,,5.962,aceptable,2025,50.803,3.674,3849,,7.233,aceptable,-5.111,4.961,False
+2019,Moquegua,Total,ods611_conjunto,46.346,3.769,3808,,8.132,aceptable,2025,38.394,3.884,3849,,10.116,aceptable,-7.952,5.412,False
+2019,Moquegua,Total,cloro_adecuado_en_red,57.344,3.424,3664,,5.971,aceptable,2025,52.919,3.886,3645,,7.343,aceptable,-4.425,5.179,False
+2019,Moquegua,Total,cloro_inadecuado_en_red,14.423,2.437,3664,,16.898,referencial (CV>15%),2025,11.109,1.694,3645,,15.248,referencial (CV>15%),-3.314,2.968,False
+2019,Moquegua,Total,sin_cloro_en_red,28.233,3.019,3664,,10.692,aceptable,2025,35.972,4.12,3645,,11.452,aceptable,7.74,5.107,False
+2019,Moquegua,Rural,red_publica,91.798,2.676,1340,,2.915,aceptable,2025,89.685,3.179,1290,,3.544,aceptable,-2.113,4.155,False
+2019,Moquegua,Rural,acc_en_vivienda,86.26,3.92,1340,,4.545,aceptable,2025,86.422,3.369,1290,,3.898,aceptable,0.162,5.169,False
+2019,Moquegua,Rural,disp_24h,76.126,6.026,1340,,7.916,aceptable,2025,69.175,6.656,1290,,9.622,aceptable,-6.951,8.979,False
+2019,Moquegua,Rural,disp_20h,76.126,6.026,1340,,7.916,aceptable,2025,69.175,6.656,1290,,9.622,aceptable,-6.951,8.979,False
+2019,Moquegua,Rural,disp_12h,80.183,5.218,1340,,6.508,aceptable,2025,76.879,5.86,1290,,7.622,aceptable,-3.305,7.846,False
+2019,Moquegua,Rural,cal_cloro_adecuado,13.461,4.85,1340,,36.028,referencial (CV>15%),2025,6.547,2.79,1290,,42.609,referencial (CV>15%),-6.914,5.595,False
+2019,Moquegua,Rural,ods611_conjunto,11.845,4.715,1340,,39.802,referencial (CV>15%),2025,6.092,2.669,1290,,43.809,referencial (CV>15%),-5.754,5.418,False
+2019,Moquegua,Rural,cloro_adecuado_en_red,14.725,5.301,1229,,36.002,referencial (CV>15%),2025,7.3,3.183,1153,,43.61,referencial (CV>15%),-7.425,6.184,False
+2019,Moquegua,Rural,cloro_inadecuado_en_red,12.201,4.56,1229,,37.378,referencial (CV>15%),2025,17.591,5.791,1153,,32.918,referencial (CV>15%),5.391,7.371,False
+2019,Moquegua,Rural,sin_cloro_en_red,73.074,7.307,1229,,10.0,aceptable,2025,75.109,6.535,1153,,8.701,aceptable,2.034,9.803,False
+2019,Moquegua,Urbano,red_publica,99.331,0.258,2468,,0.26,aceptable,2025,99.818,0.099,2559,,0.099,aceptable,0.487,0.276,False
+2019,Moquegua,Urbano,acc_en_vivienda,97.166,0.72,2468,,0.741,aceptable,2025,95.721,1.02,2559,,1.066,aceptable,-1.445,1.249,False
+2019,Moquegua,Urbano,disp_24h,71.976,4.821,2468,,6.699,aceptable,2025,63.434,4.99,2559,,7.867,aceptable,-8.542,6.939,False
+2019,Moquegua,Urbano,disp_20h,72.314,4.829,2468,,6.677,aceptable,2025,63.739,4.97,2559,,7.797,aceptable,-8.575,6.929,False
+2019,Moquegua,Urbano,disp_12h,75.918,4.743,2468,,6.247,aceptable,2025,72.44,4.872,2559,,6.725,aceptable,-3.478,6.799,False
+2019,Moquegua,Urbano,cal_cloro_adecuado,65.921,4.133,2468,,6.27,aceptable,2025,59.861,4.568,2559,,7.631,aceptable,-6.06,6.16,False
+2019,Moquegua,Urbano,ods611_conjunto,54.479,4.688,2468,,8.606,aceptable,2025,45.006,4.739,2559,,10.529,aceptable,-9.473,6.666,False
+2019,Moquegua,Urbano,cloro_adecuado_en_red,66.627,4.174,2435,,6.264,aceptable,2025,61.526,4.737,2492,,7.699,aceptable,-5.101,6.313,False
+2019,Moquegua,Urbano,cloro_inadecuado_en_red,14.907,2.791,2435,,18.721,referencial (CV>15%),2025,9.886,1.676,2492,,16.951,referencial (CV>15%),-5.021,3.255,False
+2019,Moquegua,Urbano,sin_cloro_en_red,18.466,3.423,2435,,18.538,referencial (CV>15%),2025,28.588,4.902,2492,,17.147,referencial (CV>15%),10.122,5.979,False
+2019,Pasco,Total,red_publica,83.436,2.213,4906,,2.652,aceptable,2025,82.872,2.534,4369,,3.058,aceptable,-0.564,3.364,False
+2019,Pasco,Total,acc_en_vivienda,70.644,2.398,4906,,3.395,aceptable,2025,77.508,2.561,4369,,3.304,aceptable,6.864,3.509,False
+2019,Pasco,Total,disp_24h,49.473,3.669,4906,,7.417,aceptable,2025,47.343,3.867,4369,,8.169,aceptable,-2.13,5.331,False
+2019,Pasco,Total,disp_20h,49.679,3.64,4906,,7.327,aceptable,2025,47.343,3.867,4369,,8.169,aceptable,-2.337,5.311,False
+2019,Pasco,Total,disp_12h,52.287,3.67,4906,,7.019,aceptable,2025,47.925,3.817,4369,,7.965,aceptable,-4.363,5.295,False
+2019,Pasco,Total,cal_cloro_adecuado,3.896,1.179,4906,,30.261,referencial (CV>15%),2025,1.842,0.736,4369,,39.982,referencial (CV>15%),-2.055,1.39,False
+2019,Pasco,Total,ods611_conjunto,2.387,0.902,4906,,37.783,referencial (CV>15%),2025,1.645,0.697,4369,,42.394,referencial (CV>15%),-0.742,1.14,False
+2019,Pasco,Total,cloro_adecuado_en_red,4.687,1.412,3992,,30.118,referencial (CV>15%),2025,2.252,0.899,3480,,39.935,referencial (CV>15%),-2.435,1.674,False
+2019,Pasco,Total,cloro_inadecuado_en_red,12.939,2.21,3992,,17.081,referencial (CV>15%),2025,17.256,2.416,3480,,14.0,aceptable,4.317,3.274,False
+2019,Pasco,Total,sin_cloro_en_red,82.374,2.634,3992,,3.198,aceptable,2025,80.492,2.613,3480,,3.246,aceptable,-1.882,3.71,False
+2019,Pasco,Rural,red_publica,65.588,5.548,2009,,8.459,aceptable,2025,72.797,4.76,1819,,6.539,aceptable,7.209,7.31,False
+2019,Pasco,Rural,acc_en_vivienda,61.474,5.394,2009,,8.775,aceptable,2025,70.2,4.927,1819,,7.018,aceptable,8.726,7.305,False
+2019,Pasco,Rural,disp_24h,59.48,5.744,2009,,9.658,aceptable,2025,60.518,5.594,1819,,9.243,aceptable,1.038,8.018,False
+2019,Pasco,Rural,disp_20h,59.48,5.744,2009,,9.658,aceptable,2025,60.518,5.594,1819,,9.243,aceptable,1.038,8.018,False
+2019,Pasco,Rural,disp_12h,61.157,5.689,2009,,9.302,aceptable,2025,60.518,5.594,1819,,9.243,aceptable,-0.639,7.978,False
+2019,Pasco,Rural,cal_cloro_adecuado,0.905,0.615,2009,,67.931,referencial (CV>15%),2025,0.507,0.51,1819,,100.584,referencial (CV>15%),-0.398,0.799,False
+2019,Pasco,Rural,ods611_conjunto,0.905,0.615,2009,,67.931,referencial (CV>15%),2025,0.507,0.51,1819,,100.584,referencial (CV>15%),-0.398,0.799,False
+2019,Pasco,Rural,cloro_adecuado_en_red,1.38,0.922,1344,,66.809,referencial (CV>15%),2025,0.699,0.7,1316,,100.208,referencial (CV>15%),-0.681,1.158,False
+2019,Pasco,Rural,cloro_inadecuado_en_red,1.97,1.517,1344,,77.021,referencial (CV>15%),2025,12.476,3.659,1316,,29.331,referencial (CV>15%),10.507,3.961,True
+2019,Pasco,Rural,sin_cloro_en_red,96.651,1.764,1344,,1.825,aceptable,2025,86.825,3.667,1316,,4.223,aceptable,-9.826,4.069,True
+2019,Pasco,Urbano,red_publica,91.891,1.73,2897,,1.883,aceptable,2025,86.767,2.978,2550,,3.432,aceptable,-5.124,3.444,False
+2019,Pasco,Urbano,acc_en_vivienda,74.988,2.342,2897,,3.123,aceptable,2025,80.333,2.981,2550,,3.711,aceptable,5.345,3.791,False
+2019,Pasco,Urbano,disp_24h,44.732,4.764,2897,,10.651,aceptable,2025,42.248,4.994,2550,,11.821,aceptable,-2.484,6.902,False
+2019,Pasco,Urbano,disp_20h,45.036,4.716,2897,,10.472,aceptable,2025,42.248,4.994,2550,,11.821,aceptable,-2.788,6.869,False
+2019,Pasco,Urbano,disp_12h,48.085,4.79,2897,,9.962,aceptable,2025,43.056,4.92,2550,,11.426,aceptable,-5.029,6.867,False
+2019,Pasco,Urbano,cal_cloro_adecuado,5.314,1.709,2897,,32.162,referencial (CV>15%),2025,2.358,1.005,2550,,42.622,referencial (CV>15%),-2.956,1.983,False
+2019,Pasco,Urbano,ods611_conjunto,3.089,1.295,2897,,41.921,referencial (CV>15%),2025,2.085,0.949,2550,,45.51,referencial (CV>15%),-1.004,1.606,False
+2019,Pasco,Urbano,cloro_adecuado_en_red,5.811,1.863,2648,,32.051,referencial (CV>15%),2025,2.762,1.176,2164,,42.57,referencial (CV>15%),-3.049,2.203,False
+2019,Pasco,Urbano,cloro_inadecuado_en_red,16.666,2.911,2648,,17.469,referencial (CV>15%),2025,18.826,2.978,2164,,15.817,referencial (CV>15%),2.16,4.164,False
+2019,Pasco,Urbano,sin_cloro_en_red,77.522,3.467,2648,,4.472,aceptable,2025,78.412,3.262,2164,,4.16,aceptable,0.889,4.76,False
+2019,Piura,Total,red_publica,87.99,1.791,6393,,2.036,aceptable,2025,81.41,2.335,6335,,2.868,aceptable,-6.58,2.943,True
+2019,Piura,Total,acc_en_vivienda,86.48,1.857,6393,,2.147,aceptable,2025,79.331,2.432,6335,,3.065,aceptable,-7.149,3.06,True
+2019,Piura,Total,disp_24h,18.185,2.295,6393,,12.622,aceptable,2025,14.576,2.212,6335,,15.175,referencial (CV>15%),-3.609,3.188,False
+2019,Piura,Total,disp_20h,18.439,2.305,6393,,12.499,aceptable,2025,14.805,2.216,6335,,14.966,aceptable,-3.634,3.197,False
+2019,Piura,Total,disp_12h,34.165,3.084,6393,,9.026,aceptable,2025,24.735,2.799,6335,,11.317,aceptable,-9.43,4.165,True
+2019,Piura,Total,cal_cloro_adecuado,19.14,2.18,6393,,11.388,aceptable,2025,8.129,1.644,6335,,20.226,referencial (CV>15%),-11.01,2.73,True
+2019,Piura,Total,ods611_conjunto,4.448,1.125,6393,,25.294,referencial (CV>15%),2025,2.906,1.17,6335,,40.278,referencial (CV>15%),-1.542,1.623,False
+2019,Piura,Total,cloro_adecuado_en_red,21.85,2.481,5416,,11.355,aceptable,2025,10.022,2.012,4922,,20.075,referencial (CV>15%),-11.828,3.194,True
+2019,Piura,Total,cloro_inadecuado_en_red,18.442,2.022,5416,,10.964,aceptable,2025,12.771,1.443,4922,,11.3,aceptable,-5.671,2.484,True
+2019,Piura,Total,sin_cloro_en_red,59.707,2.983,5416,,4.997,aceptable,2025,77.207,2.648,4922,,3.43,aceptable,17.499,3.989,True
+2019,Piura,Rural,red_publica,74.464,5.905,2473,,7.93,aceptable,2025,71.12,6.059,2466,,8.519,aceptable,-3.344,8.46,False
+2019,Piura,Rural,acc_en_vivienda,67.334,6.347,2473,,9.426,aceptable,2025,67.203,6.278,2466,,9.342,aceptable,-0.131,8.927,False
+2019,Piura,Rural,disp_24h,42.64,5.897,2473,,13.83,aceptable,2025,33.295,6.268,2466,,18.826,referencial (CV>15%),-9.345,8.606,False
+2019,Piura,Rural,disp_20h,42.714,5.891,2473,,13.792,aceptable,2025,33.295,6.268,2466,,18.826,referencial (CV>15%),-9.419,8.602,False
+2019,Piura,Rural,disp_12h,46.676,5.813,2473,,12.454,aceptable,2025,33.873,6.367,2466,,18.796,referencial (CV>15%),-12.803,8.621,False
+2019,Piura,Rural,cal_cloro_adecuado,1.22,0.679,2473,,55.632,referencial (CV>15%),2025,0.104,0.078,2466,,75.275,referencial (CV>15%),-1.116,0.683,False
+2019,Piura,Rural,ods611_conjunto,0.591,0.525,2473,,88.722,referencial (CV>15%),2025,0.104,0.078,2466,,75.275,referencial (CV>15%),-0.488,0.531,False
+2019,Piura,Rural,cloro_adecuado_en_red,1.64,0.902,1832,,55.003,referencial (CV>15%),2025,0.146,0.11,1763,,75.294,referencial (CV>15%),-1.494,0.909,False
+2019,Piura,Rural,cloro_inadecuado_en_red,4.174,2.175,1832,,52.113,referencial (CV>15%),2025,2.675,1.774,1763,,66.292,referencial (CV>15%),-1.499,2.807,False
+2019,Piura,Rural,sin_cloro_en_red,94.186,2.602,1832,,2.762,aceptable,2025,97.179,1.816,1763,,1.869,aceptable,2.993,3.173,False
+2019,Piura,Urbano,red_publica,91.541,1.627,3920,,1.777,aceptable,2025,83.671,2.504,3869,,2.993,aceptable,-7.87,2.986,True
+2019,Piura,Urbano,acc_en_vivienda,91.506,1.625,3920,,1.776,aceptable,2025,81.996,2.612,3869,,3.185,aceptable,-9.51,3.076,True
+2019,Piura,Urbano,disp_24h,11.765,2.415,3920,,20.529,referencial (CV>15%),2025,10.463,2.288,3869,,21.864,referencial (CV>15%),-1.302,3.327,False
+2019,Piura,Urbano,disp_20h,12.066,2.429,3920,,20.135,referencial (CV>15%),2025,10.742,2.293,3869,,21.343,referencial (CV>15%),-1.323,3.34,False
+2019,Piura,Urbano,disp_12h,30.881,3.545,3920,,11.478,aceptable,2025,22.728,3.094,3869,,13.611,aceptable,-8.153,4.705,False
+2019,Piura,Urbano,cal_cloro_adecuado,23.844,2.781,3920,,11.662,aceptable,2025,9.893,2.001,3869,,20.225,referencial (CV>15%),-13.951,3.426,True
+2019,Piura,Urbano,ods611_conjunto,5.46,1.42,3920,,26.01,referencial (CV>15%),2025,3.521,1.425,3869,,40.474,referencial (CV>15%),-1.939,2.012,False
+2019,Piura,Urbano,cloro_adecuado_en_red,26.185,3.034,3584,,11.588,aceptable,2025,11.875,2.385,3159,,20.085,referencial (CV>15%),-14.31,3.859,True
+2019,Piura,Urbano,cloro_inadecuado_en_red,21.502,2.422,3584,,11.263,aceptable,2025,14.665,1.679,3159,,11.45,aceptable,-6.838,2.947,True
+2019,Piura,Urbano,sin_cloro_en_red,52.313,3.637,3584,,6.952,aceptable,2025,73.46,3.118,3159,,4.244,aceptable,21.147,4.79,True
+2019,Puno,Total,red_publica,71.648,3.029,5072,,4.228,aceptable,2025,80.707,2.378,4662,,2.947,aceptable,9.059,3.852,True
+2019,Puno,Total,acc_en_vivienda,56.019,2.923,5072,,5.218,aceptable,2025,75.584,2.468,4662,,3.265,aceptable,19.564,3.826,True
+2019,Puno,Total,disp_24h,26.962,3.006,5072,,11.148,aceptable,2025,29.892,3.02,4662,,10.102,aceptable,2.93,4.261,False
+2019,Puno,Total,disp_20h,27.753,3.015,5072,,10.863,aceptable,2025,30.332,3.058,4662,,10.082,aceptable,2.579,4.294,False
+2019,Puno,Total,disp_12h,32.976,3.19,5072,,9.674,aceptable,2025,33.494,3.205,4662,,9.569,aceptable,0.518,4.522,False
+2019,Puno,Total,cal_cloro_adecuado,15.657,1.578,5072,,10.078,aceptable,2025,12.346,1.459,4662,,11.82,aceptable,-3.311,2.149,False
+2019,Puno,Total,ods611_conjunto,1.733,0.467,5072,,26.975,referencial (CV>15%),2025,1.746,0.549,4662,,31.452,referencial (CV>15%),0.014,0.721,False
+2019,Puno,Total,cloro_adecuado_en_red,22.032,2.194,3660,,9.958,aceptable,2025,15.746,1.835,3453,,11.654,aceptable,-6.286,2.86,True
+2019,Puno,Total,cloro_inadecuado_en_red,17.2,1.809,3660,,10.519,aceptable,2025,15.965,1.997,3453,,12.507,aceptable,-1.235,2.695,False
+2019,Puno,Total,sin_cloro_en_red,60.768,2.747,3660,,4.521,aceptable,2025,68.289,3.037,3453,,4.447,aceptable,7.521,4.095,False
+2019,Puno,Rural,red_publica,53.494,6.21,1924,,11.608,aceptable,2025,67.93,5.588,1769,,8.226,aceptable,14.435,8.354,False
+2019,Puno,Rural,acc_en_vivienda,50.118,5.919,1924,,11.81,aceptable,2025,67.588,5.53,1769,,8.181,aceptable,17.47,8.1,True
+2019,Puno,Rural,disp_24h,42.944,6.098,1924,,14.201,aceptable,2025,53.593,5.948,1769,,11.099,aceptable,10.649,8.519,False
+2019,Puno,Rural,disp_20h,43.562,6.097,1924,,13.996,aceptable,2025,53.593,5.948,1769,,11.099,aceptable,10.031,8.518,False
+2019,Puno,Rural,disp_12h,44.333,6.142,1924,,13.854,aceptable,2025,55.129,6.085,1769,,11.038,aceptable,10.795,8.646,False
+2019,Puno,Rural,cal_cloro_adecuado,0.463,0.466,1924,,100.541,referencial (CV>15%),2025,0.0,0.0,1769,,,aceptable,-0.463,0.466,False
+2019,Puno,Rural,ods611_conjunto,0.309,0.31,1924,,100.541,referencial (CV>15%),2025,0.0,0.0,1769,,,aceptable,-0.309,0.31,False
+2019,Puno,Rural,cloro_adecuado_en_red,0.866,0.88,1023,,101.613,referencial (CV>15%),2025,0.0,0.0,1192,,,aceptable,-0.866,0.88,False
+2019,Puno,Rural,cloro_inadecuado_en_red,2.598,1.722,1023,,66.298,referencial (CV>15%),2025,5.143,3.204,1192,,62.302,referencial (CV>15%),2.546,3.638,False
+2019,Puno,Rural,sin_cloro_en_red,96.537,2.324,1023,,2.407,aceptable,2025,94.857,3.204,1192,,3.378,aceptable,-1.68,3.958,False
+2019,Puno,Urbano,red_publica,84.299,2.631,3148,,3.121,aceptable,2025,87.536,1.954,2893,,2.232,aceptable,3.237,3.277,False
+2019,Puno,Urbano,acc_en_vivienda,60.132,2.701,3148,,4.491,aceptable,2025,79.857,2.296,2893,,2.875,aceptable,19.725,3.545,True
+2019,Puno,Urbano,disp_24h,15.824,2.865,3148,,18.104,referencial (CV>15%),2025,17.223,3.308,2893,,19.207,referencial (CV>15%),1.4,4.376,False
+2019,Puno,Urbano,disp_20h,16.735,2.896,3148,,17.305,referencial (CV>15%),2025,17.899,3.394,2893,,18.964,referencial (CV>15%),1.164,4.462,False
+2019,Puno,Urbano,disp_12h,25.06,3.349,3148,,13.365,aceptable,2025,21.93,3.641,2893,,16.601,referencial (CV>15%),-3.13,4.947,False
+2019,Puno,Urbano,cal_cloro_adecuado,26.246,2.668,3148,,10.167,aceptable,2025,18.945,2.193,2893,,11.576,aceptable,-7.301,3.454,True
+2019,Puno,Urbano,ods611_conjunto,2.725,0.768,3148,,28.201,referencial (CV>15%),2025,2.68,0.847,2893,,31.594,referencial (CV>15%),-0.045,1.143,False
+2019,Puno,Urbano,cloro_adecuado_en_red,31.504,3.136,2637,,9.953,aceptable,2025,22.487,2.586,2261,,11.498,aceptable,-9.017,4.064,True
+2019,Puno,Urbano,cloro_inadecuado_en_red,23.735,2.429,2637,,10.236,aceptable,2025,20.598,2.47,2261,,11.991,aceptable,-3.137,3.464,False
+2019,Puno,Urbano,sin_cloro_en_red,44.761,3.699,2637,,8.263,aceptable,2025,56.915,4.032,2261,,7.083,aceptable,12.154,5.471,True
+2019,San Martín,Total,red_publica,87.818,2.276,6744,,2.591,aceptable,2025,89.878,2.217,6238,,2.467,aceptable,2.06,3.177,False
+2019,San Martín,Total,acc_en_vivienda,85.882,2.304,6744,,2.682,aceptable,2025,87.026,2.316,6238,,2.661,aceptable,1.144,3.266,False
+2019,San Martín,Total,disp_24h,48.739,3.664,6744,,7.518,aceptable,2025,41.266,3.984,6238,,9.656,aceptable,-7.473,5.413,False
+2019,San Martín,Total,disp_20h,49.911,3.666,6744,,7.346,aceptable,2025,42.265,4.01,6238,,9.489,aceptable,-7.646,5.434,False
+2019,San Martín,Total,disp_12h,59.278,3.586,6744,,6.049,aceptable,2025,52.295,4.079,6238,,7.8,aceptable,-6.983,5.431,False
+2019,San Martín,Total,cal_cloro_adecuado,25.632,2.349,6744,,9.165,aceptable,2025,18.621,2.391,6238,,12.842,aceptable,-7.011,3.352,True
+2019,San Martín,Total,ods611_conjunto,12.52,2.083,6744,,16.636,referencial (CV>15%),2025,7.029,1.721,6238,,24.477,referencial (CV>15%),-5.491,2.702,True
+2019,San Martín,Total,cloro_adecuado_en_red,29.308,2.634,5984,,8.988,aceptable,2025,20.943,2.624,5514,,12.529,aceptable,-8.365,3.718,True
+2019,San Martín,Total,cloro_inadecuado_en_red,7.779,1.172,5984,,15.063,referencial (CV>15%),2025,11.494,1.806,5514,,15.715,referencial (CV>15%),3.715,2.153,False
+2019,San Martín,Total,sin_cloro_en_red,62.914,3.058,5984,,4.861,aceptable,2025,67.563,3.246,5514,,4.805,aceptable,4.65,4.46,False
+2019,San Martín,Rural,red_publica,76.275,5.457,2280,,7.154,aceptable,2025,77.227,6.493,2118,,8.408,aceptable,0.952,8.482,False
+2019,San Martín,Rural,acc_en_vivienda,75.439,5.51,2280,,7.303,aceptable,2025,76.891,6.483,2118,,8.431,aceptable,1.452,8.508,False
+2019,San Martín,Rural,disp_24h,66.987,6.284,2280,,9.381,aceptable,2025,58.529,8.191,2118,,13.995,aceptable,-8.458,10.324,False
+2019,San Martín,Rural,disp_20h,66.987,6.284,2280,,9.381,aceptable,2025,58.613,8.182,2118,,13.96,aceptable,-8.373,10.317,False
+2019,San Martín,Rural,disp_12h,67.219,6.227,2280,,9.263,aceptable,2025,66.723,6.933,2118,,10.391,aceptable,-0.497,9.319,False
+2019,San Martín,Rural,cal_cloro_adecuado,1.191,0.778,2280,,65.35,referencial (CV>15%),2025,0.252,0.255,2118,,100.957,referencial (CV>15%),-0.939,0.819,False
+2019,San Martín,Rural,ods611_conjunto,0.447,0.259,2280,,58.001,referencial (CV>15%),2025,0.252,0.255,2118,,100.957,referencial (CV>15%),-0.195,0.363,False
+2019,San Martín,Rural,cloro_adecuado_en_red,1.564,1.022,1740,,65.341,referencial (CV>15%),2025,0.327,0.329,1643,,100.799,referencial (CV>15%),-1.238,1.074,False
+2019,San Martín,Rural,cloro_inadecuado_en_red,3.357,2.076,1740,,61.819,referencial (CV>15%),2025,2.613,1.277,1643,,48.865,referencial (CV>15%),-0.744,2.437,False
+2019,San Martín,Rural,sin_cloro_en_red,95.078,2.749,1740,,2.892,aceptable,2025,97.06,1.364,1643,,1.405,aceptable,1.982,3.069,False
+2019,San Martín,Urbano,red_publica,93.179,2.202,4464,,2.363,aceptable,2025,94.724,1.761,4120,,1.859,aceptable,1.545,2.819,False
+2019,San Martín,Urbano,acc_en_vivienda,90.732,2.215,4464,,2.441,aceptable,2025,90.909,1.975,4120,,2.173,aceptable,0.177,2.968,False
+2019,San Martín,Urbano,disp_24h,40.263,4.451,4464,,11.054,aceptable,2025,34.652,4.541,4120,,13.105,aceptable,-5.611,6.359,False
+2019,San Martín,Urbano,disp_20h,41.98,4.451,4464,,10.602,aceptable,2025,36.002,4.578,4120,,12.715,aceptable,-5.978,6.385,False
+2019,San Martín,Urbano,disp_12h,55.59,4.334,4464,,7.796,aceptable,2025,46.768,4.886,4120,,10.447,aceptable,-8.822,6.531,False
+2019,San Martín,Urbano,cal_cloro_adecuado,36.984,3.612,4464,,9.767,aceptable,2025,25.657,3.408,4120,,13.284,aceptable,-11.326,4.966,True
+2019,San Martín,Urbano,ods611_conjunto,18.128,3.06,4464,,16.879,referencial (CV>15%),2025,9.626,2.367,4120,,24.595,referencial (CV>15%),-8.502,3.869,True
+2019,San Martín,Urbano,cloro_adecuado_en_red,39.889,3.756,4244,,9.417,aceptable,2025,27.47,3.502,3871,,12.749,aceptable,-12.419,5.136,True
+2019,San Martín,Urbano,cloro_inadecuado_en_red,9.465,1.425,4244,,15.058,referencial (CV>15%),2025,14.305,2.342,3871,,16.369,referencial (CV>15%),4.84,2.741,False
+2019,San Martín,Urbano,sin_cloro_en_red,50.647,4.267,4244,,8.425,aceptable,2025,58.226,4.306,3871,,7.395,aceptable,7.579,6.062,False
+2019,Tacna,Total,red_publica,97.849,0.493,3372,,0.504,aceptable,2025,96.304,0.879,3490,,0.913,aceptable,-1.546,1.008,False
+2019,Tacna,Total,acc_en_vivienda,92.038,1.244,3372,,1.352,aceptable,2025,89.651,2.011,3490,,2.243,aceptable,-2.388,2.365,False
+2019,Tacna,Total,disp_24h,31.957,3.412,3372,,10.676,aceptable,2025,54.308,4.776,3490,,8.794,aceptable,22.351,5.869,True
+2019,Tacna,Total,disp_20h,32.692,3.434,3372,,10.504,aceptable,2025,55.401,4.739,3490,,8.554,aceptable,22.709,5.853,True
+2019,Tacna,Total,disp_12h,58.302,3.896,3372,,6.683,aceptable,2025,76.246,3.51,3490,,4.604,aceptable,17.944,5.245,True
+2019,Tacna,Total,cal_cloro_adecuado,59.862,2.918,3372,,4.874,aceptable,2025,59.221,3.265,3490,,5.513,aceptable,-0.641,4.378,False
+2019,Tacna,Total,ods611_conjunto,21.21,2.931,3372,,13.818,aceptable,2025,34.219,3.719,3490,,10.868,aceptable,13.009,4.735,True
+2019,Tacna,Total,cloro_adecuado_en_red,63.044,3.007,3134,,4.769,aceptable,2025,63.538,3.433,3080,,5.403,aceptable,0.494,4.564,False
+2019,Tacna,Total,cloro_inadecuado_en_red,13.448,1.795,3134,,13.346,aceptable,2025,9.732,1.599,3080,,16.433,referencial (CV>15%),-3.716,2.404,False
+2019,Tacna,Total,sin_cloro_en_red,23.508,2.498,3134,,10.626,aceptable,2025,26.73,3.066,3080,,11.47,aceptable,3.222,3.955,False
+2019,Tacna,Rural,red_publica,85.153,3.876,1031,,4.552,aceptable,2025,80.385,6.025,1078,,7.495,aceptable,-4.768,7.164,False
+2019,Tacna,Rural,acc_en_vivienda,79.025,5.254,1031,,6.649,aceptable,2025,73.255,6.916,1078,,9.441,aceptable,-5.77,8.685,False
+2019,Tacna,Rural,disp_24h,44.398,8.867,1031,,19.973,referencial (CV>15%),2025,50.294,9.156,1078,,18.205,referencial (CV>15%),5.896,12.746,False
+2019,Tacna,Rural,disp_20h,44.398,8.867,1031,,19.973,referencial (CV>15%),2025,51.298,9.326,1078,,18.18,referencial (CV>15%),6.9,12.869,False
+2019,Tacna,Rural,disp_12h,46.813,8.874,1031,,18.956,referencial (CV>15%),2025,54.24,8.956,1078,,16.511,referencial (CV>15%),7.427,12.608,False
+2019,Tacna,Rural,cal_cloro_adecuado,8.079,4.045,1031,,50.073,referencial (CV>15%),2025,17.452,5.703,1078,,32.68,referencial (CV>15%),9.373,6.992,False
+2019,Tacna,Rural,ods611_conjunto,7.539,4.064,1031,,53.907,referencial (CV>15%),2025,7.172,2.888,1078,,40.275,referencial (CV>15%),-0.368,4.986,False
+2019,Tacna,Rural,cloro_adecuado_en_red,9.67,4.778,862,,49.412,referencial (CV>15%),2025,22.072,7.104,771,,32.188,referencial (CV>15%),12.401,8.562,False
+2019,Tacna,Rural,cloro_inadecuado_en_red,16.745,5.045,862,,30.129,referencial (CV>15%),2025,11.916,4.908,771,,41.186,referencial (CV>15%),-4.829,7.038,False
+2019,Tacna,Rural,sin_cloro_en_red,73.584,7.157,862,,9.726,aceptable,2025,66.012,9.233,771,,13.987,aceptable,-7.572,11.682,False
+2019,Tacna,Urbano,red_publica,99.631,0.226,2341,,0.226,aceptable,2025,98.435,0.656,2412,,0.666,aceptable,-1.195,0.694,False
+2019,Tacna,Urbano,acc_en_vivienda,93.864,1.231,2341,,1.312,aceptable,2025,91.846,2.022,2412,,2.201,aceptable,-2.018,2.367,False
+2019,Tacna,Urbano,disp_24h,30.212,3.675,2341,,12.163,aceptable,2025,54.846,5.281,2412,,9.629,aceptable,24.633,6.434,True
+2019,Tacna,Urbano,disp_20h,31.05,3.703,2341,,11.925,aceptable,2025,55.951,5.234,2412,,9.355,aceptable,24.901,6.411,True
+2019,Tacna,Urbano,disp_12h,59.914,4.262,2341,,7.113,aceptable,2025,79.193,3.799,2412,,4.798,aceptable,19.28,5.709,True
+2019,Tacna,Urbano,cal_cloro_adecuado,67.127,3.206,2341,,4.776,aceptable,2025,64.814,3.636,2412,,5.61,aceptable,-2.313,4.848,False
+2019,Tacna,Urbano,ods611_conjunto,23.128,3.304,2341,,14.285,aceptable,2025,37.841,4.212,2412,,11.13,aceptable,14.713,5.353,True
+2019,Tacna,Urbano,cloro_adecuado_en_red,69.523,3.245,2272,,4.668,aceptable,2025,68.155,3.72,2309,,5.459,aceptable,-1.368,4.937,False
+2019,Tacna,Urbano,cloro_inadecuado_en_red,13.047,1.921,2272,,14.726,aceptable,2025,9.488,1.689,2309,,17.798,referencial (CV>15%),-3.559,2.558,False
+2019,Tacna,Urbano,sin_cloro_en_red,17.429,2.526,2272,,14.495,aceptable,2025,22.357,3.259,2309,,14.575,aceptable,4.927,4.123,False
+2019,Tumbes,Total,red_publica,78.817,2.234,4529,,2.834,aceptable,2025,82.295,1.94,4192,,2.357,aceptable,3.478,2.959,False
+2019,Tumbes,Total,acc_en_vivienda,78.005,2.287,4529,,2.932,aceptable,2025,82.295,1.94,4192,,2.357,aceptable,4.29,2.999,False
+2019,Tumbes,Total,disp_24h,11.192,1.99,4529,,17.781,referencial (CV>15%),2025,8.573,2.141,4192,,24.974,referencial (CV>15%),-2.619,2.923,False
+2019,Tumbes,Total,disp_20h,11.591,1.992,4529,,17.185,referencial (CV>15%),2025,9.333,2.266,4192,,24.282,referencial (CV>15%),-2.258,3.017,False
+2019,Tumbes,Total,disp_12h,17.698,2.483,4529,,14.029,aceptable,2025,13.989,2.651,4192,,18.952,referencial (CV>15%),-3.709,3.632,False
+2019,Tumbes,Total,cal_cloro_adecuado,24.64,2.569,4529,,10.427,aceptable,2025,12.288,1.89,4192,,15.378,referencial (CV>15%),-12.351,3.189,True
+2019,Tumbes,Total,ods611_conjunto,6.584,1.636,4529,,24.856,referencial (CV>15%),2025,2.925,1.051,4192,,35.94,referencial (CV>15%),-3.659,1.945,False
+2019,Tumbes,Total,cloro_adecuado_en_red,31.595,3.046,3486,,9.642,aceptable,2025,14.999,2.266,3403,,15.108,referencial (CV>15%),-16.597,3.797,True
+2019,Tumbes,Total,cloro_inadecuado_en_red,29.192,2.28,3486,,7.81,aceptable,2025,27.013,2.549,3403,,9.435,aceptable,-2.178,3.42,False
+2019,Tumbes,Total,sin_cloro_en_red,39.213,2.851,3486,,7.271,aceptable,2025,57.988,3.439,3403,,5.931,aceptable,18.775,4.467,True
+2019,Tumbes,Rural,red_publica,73.706,5.865,1736,,7.957,aceptable,2025,86.695,5.135,1683,,5.923,aceptable,12.99,7.795,False
+2019,Tumbes,Rural,acc_en_vivienda,73.299,5.915,1736,,8.07,aceptable,2025,86.695,5.135,1683,,5.923,aceptable,13.396,7.833,False
+2019,Tumbes,Rural,disp_24h,12.127,3.955,1736,,32.611,referencial (CV>15%),2025,13.746,9.157,1683,,66.619,referencial (CV>15%),1.619,9.975,False
+2019,Tumbes,Rural,disp_20h,13.425,4.827,1736,,35.953,referencial (CV>15%),2025,13.918,9.168,1683,,65.867,referencial (CV>15%),0.493,10.361,False
+2019,Tumbes,Rural,disp_12h,16.228,4.904,1736,,30.218,referencial (CV>15%),2025,19.843,9.775,1683,,49.264,referencial (CV>15%),3.615,10.936,False
+2019,Tumbes,Rural,cal_cloro_adecuado,7.173,2.658,1736,,37.058,referencial (CV>15%),2025,6.834,3.064,1683,,44.838,referencial (CV>15%),-0.339,4.056,False
+2019,Tumbes,Rural,ods611_conjunto,2.071,1.245,1736,,60.097,referencial (CV>15%),2025,1.511,1.164,1683,,77.053,referencial (CV>15%),-0.56,1.704,False
+2019,Tumbes,Rural,cloro_adecuado_en_red,9.764,3.662,1321,,37.51,referencial (CV>15%),2025,7.918,3.772,1402,,47.645,referencial (CV>15%),-1.846,5.258,False
+2019,Tumbes,Rural,cloro_inadecuado_en_red,6.531,2.03,1321,,31.086,referencial (CV>15%),2025,10.114,2.953,1402,,29.2,referencial (CV>15%),3.583,3.584,False
+2019,Tumbes,Rural,sin_cloro_en_red,83.705,4.744,1321,,5.667,aceptable,2025,81.969,5.859,1402,,7.147,aceptable,-1.737,7.538,False
+2019,Tumbes,Urbano,red_publica,78.993,2.301,2793,,2.913,aceptable,2025,82.226,1.969,2509,,2.394,aceptable,3.233,3.028,False
+2019,Tumbes,Urbano,acc_en_vivienda,78.167,2.357,2793,,3.015,aceptable,2025,82.226,1.969,2509,,2.394,aceptable,4.059,3.071,False
+2019,Tumbes,Urbano,disp_24h,11.159,2.054,2793,,18.405,referencial (CV>15%),2025,8.491,2.17,2509,,25.559,referencial (CV>15%),-2.668,2.988,False
+2019,Tumbes,Urbano,disp_20h,11.528,2.054,2793,,17.815,referencial (CV>15%),2025,9.26,2.298,2509,,24.812,referencial (CV>15%),-2.268,3.082,False
+2019,Tumbes,Urbano,disp_12h,17.749,2.563,2793,,14.438,aceptable,2025,13.896,2.688,2509,,19.347,referencial (CV>15%),-3.852,3.714,False
+2019,Tumbes,Urbano,cal_cloro_adecuado,25.24,2.656,2793,,10.524,aceptable,2025,12.375,1.917,2509,,15.492,referencial (CV>15%),-12.865,3.276,True
+2019,Tumbes,Urbano,ods611_conjunto,6.739,1.692,2793,,25.113,referencial (CV>15%),2025,2.948,1.068,2509,,36.217,referencial (CV>15%),-3.791,2.001,False
+2019,Tumbes,Urbano,cloro_adecuado_en_red,32.301,3.14,2165,,9.722,aceptable,2025,15.117,2.3,2001,,15.215,referencial (CV>15%),-17.184,3.892,True
+2019,Tumbes,Urbano,cloro_inadecuado_en_red,29.924,2.348,2165,,7.845,aceptable,2025,27.295,2.591,2001,,9.493,aceptable,-2.629,3.496,False
+2019,Tumbes,Urbano,sin_cloro_en_red,37.775,2.926,2165,,7.745,aceptable,2025,57.588,3.489,2001,,6.058,aceptable,19.813,4.553,True
+2019,Ucayali,Total,red_publica,75.663,2.488,5236,,3.289,aceptable,2025,76.287,2.551,5656,,3.344,aceptable,0.624,3.563,False
+2019,Ucayali,Total,acc_en_vivienda,74.872,2.464,5236,,3.291,aceptable,2025,76.023,2.554,5656,,3.359,aceptable,1.151,3.549,False
+2019,Ucayali,Total,disp_24h,26.965,2.781,5236,,10.314,aceptable,2025,20.176,3.048,5656,,15.109,referencial (CV>15%),-6.789,4.126,False
+2019,Ucayali,Total,disp_20h,30.03,2.999,5236,,9.987,aceptable,2025,20.579,3.12,5656,,15.162,referencial (CV>15%),-9.452,4.328,True
+2019,Ucayali,Total,disp_12h,56.518,3.18,5236,,5.626,aceptable,2025,54.753,3.628,5656,,6.626,aceptable,-1.765,4.824,False
+2019,Ucayali,Total,cal_cloro_adecuado,19.552,2.74,5236,,14.013,aceptable,2025,15.239,3.031,5656,,19.888,referencial (CV>15%),-4.313,4.086,False
+2019,Ucayali,Total,ods611_conjunto,6.856,1.632,5236,,23.809,referencial (CV>15%),2025,1.761,0.845,5656,,47.979,referencial (CV>15%),-5.095,1.838,True
+2019,Ucayali,Total,cloro_adecuado_en_red,25.877,3.38,3656,,13.062,aceptable,2025,20.254,3.888,3908,,19.195,referencial (CV>15%),-5.624,5.152,False
+2019,Ucayali,Total,cloro_inadecuado_en_red,15.566,2.294,3656,,14.736,aceptable,2025,21.538,3.514,3908,,16.317,referencial (CV>15%),5.971,4.197,False
+2019,Ucayali,Total,sin_cloro_en_red,58.556,3.804,3656,,6.497,aceptable,2025,58.209,4.919,3908,,8.45,aceptable,-0.348,6.218,False
+2019,Ucayali,Rural,red_publica,54.588,6.041,2136,,11.066,aceptable,2025,59.562,6.58,2500,,11.048,aceptable,4.974,8.933,False
+2019,Ucayali,Rural,acc_en_vivienda,54.588,6.041,2136,,11.066,aceptable,2025,59.562,6.58,2500,,11.048,aceptable,4.974,8.933,False
+2019,Ucayali,Rural,disp_24h,24.719,5.193,2136,,21.009,referencial (CV>15%),2025,28.561,5.794,2500,,20.287,referencial (CV>15%),3.842,7.781,False
+2019,Ucayali,Rural,disp_20h,24.719,5.193,2136,,21.009,referencial (CV>15%),2025,28.561,5.794,2500,,20.287,referencial (CV>15%),3.842,7.781,False
+2019,Ucayali,Rural,disp_12h,28.511,5.331,2136,,18.699,referencial (CV>15%),2025,31.999,5.894,2500,,18.419,referencial (CV>15%),3.488,7.947,False
+2019,Ucayali,Rural,cal_cloro_adecuado,0.0,0.0,2136,,,aceptable,2025,2.269,1.603,2500,,70.621,referencial (CV>15%),2.269,1.603,False
+2019,Ucayali,Rural,ods611_conjunto,0.0,0.0,2136,,,aceptable,2025,1.823,1.551,2500,,85.125,referencial (CV>15%),1.823,1.551,False
+2019,Ucayali,Rural,cloro_adecuado_en_red,0.0,0.0,1166,,,aceptable,2025,3.815,2.666,1480,,69.893,referencial (CV>15%),3.815,2.666,False
+2019,Ucayali,Rural,cloro_inadecuado_en_red,0.086,0.085,1166,,98.754,referencial (CV>15%),2025,4.43,2.47,1480,,55.77,referencial (CV>15%),4.344,2.472,False
+2019,Ucayali,Rural,sin_cloro_en_red,99.914,0.085,1166,,0.085,aceptable,2025,91.755,4.923,1480,,5.365,aceptable,-8.159,4.924,False
+2019,Ucayali,Urbano,red_publica,80.334,2.734,3100,,3.404,aceptable,2025,79.213,2.705,3156,,3.415,aceptable,-1.121,3.846,False
+2019,Ucayali,Urbano,acc_en_vivienda,79.367,2.701,3100,,3.403,aceptable,2025,78.903,2.711,3156,,3.436,aceptable,-0.465,3.826,False
+2019,Ucayali,Urbano,disp_24h,27.463,3.198,3100,,11.645,aceptable,2025,18.709,3.426,3156,,18.314,referencial (CV>15%),-8.754,4.687,False
+2019,Ucayali,Urbano,disp_20h,31.207,3.478,3100,,11.146,aceptable,2025,19.182,3.515,3156,,18.323,referencial (CV>15%),-12.026,4.945,True
+2019,Ucayali,Urbano,disp_12h,62.726,3.636,3100,,5.797,aceptable,2025,58.734,4.04,3156,,6.879,aceptable,-3.992,5.436,False
+2019,Ucayali,Urbano,cal_cloro_adecuado,23.886,3.3,3100,,13.816,aceptable,2025,17.509,3.506,3156,,20.022,referencial (CV>15%),-6.377,4.815,False
+2019,Ucayali,Urbano,ods611_conjunto,8.376,1.985,3100,,23.7,referencial (CV>15%),2025,1.751,0.955,3156,,54.559,referencial (CV>15%),-6.625,2.203,True
+2019,Ucayali,Urbano,cloro_adecuado_en_red,29.781,3.812,2490,,12.8,aceptable,2025,22.447,4.342,2428,,19.341,referencial (CV>15%),-7.334,5.777,False
+2019,Ucayali,Urbano,cloro_inadecuado_en_red,17.902,2.61,2490,,14.579,aceptable,2025,23.821,3.925,2428,,16.476,referencial (CV>15%),5.919,4.713,False
+2019,Ucayali,Urbano,sin_cloro_en_red,52.317,4.218,2490,,8.062,aceptable,2025,53.732,5.39,2428,,10.031,aceptable,1.415,6.844,False
+2019,Áncash,Total,red_publica,96.419,0.806,5778,,0.836,aceptable,2025,91.503,1.497,4984,,1.636,aceptable,-4.916,1.7,True
+2019,Áncash,Total,acc_en_vivienda,94.362,1.091,5778,,1.156,aceptable,2025,89.142,1.614,4984,,1.811,aceptable,-5.22,1.949,True
+2019,Áncash,Total,disp_24h,46.239,3.66,5778,,7.915,aceptable,2025,43.7,3.508,4984,,8.027,aceptable,-2.539,5.069,False
+2019,Áncash,Total,disp_20h,46.488,3.677,5778,,7.91,aceptable,2025,43.7,3.508,4984,,8.027,aceptable,-2.788,5.082,False
+2019,Áncash,Total,disp_12h,50.094,3.764,5778,,7.514,aceptable,2025,47.091,3.619,4984,,7.686,aceptable,-3.004,5.222,False
+2019,Áncash,Total,cal_cloro_adecuado,26.975,2.444,5778,,9.059,aceptable,2025,19.968,2.62,4984,,13.12,aceptable,-7.007,3.583,False
+2019,Áncash,Total,ods611_conjunto,9.732,1.597,5778,,16.409,referencial (CV>15%),2025,7.529,1.648,4984,,21.883,referencial (CV>15%),-2.203,2.294,False
+2019,Áncash,Total,cloro_adecuado_en_red,28.215,2.56,5536,,9.074,aceptable,2025,22.143,2.906,4341,,13.122,aceptable,-6.072,3.873,False
+2019,Áncash,Total,cloro_inadecuado_en_red,22.821,2.463,5536,,10.793,aceptable,2025,26.539,3.491,4341,,13.155,aceptable,3.719,4.273,False
+2019,Áncash,Total,sin_cloro_en_red,48.964,2.691,5536,,5.497,aceptable,2025,51.318,3.565,4341,,6.946,aceptable,2.354,4.467,False
+2019,Áncash,Rural,red_publica,93.073,1.797,2044,,1.93,aceptable,2025,88.968,3.172,1858,,3.566,aceptable,-4.105,3.646,False
+2019,Áncash,Rural,acc_en_vivienda,92.813,1.798,2044,,1.938,aceptable,2025,87.423,3.235,1858,,3.701,aceptable,-5.39,3.701,False
+2019,Áncash,Rural,disp_24h,76.548,8.256,2044,,10.785,aceptable,2025,80.395,4.204,1858,,5.229,aceptable,3.847,9.264,False
+2019,Áncash,Rural,disp_20h,76.792,8.268,2044,,10.767,aceptable,2025,80.395,4.204,1858,,5.229,aceptable,3.603,9.275,False
+2019,Áncash,Rural,disp_12h,77.524,8.343,2044,,10.762,aceptable,2025,81.662,4.005,1858,,4.905,aceptable,4.138,9.255,False
+2019,Áncash,Rural,cal_cloro_adecuado,0.635,0.546,2044,,86.031,referencial (CV>15%),2025,0.99,0.716,1858,,72.359,referencial (CV>15%),0.355,0.901,False
+2019,Áncash,Rural,ods611_conjunto,0.635,0.546,2044,,86.031,referencial (CV>15%),2025,0.99,0.716,1858,,72.359,referencial (CV>15%),0.355,0.901,False
+2019,Áncash,Rural,cloro_adecuado_en_red,0.682,0.586,1885,,85.898,referencial (CV>15%),2025,1.114,0.811,1612,,72.73,referencial (CV>15%),0.432,1.0,False
+2019,Áncash,Rural,cloro_inadecuado_en_red,1.836,1.233,1885,,67.175,referencial (CV>15%),2025,6.293,3.083,1612,,48.992,referencial (CV>15%),4.457,3.321,False
+2019,Áncash,Rural,sin_cloro_en_red,97.482,1.8,1885,,1.847,aceptable,2025,92.593,3.524,1612,,3.806,aceptable,-4.889,3.957,False
+2019,Áncash,Urbano,red_publica,98.333,0.801,3734,,0.815,aceptable,2025,92.738,1.597,3126,,1.722,aceptable,-5.595,1.786,True
+2019,Áncash,Urbano,acc_en_vivienda,95.247,1.386,3734,,1.455,aceptable,2025,89.979,1.803,3126,,2.003,aceptable,-5.268,2.274,True
+2019,Áncash,Urbano,disp_24h,28.903,3.91,3734,,13.528,aceptable,2025,25.823,3.946,3126,,15.281,referencial (CV>15%),-3.08,5.555,False
+2019,Áncash,Urbano,disp_20h,29.154,3.938,3734,,13.506,aceptable,2025,25.823,3.946,3126,,15.281,referencial (CV>15%),-3.331,5.574,False
+2019,Áncash,Urbano,disp_12h,34.404,4.131,3734,,12.007,aceptable,2025,30.247,4.331,3126,,14.32,aceptable,-4.157,5.985,False
+2019,Áncash,Urbano,cal_cloro_adecuado,42.042,3.687,3734,,8.77,aceptable,2025,29.214,3.854,3126,,13.192,aceptable,-12.828,5.333,True
+2019,Áncash,Urbano,ods611_conjunto,14.935,2.53,3734,,16.94,referencial (CV>15%),2025,10.715,2.474,3126,,23.086,referencial (CV>15%),-4.22,3.538,False
+2019,Áncash,Urbano,cloro_adecuado_en_red,43.319,3.755,3651,,8.669,aceptable,2025,32.158,4.28,2729,,13.308,aceptable,-11.161,5.694,True
+2019,Áncash,Urbano,cloro_inadecuado_en_red,34.332,3.467,3651,,10.097,aceptable,2025,36.181,4.849,2729,,13.401,aceptable,1.849,5.96,False
+2019,Áncash,Urbano,sin_cloro_en_red,22.348,2.989,3651,,13.375,aceptable,2025,31.661,4.814,2729,,15.206,referencial (CV>15%),9.312,5.667,False
+2019,Nacional,Total,ods611_minimo_directo,41.534,0.659,144788,cal_cloro_adecuado,1.587,aceptable,2025,36.577,0.695,132354,cal_cloro_adecuado,1.901,aceptable,-4.958,0.958,True
+2019,Nacional,Total,ods611_minimo,41.534,0.625,144788,cal_cloro_adecuado,1.506,aceptable,2025,36.577,0.665,132354,cal_cloro_adecuado,1.819,aceptable,-4.958,0.913,True
+2019,Nacional,Total,ods611_minimo_directo_20h,41.534,0.659,144788,cal_cloro_adecuado,1.587,aceptable,2025,36.577,0.695,132354,cal_cloro_adecuado,1.901,aceptable,-4.958,0.958,True
+2019,Nacional,Total,ods611_minimo_20h,41.534,0.625,144788,cal_cloro_adecuado,1.506,aceptable,2025,36.577,0.665,132354,cal_cloro_adecuado,1.819,aceptable,-4.958,0.913,True
+2019,Nacional,Total,ods611_minimo_directo_12h,41.534,0.659,144788,cal_cloro_adecuado,1.587,aceptable,2025,36.577,0.695,132354,cal_cloro_adecuado,1.901,aceptable,-4.958,0.958,True
+2019,Nacional,Total,ods611_minimo_12h,41.534,0.625,144788,cal_cloro_adecuado,1.506,aceptable,2025,36.577,0.665,132354,cal_cloro_adecuado,1.819,aceptable,-4.958,0.913,True
+2019,Nacional,Rural,ods611_minimo,3.606,0.501,50319,cal_cloro_adecuado,13.9,aceptable,2025,3.065,0.405,46864,cal_cloro_adecuado,13.217,aceptable,-0.541,0.644,False
+2019,Nacional,Rural,ods611_minimo_20h,3.606,0.501,50319,cal_cloro_adecuado,13.9,aceptable,2025,3.065,0.405,46864,cal_cloro_adecuado,13.217,aceptable,-0.541,0.644,False
+2019,Nacional,Rural,ods611_minimo_12h,3.606,0.501,50319,cal_cloro_adecuado,13.9,aceptable,2025,3.065,0.405,46864,cal_cloro_adecuado,13.217,aceptable,-0.541,0.644,False
+2019,Nacional,Urbano,ods611_minimo,51.826,0.783,94469,cal_cloro_adecuado,1.512,aceptable,2025,44.291,0.813,85490,cal_cloro_adecuado,1.836,aceptable,-7.536,1.129,True
+2019,Nacional,Urbano,ods611_minimo_20h,51.826,0.783,94469,cal_cloro_adecuado,1.512,aceptable,2025,44.291,0.813,85490,cal_cloro_adecuado,1.836,aceptable,-7.536,1.129,True
+2019,Nacional,Urbano,ods611_minimo_12h,51.826,0.783,94469,cal_cloro_adecuado,1.512,aceptable,2025,44.291,0.813,85490,cal_cloro_adecuado,1.836,aceptable,-7.536,1.129,True
+2019,Amazonas,Total,ods611_minimo_directo,11.037,1.394,5749,cal_cloro_adecuado,12.635,aceptable,2025,11.461,1.7,5215,cal_cloro_adecuado,14.83,aceptable,0.424,2.199,False
+2019,Amazonas,Total,ods611_minimo,11.037,1.517,5749,cal_cloro_adecuado,13.745,aceptable,2025,11.461,1.782,5215,cal_cloro_adecuado,15.549,referencial (CV>15%),0.424,2.34,False
+2019,Amazonas,Total,ods611_minimo_directo_20h,11.037,1.394,5749,cal_cloro_adecuado,12.635,aceptable,2025,11.461,1.7,5215,cal_cloro_adecuado,14.83,aceptable,0.424,2.199,False
+2019,Amazonas,Total,ods611_minimo_20h,11.037,1.517,5749,cal_cloro_adecuado,13.745,aceptable,2025,11.461,1.782,5215,cal_cloro_adecuado,15.549,referencial (CV>15%),0.424,2.34,False
+2019,Amazonas,Total,ods611_minimo_directo_12h,11.037,1.394,5749,cal_cloro_adecuado,12.635,aceptable,2025,11.461,1.7,5215,cal_cloro_adecuado,14.83,aceptable,0.424,2.199,False
+2019,Amazonas,Total,ods611_minimo_12h,11.037,1.517,5749,cal_cloro_adecuado,13.745,aceptable,2025,11.461,1.782,5215,cal_cloro_adecuado,15.549,referencial (CV>15%),0.424,2.34,False
+2019,Amazonas,Rural,ods611_minimo,0.346,0.346,2710,cal_cloro_adecuado,99.879,referencial (CV>15%),2025,1.363,0.859,2494,cal_cloro_adecuado,63.038,referencial (CV>15%),1.017,0.926,False
+2019,Amazonas,Rural,ods611_minimo_20h,0.346,0.346,2710,cal_cloro_adecuado,99.879,referencial (CV>15%),2025,1.363,0.859,2494,cal_cloro_adecuado,63.038,referencial (CV>15%),1.017,0.926,False
+2019,Amazonas,Rural,ods611_minimo_12h,0.346,0.346,2710,cal_cloro_adecuado,99.879,referencial (CV>15%),2025,1.363,0.859,2494,cal_cloro_adecuado,63.038,referencial (CV>15%),1.017,0.926,False
+2019,Amazonas,Urbano,ods611_minimo,21.454,2.976,3039,cal_cloro_adecuado,13.873,aceptable,2025,18.546,2.972,2721,cal_cloro_adecuado,16.025,referencial (CV>15%),-2.909,4.206,False
+2019,Amazonas,Urbano,ods611_minimo_20h,21.454,2.976,3039,cal_cloro_adecuado,13.873,aceptable,2025,18.546,2.972,2721,cal_cloro_adecuado,16.025,referencial (CV>15%),-2.909,4.206,False
+2019,Amazonas,Urbano,ods611_minimo_12h,21.454,2.976,3039,cal_cloro_adecuado,13.873,aceptable,2025,18.546,2.972,2721,cal_cloro_adecuado,16.025,referencial (CV>15%),-2.909,4.206,False
+2019,Apurímac,Total,ods611_minimo_directo,12.095,1.534,4815,cal_cloro_adecuado,12.68,aceptable,2025,10.126,1.645,4378,cal_cloro_adecuado,16.249,referencial (CV>15%),-1.969,2.249,False
+2019,Apurímac,Total,ods611_minimo,12.095,1.564,4815,cal_cloro_adecuado,12.93,aceptable,2025,10.126,1.649,4378,cal_cloro_adecuado,16.281,referencial (CV>15%),-1.969,2.272,False
+2019,Apurímac,Total,ods611_minimo_directo_20h,12.095,1.534,4815,cal_cloro_adecuado,12.68,aceptable,2025,10.126,1.645,4378,cal_cloro_adecuado,16.249,referencial (CV>15%),-1.969,2.249,False
+2019,Apurímac,Total,ods611_minimo_20h,12.095,1.564,4815,cal_cloro_adecuado,12.93,aceptable,2025,10.126,1.649,4378,cal_cloro_adecuado,16.281,referencial (CV>15%),-1.969,2.272,False
+2019,Apurímac,Total,ods611_minimo_directo_12h,12.095,1.534,4815,cal_cloro_adecuado,12.68,aceptable,2025,10.126,1.645,4378,cal_cloro_adecuado,16.249,referencial (CV>15%),-1.969,2.249,False
+2019,Apurímac,Total,ods611_minimo_12h,12.095,1.564,4815,cal_cloro_adecuado,12.93,aceptable,2025,10.126,1.649,4378,cal_cloro_adecuado,16.281,referencial (CV>15%),-1.969,2.272,False
+2019,Apurímac,Rural,ods611_minimo,1.892,1.202,1903,cal_cloro_adecuado,63.517,referencial (CV>15%),2025,5.249,2.17,1829,cal_cloro_adecuado,41.348,referencial (CV>15%),3.357,2.481,False
+2019,Apurímac,Rural,ods611_minimo_20h,1.892,1.202,1903,cal_cloro_adecuado,63.517,referencial (CV>15%),2025,5.249,2.17,1829,cal_cloro_adecuado,41.348,referencial (CV>15%),3.357,2.481,False
+2019,Apurímac,Rural,ods611_minimo_12h,1.892,1.202,1903,cal_cloro_adecuado,63.517,referencial (CV>15%),2025,5.249,2.17,1829,cal_cloro_adecuado,41.348,referencial (CV>15%),3.357,2.481,False
+2019,Apurímac,Urbano,ods611_minimo,25.249,3.228,2912,cal_cloro_adecuado,12.783,aceptable,2025,15.233,2.495,2549,cal_cloro_adecuado,16.381,referencial (CV>15%),-10.016,4.08,True
+2019,Apurímac,Urbano,ods611_minimo_20h,25.249,3.228,2912,cal_cloro_adecuado,12.783,aceptable,2025,15.233,2.495,2549,cal_cloro_adecuado,16.381,referencial (CV>15%),-10.016,4.08,True
+2019,Apurímac,Urbano,ods611_minimo_12h,25.249,3.228,2912,cal_cloro_adecuado,12.783,aceptable,2025,15.233,2.495,2549,cal_cloro_adecuado,16.381,referencial (CV>15%),-10.016,4.08,True
+2019,Arequipa,Total,ods611_minimo_directo,69.698,2.426,5135,cal_cloro_adecuado,3.481,aceptable,2025,44.52,3.049,4818,cal_cloro_adecuado,6.848,aceptable,-25.178,3.896,True
+2019,Arequipa,Total,ods611_minimo,69.698,2.377,5135,cal_cloro_adecuado,3.411,aceptable,2025,44.52,3.037,4818,cal_cloro_adecuado,6.822,aceptable,-25.178,3.857,True
+2019,Arequipa,Total,ods611_minimo_directo_20h,69.698,2.426,5135,cal_cloro_adecuado,3.481,aceptable,2025,44.52,3.049,4818,cal_cloro_adecuado,6.848,aceptable,-25.178,3.896,True
+2019,Arequipa,Total,ods611_minimo_20h,69.698,2.377,5135,cal_cloro_adecuado,3.411,aceptable,2025,44.52,3.037,4818,cal_cloro_adecuado,6.822,aceptable,-25.178,3.857,True
+2019,Arequipa,Total,ods611_minimo_directo_12h,69.698,2.426,5135,cal_cloro_adecuado,3.481,aceptable,2025,44.52,3.049,4818,cal_cloro_adecuado,6.848,aceptable,-25.178,3.896,True
+2019,Arequipa,Total,ods611_minimo_12h,69.698,2.377,5135,cal_cloro_adecuado,3.411,aceptable,2025,44.52,3.037,4818,cal_cloro_adecuado,6.822,aceptable,-25.178,3.857,True
+2019,Arequipa,Rural,ods611_minimo,7.874,2.584,1853,cal_cloro_adecuado,32.811,referencial (CV>15%),2025,5.549,2.031,1759,cal_cloro_adecuado,36.601,referencial (CV>15%),-2.326,3.286,False
+2019,Arequipa,Rural,ods611_minimo_20h,7.874,2.584,1853,cal_cloro_adecuado,32.811,referencial (CV>15%),2025,5.549,2.031,1759,cal_cloro_adecuado,36.601,referencial (CV>15%),-2.326,3.286,False
+2019,Arequipa,Rural,ods611_minimo_12h,7.874,2.584,1853,cal_cloro_adecuado,32.811,referencial (CV>15%),2025,5.549,2.031,1759,cal_cloro_adecuado,36.601,referencial (CV>15%),-2.326,3.286,False
+2019,Arequipa,Urbano,ods611_minimo,75.523,2.59,3282,cal_cloro_adecuado,3.429,aceptable,2025,47.435,3.261,3059,cal_cloro_adecuado,6.874,aceptable,-28.088,4.164,True
+2019,Arequipa,Urbano,ods611_minimo_20h,75.523,2.59,3282,cal_cloro_adecuado,3.429,aceptable,2025,47.435,3.261,3059,cal_cloro_adecuado,6.874,aceptable,-28.088,4.164,True
+2019,Arequipa,Urbano,ods611_minimo_12h,75.523,2.59,3282,cal_cloro_adecuado,3.429,aceptable,2025,47.435,3.261,3059,cal_cloro_adecuado,6.874,aceptable,-28.088,4.164,True
+2019,Ayacucho,Total,ods611_minimo_directo,37.977,2.451,6130,cal_cloro_adecuado,6.454,aceptable,2025,39.344,2.978,5249,cal_cloro_adecuado,7.568,aceptable,1.368,3.857,False
+2019,Ayacucho,Total,ods611_minimo,37.977,2.495,6130,cal_cloro_adecuado,6.569,aceptable,2025,39.344,3.038,5249,cal_cloro_adecuado,7.72,aceptable,1.368,3.931,False
+2019,Ayacucho,Total,ods611_minimo_directo_20h,37.977,2.451,6130,cal_cloro_adecuado,6.454,aceptable,2025,39.344,2.978,5249,cal_cloro_adecuado,7.568,aceptable,1.368,3.857,False
+2019,Ayacucho,Total,ods611_minimo_20h,37.977,2.495,6130,cal_cloro_adecuado,6.569,aceptable,2025,39.344,3.038,5249,cal_cloro_adecuado,7.72,aceptable,1.368,3.931,False
+2019,Ayacucho,Total,ods611_minimo_directo_12h,37.977,2.451,6130,cal_cloro_adecuado,6.454,aceptable,2025,39.344,2.978,5249,cal_cloro_adecuado,7.568,aceptable,1.368,3.857,False
+2019,Ayacucho,Total,ods611_minimo_12h,37.977,2.495,6130,cal_cloro_adecuado,6.569,aceptable,2025,39.344,3.038,5249,cal_cloro_adecuado,7.72,aceptable,1.368,3.931,False
+2019,Ayacucho,Rural,ods611_minimo,7.202,2.673,2363,cal_cloro_adecuado,37.117,referencial (CV>15%),2025,20.972,4.771,2056,cal_cloro_adecuado,22.75,referencial (CV>15%),13.77,5.469,True
+2019,Ayacucho,Rural,ods611_minimo_20h,7.202,2.673,2363,cal_cloro_adecuado,37.117,referencial (CV>15%),2025,20.972,4.771,2056,cal_cloro_adecuado,22.75,referencial (CV>15%),13.77,5.469,True
+2019,Ayacucho,Rural,ods611_minimo_12h,7.202,2.673,2363,cal_cloro_adecuado,37.117,referencial (CV>15%),2025,20.972,4.771,2056,cal_cloro_adecuado,22.75,referencial (CV>15%),13.77,5.469,True
+2019,Ayacucho,Urbano,ods611_minimo,60.361,3.846,3767,cal_cloro_adecuado,6.372,aceptable,2025,50.27,3.926,3193,cal_cloro_adecuado,7.81,aceptable,-10.091,5.496,False
+2019,Ayacucho,Urbano,ods611_minimo_20h,60.361,3.846,3767,cal_cloro_adecuado,6.372,aceptable,2025,50.27,3.926,3193,cal_cloro_adecuado,7.81,aceptable,-10.091,5.496,False
+2019,Ayacucho,Urbano,ods611_minimo_12h,60.361,3.846,3767,cal_cloro_adecuado,6.372,aceptable,2025,50.27,3.926,3193,cal_cloro_adecuado,7.81,aceptable,-10.091,5.496,False
+2019,Cajamarca,Total,ods611_minimo_directo,15.456,1.809,5803,cal_cloro_adecuado,11.707,aceptable,2025,9.658,2.262,4516,cal_cloro_adecuado,23.419,referencial (CV>15%),-5.798,2.897,True
+2019,Cajamarca,Total,ods611_minimo,15.456,1.755,5803,cal_cloro_adecuado,11.358,aceptable,2025,9.658,2.101,4516,cal_cloro_adecuado,21.752,referencial (CV>15%),-5.798,2.738,True
+2019,Cajamarca,Total,ods611_minimo_directo_20h,15.456,1.809,5803,cal_cloro_adecuado,11.707,aceptable,2025,9.658,2.262,4516,cal_cloro_adecuado,23.419,referencial (CV>15%),-5.798,2.897,True
+2019,Cajamarca,Total,ods611_minimo_20h,15.456,1.755,5803,cal_cloro_adecuado,11.358,aceptable,2025,9.658,2.101,4516,cal_cloro_adecuado,21.752,referencial (CV>15%),-5.798,2.738,True
+2019,Cajamarca,Total,ods611_minimo_directo_12h,15.456,1.809,5803,cal_cloro_adecuado,11.707,aceptable,2025,9.658,2.262,4516,cal_cloro_adecuado,23.419,referencial (CV>15%),-5.798,2.897,True
+2019,Cajamarca,Total,ods611_minimo_12h,15.456,1.755,5803,cal_cloro_adecuado,11.358,aceptable,2025,9.658,2.101,4516,cal_cloro_adecuado,21.752,referencial (CV>15%),-5.798,2.738,True
+2019,Cajamarca,Rural,ods611_minimo,4.434,1.923,2608,cal_cloro_adecuado,43.372,referencial (CV>15%),2025,1.359,0.885,2124,cal_cloro_adecuado,65.151,referencial (CV>15%),-3.075,2.117,False
+2019,Cajamarca,Rural,ods611_minimo_20h,4.434,1.923,2608,cal_cloro_adecuado,43.372,referencial (CV>15%),2025,1.359,0.885,2124,cal_cloro_adecuado,65.151,referencial (CV>15%),-3.075,2.117,False
+2019,Cajamarca,Rural,ods611_minimo_12h,4.434,1.923,2608,cal_cloro_adecuado,43.372,referencial (CV>15%),2025,1.359,0.885,2124,cal_cloro_adecuado,65.151,referencial (CV>15%),-3.075,2.117,False
+2019,Cajamarca,Urbano,ods611_minimo,33.703,3.405,3195,cal_cloro_adecuado,10.104,aceptable,2025,20.626,4.735,2392,cal_cloro_adecuado,22.955,referencial (CV>15%),-13.077,5.832,True
+2019,Cajamarca,Urbano,ods611_minimo_20h,33.703,3.405,3195,cal_cloro_adecuado,10.104,aceptable,2025,20.626,4.735,2392,cal_cloro_adecuado,22.955,referencial (CV>15%),-13.077,5.832,True
+2019,Cajamarca,Urbano,ods611_minimo_12h,33.703,3.405,3195,cal_cloro_adecuado,10.104,aceptable,2025,20.626,4.735,2392,cal_cloro_adecuado,22.955,referencial (CV>15%),-13.077,5.832,True
+2019,Callao,Total,ods611_minimo_directo,52.693,3.097,6670,disp_24h,5.877,aceptable,2025,73.058,2.697,5786,disp_24h,3.692,aceptable,20.365,4.107,True
+2019,Callao,Total,ods611_minimo,52.693,3.097,6670,disp_24h,5.877,aceptable,2025,73.058,2.697,5786,disp_24h,3.692,aceptable,20.365,4.107,True
+2019,Callao,Total,ods611_minimo_directo_20h,53.408,3.088,6670,disp_20h,5.782,aceptable,2025,73.385,2.678,5786,disp_20h,3.65,aceptable,19.977,4.088,True
+2019,Callao,Total,ods611_minimo_20h,53.408,3.088,6670,disp_20h,5.782,aceptable,2025,73.385,2.678,5786,disp_20h,3.65,aceptable,19.977,4.088,True
+2019,Callao,Total,ods611_minimo_directo_12h,76.021,1.664,6670,cal_cloro_adecuado,2.189,aceptable,2025,76.129,1.655,5786,cal_cloro_adecuado,2.174,aceptable,0.107,2.347,False
+2019,Callao,Total,ods611_minimo_12h,76.021,1.664,6670,cal_cloro_adecuado,2.189,aceptable,2025,76.129,1.655,5786,cal_cloro_adecuado,2.174,aceptable,0.107,2.347,False
+2019,Callao,Urbano,ods611_minimo,52.693,3.097,6670,disp_24h,5.877,aceptable,2025,73.058,2.697,5786,disp_24h,3.692,aceptable,20.365,4.107,True
+2019,Callao,Urbano,ods611_minimo_20h,53.408,3.088,6670,disp_20h,5.782,aceptable,2025,73.385,2.678,5786,disp_20h,3.65,aceptable,19.977,4.088,True
+2019,Callao,Urbano,ods611_minimo_12h,76.021,1.664,6670,cal_cloro_adecuado,2.189,aceptable,2025,76.129,1.655,5786,cal_cloro_adecuado,2.174,aceptable,0.107,2.347,False
+2019,Cusco,Total,ods611_minimo_directo,42.473,2.671,5121,cal_cloro_adecuado,6.288,aceptable,2025,39.535,2.633,4769,cal_cloro_adecuado,6.66,aceptable,-2.939,3.75,False
+2019,Cusco,Total,ods611_minimo,37.98,2.841,5121,distinto en urbano y rural,7.481,aceptable,2025,35.508,3.093,4769,distinto en urbano y rural,8.711,aceptable,-2.472,4.2,False
+2019,Cusco,Total,ods611_minimo_directo_20h,42.473,2.671,5121,cal_cloro_adecuado,6.288,aceptable,2025,39.535,2.633,4769,cal_cloro_adecuado,6.66,aceptable,-2.939,3.75,False
+2019,Cusco,Total,ods611_minimo_20h,40.449,2.82,5121,distinto en urbano y rural,6.972,aceptable,2025,37.688,3.137,4769,distinto en urbano y rural,8.323,aceptable,-2.761,4.218,False
+2019,Cusco,Total,ods611_minimo_directo_12h,42.473,2.671,5121,cal_cloro_adecuado,6.288,aceptable,2025,39.535,2.633,4769,cal_cloro_adecuado,6.66,aceptable,-2.939,3.75,False
+2019,Cusco,Total,ods611_minimo_12h,42.473,2.632,5121,cal_cloro_adecuado,6.196,aceptable,2025,39.535,2.58,4769,cal_cloro_adecuado,6.525,aceptable,-2.939,3.685,False
+2019,Cusco,Rural,ods611_minimo,14.521,4.066,2210,cal_cloro_adecuado,27.998,referencial (CV>15%),2025,9.221,3.112,1989,cal_cloro_adecuado,33.754,referencial (CV>15%),-5.3,5.12,False
+2019,Cusco,Rural,ods611_minimo_20h,14.521,4.066,2210,cal_cloro_adecuado,27.998,referencial (CV>15%),2025,9.221,3.112,1989,cal_cloro_adecuado,33.754,referencial (CV>15%),-5.3,5.12,False
+2019,Cusco,Rural,ods611_minimo_12h,14.521,4.066,2210,cal_cloro_adecuado,27.998,referencial (CV>15%),2025,9.221,3.112,1989,cal_cloro_adecuado,33.754,referencial (CV>15%),-5.3,5.12,False
+2019,Cusco,Urbano,ods611_minimo,54.366,3.902,2911,disp_24h,7.177,aceptable,2025,50.813,4.546,2780,disp_24h,8.947,aceptable,-3.553,5.991,False
+2019,Cusco,Urbano,ods611_minimo_20h,58.561,3.858,2911,disp_20h,6.588,aceptable,2025,54.261,4.621,2780,disp_20h,8.515,aceptable,-4.299,6.019,False
+2019,Cusco,Urbano,ods611_minimo_12h,61.998,3.452,2911,cal_cloro_adecuado,5.568,aceptable,2025,57.183,3.657,2780,cal_cloro_adecuado,6.395,aceptable,-4.815,5.029,False
+2019,Huancavelica,Total,ods611_minimo_directo,18.746,2.728,5153,cal_cloro_adecuado,14.552,aceptable,2025,14.149,1.765,4503,cal_cloro_adecuado,12.476,aceptable,-4.596,3.249,False
+2019,Huancavelica,Total,ods611_minimo,18.746,2.715,5153,cal_cloro_adecuado,14.484,aceptable,2025,14.149,1.798,4503,cal_cloro_adecuado,12.71,aceptable,-4.596,3.257,False
+2019,Huancavelica,Total,ods611_minimo_directo_20h,18.746,2.728,5153,cal_cloro_adecuado,14.552,aceptable,2025,14.149,1.765,4503,cal_cloro_adecuado,12.476,aceptable,-4.596,3.249,False
+2019,Huancavelica,Total,ods611_minimo_20h,18.746,2.715,5153,cal_cloro_adecuado,14.484,aceptable,2025,14.149,1.798,4503,cal_cloro_adecuado,12.71,aceptable,-4.596,3.257,False
+2019,Huancavelica,Total,ods611_minimo_directo_12h,18.746,2.728,5153,cal_cloro_adecuado,14.552,aceptable,2025,14.149,1.765,4503,cal_cloro_adecuado,12.476,aceptable,-4.596,3.249,False
+2019,Huancavelica,Total,ods611_minimo_12h,18.746,2.715,5153,cal_cloro_adecuado,14.484,aceptable,2025,14.149,1.798,4503,cal_cloro_adecuado,12.71,aceptable,-4.596,3.257,False
+2019,Huancavelica,Rural,ods611_minimo,9.847,3.291,2285,cal_cloro_adecuado,33.426,referencial (CV>15%),2025,3.457,1.807,1996,cal_cloro_adecuado,52.285,referencial (CV>15%),-6.39,3.755,False
+2019,Huancavelica,Rural,ods611_minimo_20h,9.847,3.291,2285,cal_cloro_adecuado,33.426,referencial (CV>15%),2025,3.457,1.807,1996,cal_cloro_adecuado,52.285,referencial (CV>15%),-6.39,3.755,False
+2019,Huancavelica,Rural,ods611_minimo_12h,9.847,3.291,2285,cal_cloro_adecuado,33.426,referencial (CV>15%),2025,3.457,1.807,1996,cal_cloro_adecuado,52.285,referencial (CV>15%),-6.39,3.755,False
+2019,Huancavelica,Urbano,ods611_minimo,44.43,4.593,2868,cal_cloro_adecuado,10.337,aceptable,2025,40.068,4.327,2507,cal_cloro_adecuado,10.798,aceptable,-4.362,6.31,False
+2019,Huancavelica,Urbano,ods611_minimo_20h,44.43,4.593,2868,cal_cloro_adecuado,10.337,aceptable,2025,40.068,4.327,2507,cal_cloro_adecuado,10.798,aceptable,-4.362,6.31,False
+2019,Huancavelica,Urbano,ods611_minimo_12h,44.43,4.593,2868,cal_cloro_adecuado,10.337,aceptable,2025,40.068,4.327,2507,cal_cloro_adecuado,10.798,aceptable,-4.362,6.31,False
+2019,Huánuco,Total,ods611_minimo_directo,24.558,1.69,5136,cal_cloro_adecuado,6.882,aceptable,2025,23.716,2.143,4764,cal_cloro_adecuado,9.036,aceptable,-0.842,2.729,False
+2019,Huánuco,Total,ods611_minimo,24.558,1.693,5136,cal_cloro_adecuado,6.893,aceptable,2025,23.716,2.091,4764,cal_cloro_adecuado,8.816,aceptable,-0.842,2.69,False
+2019,Huánuco,Total,ods611_minimo_directo_20h,24.558,1.69,5136,cal_cloro_adecuado,6.882,aceptable,2025,23.716,2.143,4764,cal_cloro_adecuado,9.036,aceptable,-0.842,2.729,False
+2019,Huánuco,Total,ods611_minimo_20h,24.558,1.693,5136,cal_cloro_adecuado,6.893,aceptable,2025,23.716,2.091,4764,cal_cloro_adecuado,8.816,aceptable,-0.842,2.69,False
+2019,Huánuco,Total,ods611_minimo_directo_12h,24.558,1.69,5136,cal_cloro_adecuado,6.882,aceptable,2025,23.716,2.143,4764,cal_cloro_adecuado,9.036,aceptable,-0.842,2.729,False
+2019,Huánuco,Total,ods611_minimo_12h,24.558,1.693,5136,cal_cloro_adecuado,6.893,aceptable,2025,23.716,2.091,4764,cal_cloro_adecuado,8.816,aceptable,-0.842,2.69,False
+2019,Huánuco,Rural,ods611_minimo,0.699,0.487,2218,cal_cloro_adecuado,69.599,referencial (CV>15%),2025,0.785,0.483,2121,cal_cloro_adecuado,61.545,referencial (CV>15%),0.086,0.686,False
+2019,Huánuco,Rural,ods611_minimo_20h,0.699,0.487,2218,cal_cloro_adecuado,69.599,referencial (CV>15%),2025,0.785,0.483,2121,cal_cloro_adecuado,61.545,referencial (CV>15%),0.086,0.686,False
+2019,Huánuco,Rural,ods611_minimo_12h,0.699,0.487,2218,cal_cloro_adecuado,69.599,referencial (CV>15%),2025,0.785,0.483,2121,cal_cloro_adecuado,61.545,referencial (CV>15%),0.086,0.686,False
+2019,Huánuco,Urbano,ods611_minimo,60.019,4.146,2918,cal_cloro_adecuado,6.908,aceptable,2025,54.685,4.871,2643,cal_cloro_adecuado,8.907,aceptable,-5.334,6.397,False
+2019,Huánuco,Urbano,ods611_minimo_20h,60.019,4.146,2918,cal_cloro_adecuado,6.908,aceptable,2025,54.685,4.871,2643,cal_cloro_adecuado,8.907,aceptable,-5.334,6.397,False
+2019,Huánuco,Urbano,ods611_minimo_12h,60.019,4.146,2918,cal_cloro_adecuado,6.908,aceptable,2025,54.685,4.871,2643,cal_cloro_adecuado,8.907,aceptable,-5.334,6.397,False
+2019,Ica,Total,ods611_minimo_directo,17.084,2.399,4975,cal_cloro_adecuado,14.042,aceptable,2025,15.794,2.675,4761,cal_cloro_adecuado,16.939,referencial (CV>15%),-1.29,3.593,False
+2019,Ica,Total,ods611_minimo,17.084,2.396,4975,cal_cloro_adecuado,14.028,aceptable,2025,15.794,2.67,4761,cal_cloro_adecuado,16.907,referencial (CV>15%),-1.29,3.588,False
+2019,Ica,Total,ods611_minimo_directo_20h,17.084,2.399,4975,cal_cloro_adecuado,14.042,aceptable,2025,15.794,2.675,4761,cal_cloro_adecuado,16.939,referencial (CV>15%),-1.29,3.593,False
+2019,Ica,Total,ods611_minimo_20h,17.084,2.396,4975,cal_cloro_adecuado,14.028,aceptable,2025,15.794,2.67,4761,cal_cloro_adecuado,16.907,referencial (CV>15%),-1.29,3.588,False
+2019,Ica,Total,ods611_minimo_directo_12h,17.084,2.399,4975,cal_cloro_adecuado,14.042,aceptable,2025,15.794,2.675,4761,cal_cloro_adecuado,16.939,referencial (CV>15%),-1.29,3.593,False
+2019,Ica,Total,ods611_minimo_12h,17.084,2.396,4975,cal_cloro_adecuado,14.028,aceptable,2025,15.794,2.67,4761,cal_cloro_adecuado,16.907,referencial (CV>15%),-1.29,3.588,False
+2019,Ica,Rural,ods611_minimo,4.444,1.592,1803,cal_cloro_adecuado,35.817,referencial (CV>15%),2025,2.867,1.336,1677,cal_cloro_adecuado,46.59,referencial (CV>15%),-1.577,2.078,False
+2019,Ica,Rural,ods611_minimo_20h,4.444,1.592,1803,cal_cloro_adecuado,35.817,referencial (CV>15%),2025,2.867,1.336,1677,cal_cloro_adecuado,46.59,referencial (CV>15%),-1.577,2.078,False
+2019,Ica,Rural,ods611_minimo_12h,4.444,1.592,1803,cal_cloro_adecuado,35.817,referencial (CV>15%),2025,2.867,1.336,1677,cal_cloro_adecuado,46.59,referencial (CV>15%),-1.577,2.078,False
+2019,Ica,Urbano,ods611_minimo,17.933,2.555,3172,cal_cloro_adecuado,14.249,aceptable,2025,16.387,2.792,3084,cal_cloro_adecuado,17.039,referencial (CV>15%),-1.546,3.785,False
+2019,Ica,Urbano,ods611_minimo_20h,17.933,2.555,3172,cal_cloro_adecuado,14.249,aceptable,2025,16.387,2.792,3084,cal_cloro_adecuado,17.039,referencial (CV>15%),-1.546,3.785,False
+2019,Ica,Urbano,ods611_minimo_12h,17.933,2.555,3172,cal_cloro_adecuado,14.249,aceptable,2025,16.387,2.792,3084,cal_cloro_adecuado,17.039,referencial (CV>15%),-1.546,3.785,False
+2019,Junín,Total,ods611_minimo_directo,22.597,2.195,5181,cal_cloro_adecuado,9.712,aceptable,2025,20.594,2.611,4976,cal_cloro_adecuado,12.678,aceptable,-2.003,3.411,False
+2019,Junín,Total,ods611_minimo,22.597,2.137,5181,cal_cloro_adecuado,9.456,aceptable,2025,20.594,2.559,4976,cal_cloro_adecuado,12.427,aceptable,-2.003,3.334,False
+2019,Junín,Total,ods611_minimo_directo_20h,22.597,2.195,5181,cal_cloro_adecuado,9.712,aceptable,2025,20.594,2.611,4976,cal_cloro_adecuado,12.678,aceptable,-2.003,3.411,False
+2019,Junín,Total,ods611_minimo_20h,22.597,2.137,5181,cal_cloro_adecuado,9.456,aceptable,2025,20.594,2.559,4976,cal_cloro_adecuado,12.427,aceptable,-2.003,3.334,False
+2019,Junín,Total,ods611_minimo_directo_12h,22.597,2.195,5181,cal_cloro_adecuado,9.712,aceptable,2025,20.594,2.611,4976,cal_cloro_adecuado,12.678,aceptable,-2.003,3.411,False
+2019,Junín,Total,ods611_minimo_12h,22.597,2.137,5181,cal_cloro_adecuado,9.456,aceptable,2025,20.594,2.559,4976,cal_cloro_adecuado,12.427,aceptable,-2.003,3.334,False
+2019,Junín,Rural,ods611_minimo,1.645,1.119,2122,cal_cloro_adecuado,68.033,referencial (CV>15%),2025,2.916,1.648,1972,cal_cloro_adecuado,56.518,referencial (CV>15%),1.271,1.992,False
+2019,Junín,Rural,ods611_minimo_20h,1.645,1.119,2122,cal_cloro_adecuado,68.033,referencial (CV>15%),2025,2.916,1.648,1972,cal_cloro_adecuado,56.518,referencial (CV>15%),1.271,1.992,False
+2019,Junín,Rural,ods611_minimo_12h,1.645,1.119,2122,cal_cloro_adecuado,68.033,referencial (CV>15%),2025,2.916,1.648,1972,cal_cloro_adecuado,56.518,referencial (CV>15%),1.271,1.992,False
+2019,Junín,Urbano,ods611_minimo,32.736,3.124,3059,cal_cloro_adecuado,9.544,aceptable,2025,28.173,3.587,3004,cal_cloro_adecuado,12.734,aceptable,-4.564,4.757,False
+2019,Junín,Urbano,ods611_minimo_20h,32.736,3.124,3059,cal_cloro_adecuado,9.544,aceptable,2025,28.173,3.587,3004,cal_cloro_adecuado,12.734,aceptable,-4.564,4.757,False
+2019,Junín,Urbano,ods611_minimo_12h,32.736,3.124,3059,cal_cloro_adecuado,9.544,aceptable,2025,28.173,3.587,3004,cal_cloro_adecuado,12.734,aceptable,-4.564,4.757,False
+2019,La Libertad,Total,ods611_minimo_directo,24.591,2.008,6684,cal_cloro_adecuado,8.164,aceptable,2025,15.139,1.826,5826,cal_cloro_adecuado,12.063,aceptable,-9.452,2.714,True
+2019,La Libertad,Total,ods611_minimo,17.445,2.322,6684,distinto en urbano y rural,13.311,aceptable,2025,15.139,1.823,5826,cal_cloro_adecuado,12.043,aceptable,-2.306,2.952,False
+2019,La Libertad,Total,ods611_minimo_directo_20h,24.591,2.008,6684,cal_cloro_adecuado,8.164,aceptable,2025,15.139,1.826,5826,cal_cloro_adecuado,12.063,aceptable,-9.452,2.714,True
+2019,La Libertad,Total,ods611_minimo_20h,18.9,2.417,6684,distinto en urbano y rural,12.789,aceptable,2025,15.139,1.823,5826,cal_cloro_adecuado,12.043,aceptable,-3.762,3.028,False
+2019,La Libertad,Total,ods611_minimo_directo_12h,24.591,2.008,6684,cal_cloro_adecuado,8.164,aceptable,2025,15.139,1.826,5826,cal_cloro_adecuado,12.063,aceptable,-9.452,2.714,True
+2019,La Libertad,Total,ods611_minimo_12h,24.315,2.805,6684,distinto en urbano y rural,11.534,aceptable,2025,15.139,1.823,5826,cal_cloro_adecuado,12.043,aceptable,-9.177,3.345,True
+2019,La Libertad,Rural,ods611_minimo,1.31,1.315,2416,cal_cloro_adecuado,100.381,referencial (CV>15%),2025,0.469,0.374,2051,cal_cloro_adecuado,79.754,referencial (CV>15%),-0.841,1.367,False
+2019,La Libertad,Rural,ods611_minimo_20h,1.31,1.315,2416,cal_cloro_adecuado,100.381,referencial (CV>15%),2025,0.469,0.374,2051,cal_cloro_adecuado,79.754,referencial (CV>15%),-0.841,1.367,False
+2019,La Libertad,Rural,ods611_minimo_12h,1.31,1.315,2416,cal_cloro_adecuado,100.381,referencial (CV>15%),2025,0.469,0.374,2051,cal_cloro_adecuado,79.754,referencial (CV>15%),-0.841,1.367,False
+2019,La Libertad,Urbano,ods611_minimo,21.384,2.871,4268,disp_24h,13.427,aceptable,2025,18.103,2.19,3775,cal_cloro_adecuado,12.098,aceptable,-3.281,3.611,False
+2019,La Libertad,Urbano,ods611_minimo_20h,23.195,2.99,4268,disp_20h,12.891,aceptable,2025,18.103,2.19,3775,cal_cloro_adecuado,12.098,aceptable,-5.093,3.706,False
+2019,La Libertad,Urbano,ods611_minimo_12h,29.932,3.474,4268,disp_12h,11.608,aceptable,2025,18.103,2.19,3775,cal_cloro_adecuado,12.098,aceptable,-11.83,4.107,True
+2019,Lambayeque,Total,ods611_minimo_directo,20.867,2.418,5868,cal_cloro_adecuado,11.589,aceptable,2025,9.327,2.675,5423,cal_cloro_adecuado,28.677,referencial (CV>15%),-11.54,3.606,True
+2019,Lambayeque,Total,ods611_minimo,20.867,2.404,5868,cal_cloro_adecuado,11.522,aceptable,2025,9.327,2.644,5423,cal_cloro_adecuado,28.35,referencial (CV>15%),-11.54,3.574,True
+2019,Lambayeque,Total,ods611_minimo_directo_20h,20.867,2.418,5868,cal_cloro_adecuado,11.589,aceptable,2025,9.327,2.675,5423,cal_cloro_adecuado,28.677,referencial (CV>15%),-11.54,3.606,True
+2019,Lambayeque,Total,ods611_minimo_20h,20.867,2.404,5868,cal_cloro_adecuado,11.522,aceptable,2025,9.327,2.644,5423,cal_cloro_adecuado,28.35,referencial (CV>15%),-11.54,3.574,True
+2019,Lambayeque,Total,ods611_minimo_directo_12h,20.867,2.418,5868,cal_cloro_adecuado,11.589,aceptable,2025,9.327,2.675,5423,cal_cloro_adecuado,28.677,referencial (CV>15%),-11.54,3.606,True
+2019,Lambayeque,Total,ods611_minimo_12h,20.867,2.404,5868,cal_cloro_adecuado,11.522,aceptable,2025,9.327,2.644,5423,cal_cloro_adecuado,28.35,referencial (CV>15%),-11.54,3.574,True
+2019,Lambayeque,Rural,ods611_minimo,0.569,0.359,2141,cal_cloro_adecuado,63.052,referencial (CV>15%),2025,0.203,0.203,1981,cal_cloro_adecuado,99.711,referencial (CV>15%),-0.366,0.412,False
+2019,Lambayeque,Rural,ods611_minimo_20h,0.569,0.359,2141,cal_cloro_adecuado,63.052,referencial (CV>15%),2025,0.203,0.203,1981,cal_cloro_adecuado,99.711,referencial (CV>15%),-0.366,0.412,False
+2019,Lambayeque,Rural,ods611_minimo_12h,0.569,0.359,2141,cal_cloro_adecuado,63.052,referencial (CV>15%),2025,0.203,0.203,1981,cal_cloro_adecuado,99.711,referencial (CV>15%),-0.366,0.412,False
+2019,Lambayeque,Urbano,ods611_minimo,24.868,2.877,3727,cal_cloro_adecuado,11.57,aceptable,2025,10.891,3.097,3442,cal_cloro_adecuado,28.439,referencial (CV>15%),-13.977,4.227,True
+2019,Lambayeque,Urbano,ods611_minimo_20h,24.868,2.877,3727,cal_cloro_adecuado,11.57,aceptable,2025,10.891,3.097,3442,cal_cloro_adecuado,28.439,referencial (CV>15%),-13.977,4.227,True
+2019,Lambayeque,Urbano,ods611_minimo_12h,24.868,2.877,3727,cal_cloro_adecuado,11.57,aceptable,2025,10.891,3.097,3442,cal_cloro_adecuado,28.439,referencial (CV>15%),-13.977,4.227,True
+2019,Lima,Total,ods611_minimo_directo,68.225,1.438,14564,cal_cloro_adecuado,2.108,aceptable,2025,65.711,1.536,12479,cal_cloro_adecuado,2.338,aceptable,-2.514,2.105,False
+2019,Lima,Total,ods611_minimo,68.225,1.429,14564,cal_cloro_adecuado,2.095,aceptable,2025,65.711,1.533,12479,cal_cloro_adecuado,2.333,aceptable,-2.514,2.096,False
+2019,Lima,Total,ods611_minimo_directo_20h,68.225,1.438,14564,cal_cloro_adecuado,2.108,aceptable,2025,65.711,1.536,12479,cal_cloro_adecuado,2.338,aceptable,-2.514,2.105,False
+2019,Lima,Total,ods611_minimo_20h,68.225,1.429,14564,cal_cloro_adecuado,2.095,aceptable,2025,65.711,1.533,12479,cal_cloro_adecuado,2.333,aceptable,-2.514,2.096,False
+2019,Lima,Total,ods611_minimo_directo_12h,68.225,1.438,14564,cal_cloro_adecuado,2.108,aceptable,2025,65.711,1.536,12479,cal_cloro_adecuado,2.338,aceptable,-2.514,2.105,False
+2019,Lima,Total,ods611_minimo_12h,68.225,1.429,14564,cal_cloro_adecuado,2.095,aceptable,2025,65.711,1.533,12479,cal_cloro_adecuado,2.333,aceptable,-2.514,2.096,False
+2019,Lima,Rural,ods611_minimo,3.494,2.218,1964,cal_cloro_adecuado,63.472,referencial (CV>15%),2025,2.218,1.41,1590,cal_cloro_adecuado,63.596,referencial (CV>15%),-1.277,2.628,False
+2019,Lima,Rural,ods611_minimo_20h,3.494,2.218,1964,cal_cloro_adecuado,63.472,referencial (CV>15%),2025,2.218,1.41,1590,cal_cloro_adecuado,63.596,referencial (CV>15%),-1.277,2.628,False
+2019,Lima,Rural,ods611_minimo_12h,3.494,2.218,1964,cal_cloro_adecuado,63.472,referencial (CV>15%),2025,2.218,1.41,1590,cal_cloro_adecuado,63.596,referencial (CV>15%),-1.277,2.628,False
+2019,Lima,Urbano,ods611_minimo,69.337,1.453,12600,cal_cloro_adecuado,2.096,aceptable,2025,66.58,1.554,10889,cal_cloro_adecuado,2.334,aceptable,-2.758,2.127,False
+2019,Lima,Urbano,ods611_minimo_20h,69.337,1.453,12600,cal_cloro_adecuado,2.096,aceptable,2025,66.58,1.554,10889,cal_cloro_adecuado,2.334,aceptable,-2.758,2.127,False
+2019,Lima,Urbano,ods611_minimo_12h,69.337,1.453,12600,cal_cloro_adecuado,2.096,aceptable,2025,66.58,1.554,10889,cal_cloro_adecuado,2.334,aceptable,-2.758,2.127,False
+2019,Loreto,Total,ods611_minimo_directo,8.188,1.727,7033,disp_24h,21.091,referencial (CV>15%),2025,6.052,1.336,6697,cal_cloro_adecuado,22.076,referencial (CV>15%),-2.136,2.183,False
+2019,Loreto,Total,ods611_minimo,6.696,1.54,7033,distinto en urbano y rural,23.004,referencial (CV>15%),2025,6.052,1.329,6697,cal_cloro_adecuado,21.966,referencial (CV>15%),-0.644,2.035,False
+2019,Loreto,Total,ods611_minimo_directo_20h,8.696,1.75,7033,disp_20h,20.123,referencial (CV>15%),2025,6.052,1.336,6697,cal_cloro_adecuado,22.076,referencial (CV>15%),-2.644,2.202,False
+2019,Loreto,Total,ods611_minimo_20h,7.204,1.566,7033,distinto en urbano y rural,21.737,referencial (CV>15%),2025,6.052,1.329,6697,cal_cloro_adecuado,21.966,referencial (CV>15%),-1.152,2.054,False
+2019,Loreto,Total,ods611_minimo_directo_12h,10.667,1.828,7033,disp_12h,17.134,referencial (CV>15%),2025,6.052,1.336,6697,cal_cloro_adecuado,22.076,referencial (CV>15%),-4.615,2.264,True
+2019,Loreto,Total,ods611_minimo_12h,9.026,1.65,7033,distinto en urbano y rural,18.281,referencial (CV>15%),2025,6.052,1.329,6697,cal_cloro_adecuado,21.966,referencial (CV>15%),-2.974,2.119,False
+2019,Loreto,Rural,ods611_minimo,0.128,0.128,3131,cal_cloro_adecuado,100.072,referencial (CV>15%),2025,0.0,0.0,3054,cal_cloro_adecuado,,aceptable,-0.128,0.128,False
+2019,Loreto,Rural,ods611_minimo_20h,0.128,0.128,3131,cal_cloro_adecuado,100.072,referencial (CV>15%),2025,0.0,0.0,3054,cal_cloro_adecuado,,aceptable,-0.128,0.128,False
+2019,Loreto,Rural,ods611_minimo_12h,0.128,0.128,3131,cal_cloro_adecuado,100.072,referencial (CV>15%),2025,0.0,0.0,3054,cal_cloro_adecuado,,aceptable,-0.128,0.128,False
+2019,Loreto,Urbano,ods611_minimo,9.667,2.236,3902,disp_24h,23.133,referencial (CV>15%),2025,8.36,1.836,3643,cal_cloro_adecuado,21.966,referencial (CV>15%),-1.307,2.894,False
+2019,Loreto,Urbano,ods611_minimo_20h,10.405,2.274,3902,disp_20h,21.851,referencial (CV>15%),2025,8.36,1.836,3643,cal_cloro_adecuado,21.966,referencial (CV>15%),-2.045,2.922,False
+2019,Loreto,Urbano,ods611_minimo_12h,13.051,2.396,3902,disp_12h,18.356,referencial (CV>15%),2025,8.36,1.836,3643,cal_cloro_adecuado,21.966,referencial (CV>15%),-4.691,3.018,False
+2019,Madre de Dios,Total,ods611_minimo_directo,66.486,2.975,4933,cal_cloro_adecuado,4.474,aceptable,2025,67.817,3.128,4419,cal_cloro_adecuado,4.612,aceptable,1.331,4.316,False
+2019,Madre de Dios,Total,ods611_minimo,66.486,2.772,4933,cal_cloro_adecuado,4.169,aceptable,2025,67.817,3.031,4419,cal_cloro_adecuado,4.469,aceptable,1.331,4.107,False
+2019,Madre de Dios,Total,ods611_minimo_directo_20h,66.486,2.975,4933,cal_cloro_adecuado,4.474,aceptable,2025,67.817,3.128,4419,cal_cloro_adecuado,4.612,aceptable,1.331,4.316,False
+2019,Madre de Dios,Total,ods611_minimo_20h,66.486,2.772,4933,cal_cloro_adecuado,4.169,aceptable,2025,67.817,3.031,4419,cal_cloro_adecuado,4.469,aceptable,1.331,4.107,False
+2019,Madre de Dios,Total,ods611_minimo_directo_12h,66.486,2.975,4933,cal_cloro_adecuado,4.474,aceptable,2025,67.817,3.128,4419,cal_cloro_adecuado,4.612,aceptable,1.331,4.316,False
+2019,Madre de Dios,Total,ods611_minimo_12h,66.486,2.772,4933,cal_cloro_adecuado,4.169,aceptable,2025,67.817,3.031,4419,cal_cloro_adecuado,4.469,aceptable,1.331,4.107,False
+2019,Madre de Dios,Rural,ods611_minimo,13.279,4.934,1619,cal_cloro_adecuado,37.156,referencial (CV>15%),2025,17.544,6.407,1590,cal_cloro_adecuado,36.518,referencial (CV>15%),4.266,8.086,False
+2019,Madre de Dios,Rural,ods611_minimo_20h,13.279,4.934,1619,cal_cloro_adecuado,37.156,referencial (CV>15%),2025,17.544,6.407,1590,cal_cloro_adecuado,36.518,referencial (CV>15%),4.266,8.086,False
+2019,Madre de Dios,Rural,ods611_minimo_12h,13.279,4.934,1619,cal_cloro_adecuado,37.156,referencial (CV>15%),2025,17.544,6.407,1590,cal_cloro_adecuado,36.518,referencial (CV>15%),4.266,8.086,False
+2019,Madre de Dios,Urbano,ods611_minimo,77.515,3.187,3314,cal_cloro_adecuado,4.111,aceptable,2025,74.988,3.34,2829,cal_cloro_adecuado,4.454,aceptable,-2.527,4.617,False
+2019,Madre de Dios,Urbano,ods611_minimo_20h,77.515,3.187,3314,cal_cloro_adecuado,4.111,aceptable,2025,74.988,3.34,2829,cal_cloro_adecuado,4.454,aceptable,-2.527,4.617,False
+2019,Madre de Dios,Urbano,ods611_minimo_12h,77.515,3.187,3314,cal_cloro_adecuado,4.111,aceptable,2025,74.988,3.34,2829,cal_cloro_adecuado,4.454,aceptable,-2.527,4.617,False
+2019,Moquegua,Total,ods611_minimo_directo,55.913,3.333,3808,cal_cloro_adecuado,5.962,aceptable,2025,50.803,3.674,3849,cal_cloro_adecuado,7.233,aceptable,-5.111,4.961,False
+2019,Moquegua,Total,ods611_minimo,55.913,3.47,3808,cal_cloro_adecuado,6.206,aceptable,2025,50.803,3.822,3849,cal_cloro_adecuado,7.522,aceptable,-5.111,5.162,False
+2019,Moquegua,Total,ods611_minimo_directo_20h,55.913,3.333,3808,cal_cloro_adecuado,5.962,aceptable,2025,50.803,3.674,3849,cal_cloro_adecuado,7.233,aceptable,-5.111,4.961,False
+2019,Moquegua,Total,ods611_minimo_20h,55.913,3.47,3808,cal_cloro_adecuado,6.206,aceptable,2025,50.803,3.822,3849,cal_cloro_adecuado,7.522,aceptable,-5.111,5.162,False
+2019,Moquegua,Total,ods611_minimo_directo_12h,55.913,3.333,3808,cal_cloro_adecuado,5.962,aceptable,2025,50.803,3.674,3849,cal_cloro_adecuado,7.233,aceptable,-5.111,4.961,False
+2019,Moquegua,Total,ods611_minimo_12h,55.913,3.47,3808,cal_cloro_adecuado,6.206,aceptable,2025,50.803,3.822,3849,cal_cloro_adecuado,7.522,aceptable,-5.111,5.162,False
+2019,Moquegua,Rural,ods611_minimo,13.461,4.85,1340,cal_cloro_adecuado,36.028,referencial (CV>15%),2025,6.547,2.79,1290,cal_cloro_adecuado,42.609,referencial (CV>15%),-6.914,5.595,False
+2019,Moquegua,Rural,ods611_minimo_20h,13.461,4.85,1340,cal_cloro_adecuado,36.028,referencial (CV>15%),2025,6.547,2.79,1290,cal_cloro_adecuado,42.609,referencial (CV>15%),-6.914,5.595,False
+2019,Moquegua,Rural,ods611_minimo_12h,13.461,4.85,1340,cal_cloro_adecuado,36.028,referencial (CV>15%),2025,6.547,2.79,1290,cal_cloro_adecuado,42.609,referencial (CV>15%),-6.914,5.595,False
+2019,Moquegua,Urbano,ods611_minimo,65.921,4.133,2468,cal_cloro_adecuado,6.27,aceptable,2025,59.861,4.568,2559,cal_cloro_adecuado,7.631,aceptable,-6.06,6.16,False
+2019,Moquegua,Urbano,ods611_minimo_20h,65.921,4.133,2468,cal_cloro_adecuado,6.27,aceptable,2025,59.861,4.568,2559,cal_cloro_adecuado,7.631,aceptable,-6.06,6.16,False
+2019,Moquegua,Urbano,ods611_minimo_12h,65.921,4.133,2468,cal_cloro_adecuado,6.27,aceptable,2025,59.861,4.568,2559,cal_cloro_adecuado,7.631,aceptable,-6.06,6.16,False
+2019,Pasco,Total,ods611_minimo_directo,3.896,1.179,4906,cal_cloro_adecuado,30.261,referencial (CV>15%),2025,1.842,0.736,4369,cal_cloro_adecuado,39.982,referencial (CV>15%),-2.055,1.39,False
+2019,Pasco,Total,ods611_minimo,3.896,1.176,4906,cal_cloro_adecuado,30.19,referencial (CV>15%),2025,1.842,0.739,4369,cal_cloro_adecuado,40.102,referencial (CV>15%),-2.055,1.389,False
+2019,Pasco,Total,ods611_minimo_directo_20h,3.896,1.179,4906,cal_cloro_adecuado,30.261,referencial (CV>15%),2025,1.842,0.736,4369,cal_cloro_adecuado,39.982,referencial (CV>15%),-2.055,1.39,False
+2019,Pasco,Total,ods611_minimo_20h,3.896,1.176,4906,cal_cloro_adecuado,30.19,referencial (CV>15%),2025,1.842,0.739,4369,cal_cloro_adecuado,40.102,referencial (CV>15%),-2.055,1.389,False
+2019,Pasco,Total,ods611_minimo_directo_12h,3.896,1.179,4906,cal_cloro_adecuado,30.261,referencial (CV>15%),2025,1.842,0.736,4369,cal_cloro_adecuado,39.982,referencial (CV>15%),-2.055,1.39,False
+2019,Pasco,Total,ods611_minimo_12h,3.896,1.176,4906,cal_cloro_adecuado,30.19,referencial (CV>15%),2025,1.842,0.739,4369,cal_cloro_adecuado,40.102,referencial (CV>15%),-2.055,1.389,False
+2019,Pasco,Rural,ods611_minimo,0.905,0.615,2009,cal_cloro_adecuado,67.931,referencial (CV>15%),2025,0.507,0.51,1819,cal_cloro_adecuado,100.584,referencial (CV>15%),-0.398,0.799,False
+2019,Pasco,Rural,ods611_minimo_20h,0.905,0.615,2009,cal_cloro_adecuado,67.931,referencial (CV>15%),2025,0.507,0.51,1819,cal_cloro_adecuado,100.584,referencial (CV>15%),-0.398,0.799,False
+2019,Pasco,Rural,ods611_minimo_12h,0.905,0.615,2009,cal_cloro_adecuado,67.931,referencial (CV>15%),2025,0.507,0.51,1819,cal_cloro_adecuado,100.584,referencial (CV>15%),-0.398,0.799,False
+2019,Pasco,Urbano,ods611_minimo,5.314,1.709,2897,cal_cloro_adecuado,32.162,referencial (CV>15%),2025,2.358,1.005,2550,cal_cloro_adecuado,42.622,referencial (CV>15%),-2.956,1.983,False
+2019,Pasco,Urbano,ods611_minimo_20h,5.314,1.709,2897,cal_cloro_adecuado,32.162,referencial (CV>15%),2025,2.358,1.005,2550,cal_cloro_adecuado,42.622,referencial (CV>15%),-2.956,1.983,False
+2019,Pasco,Urbano,ods611_minimo_12h,5.314,1.709,2897,cal_cloro_adecuado,32.162,referencial (CV>15%),2025,2.358,1.005,2550,cal_cloro_adecuado,42.622,referencial (CV>15%),-2.956,1.983,False
+2019,Piura,Total,ods611_minimo_directo,18.185,2.295,6393,disp_24h,12.622,aceptable,2025,8.129,1.644,6335,cal_cloro_adecuado,20.226,referencial (CV>15%),-10.056,2.823,True
+2019,Piura,Total,ods611_minimo,9.572,1.918,6393,distinto en urbano y rural,20.039,referencial (CV>15%),2025,8.129,1.64,6335,cal_cloro_adecuado,20.18,referencial (CV>15%),-1.443,2.524,False
+2019,Piura,Total,ods611_minimo_directo_20h,18.439,2.305,6393,disp_20h,12.499,aceptable,2025,8.129,1.644,6335,cal_cloro_adecuado,20.226,referencial (CV>15%),-10.309,2.831,True
+2019,Piura,Total,ods611_minimo_20h,9.81,1.929,6393,distinto en urbano y rural,19.667,referencial (CV>15%),2025,8.129,1.64,6335,cal_cloro_adecuado,20.18,referencial (CV>15%),-1.681,2.533,False
+2019,Piura,Total,ods611_minimo_directo_12h,19.14,2.18,6393,cal_cloro_adecuado,11.388,aceptable,2025,8.129,1.644,6335,cal_cloro_adecuado,20.226,referencial (CV>15%),-11.01,2.73,True
+2019,Piura,Total,ods611_minimo_12h,19.14,2.207,6393,cal_cloro_adecuado,11.531,aceptable,2025,8.129,1.64,6335,cal_cloro_adecuado,20.18,referencial (CV>15%),-11.01,2.75,True
+2019,Piura,Rural,ods611_minimo,1.22,0.679,2473,cal_cloro_adecuado,55.632,referencial (CV>15%),2025,0.104,0.078,2466,cal_cloro_adecuado,75.275,referencial (CV>15%),-1.116,0.683,False
+2019,Piura,Rural,ods611_minimo_20h,1.22,0.679,2473,cal_cloro_adecuado,55.632,referencial (CV>15%),2025,0.104,0.078,2466,cal_cloro_adecuado,75.275,referencial (CV>15%),-1.116,0.683,False
+2019,Piura,Rural,ods611_minimo_12h,1.22,0.679,2473,cal_cloro_adecuado,55.632,referencial (CV>15%),2025,0.104,0.078,2466,cal_cloro_adecuado,75.275,referencial (CV>15%),-1.116,0.683,False
+2019,Piura,Urbano,ods611_minimo,11.765,2.415,3920,disp_24h,20.529,referencial (CV>15%),2025,9.893,2.001,3869,cal_cloro_adecuado,20.225,referencial (CV>15%),-1.872,3.136,False
+2019,Piura,Urbano,ods611_minimo_20h,12.066,2.429,3920,disp_20h,20.135,referencial (CV>15%),2025,9.893,2.001,3869,cal_cloro_adecuado,20.225,referencial (CV>15%),-2.173,3.147,False
+2019,Piura,Urbano,ods611_minimo_12h,23.844,2.781,3920,cal_cloro_adecuado,11.662,aceptable,2025,9.893,2.001,3869,cal_cloro_adecuado,20.225,referencial (CV>15%),-13.951,3.426,True
+2019,Puno,Total,ods611_minimo_directo,15.657,1.578,5072,cal_cloro_adecuado,10.078,aceptable,2025,12.346,1.459,4662,cal_cloro_adecuado,11.82,aceptable,-3.311,2.149,False
+2019,Puno,Total,ods611_minimo,9.515,1.699,5072,distinto en urbano y rural,17.856,referencial (CV>15%),2025,11.224,2.156,4662,distinto en urbano y rural,19.207,referencial (CV>15%),1.709,2.745,False
+2019,Puno,Total,ods611_minimo_directo_20h,15.657,1.578,5072,cal_cloro_adecuado,10.078,aceptable,2025,12.346,1.459,4662,cal_cloro_adecuado,11.82,aceptable,-3.311,2.149,False
+2019,Puno,Total,ods611_minimo_20h,10.052,1.717,5072,distinto en urbano y rural,17.084,referencial (CV>15%),2025,11.664,2.212,4662,distinto en urbano y rural,18.964,referencial (CV>15%),1.612,2.8,False
+2019,Puno,Total,ods611_minimo_directo_12h,15.657,1.578,5072,cal_cloro_adecuado,10.078,aceptable,2025,12.346,1.459,4662,cal_cloro_adecuado,11.82,aceptable,-3.311,2.149,False
+2019,Puno,Total,ods611_minimo_12h,14.958,1.983,5072,distinto en urbano y rural,13.257,aceptable,2025,12.346,1.429,4662,cal_cloro_adecuado,11.576,aceptable,-2.612,2.444,False
+2019,Puno,Rural,ods611_minimo,0.463,0.466,1924,cal_cloro_adecuado,100.541,referencial (CV>15%),2025,0.0,0.0,1769,cal_cloro_adecuado,,aceptable,-0.463,0.466,False
+2019,Puno,Rural,ods611_minimo_20h,0.463,0.466,1924,cal_cloro_adecuado,100.541,referencial (CV>15%),2025,0.0,0.0,1769,cal_cloro_adecuado,,aceptable,-0.463,0.466,False
+2019,Puno,Rural,ods611_minimo_12h,0.463,0.466,1924,cal_cloro_adecuado,100.541,referencial (CV>15%),2025,0.0,0.0,1769,cal_cloro_adecuado,,aceptable,-0.463,0.466,False
+2019,Puno,Urbano,ods611_minimo,15.824,2.865,3148,disp_24h,18.104,referencial (CV>15%),2025,17.223,3.308,2893,disp_24h,19.207,referencial (CV>15%),1.4,4.376,False
+2019,Puno,Urbano,ods611_minimo_20h,16.735,2.896,3148,disp_20h,17.305,referencial (CV>15%),2025,17.899,3.394,2893,disp_20h,18.964,referencial (CV>15%),1.164,4.462,False
+2019,Puno,Urbano,ods611_minimo_12h,25.06,3.349,3148,disp_12h,13.365,aceptable,2025,18.945,2.193,2893,cal_cloro_adecuado,11.576,aceptable,-6.115,4.003,False
+2019,San Martín,Total,ods611_minimo_directo,25.632,2.349,6744,cal_cloro_adecuado,9.165,aceptable,2025,18.621,2.391,6238,cal_cloro_adecuado,12.842,aceptable,-7.011,3.352,True
+2019,San Martín,Total,ods611_minimo,25.632,2.479,6744,cal_cloro_adecuado,9.671,aceptable,2025,18.621,2.465,6238,cal_cloro_adecuado,13.239,aceptable,-7.011,3.496,True
+2019,San Martín,Total,ods611_minimo_directo_20h,25.632,2.349,6744,cal_cloro_adecuado,9.165,aceptable,2025,18.621,2.391,6238,cal_cloro_adecuado,12.842,aceptable,-7.011,3.352,True
+2019,San Martín,Total,ods611_minimo_20h,25.632,2.479,6744,cal_cloro_adecuado,9.671,aceptable,2025,18.621,2.465,6238,cal_cloro_adecuado,13.239,aceptable,-7.011,3.496,True
+2019,San Martín,Total,ods611_minimo_directo_12h,25.632,2.349,6744,cal_cloro_adecuado,9.165,aceptable,2025,18.621,2.391,6238,cal_cloro_adecuado,12.842,aceptable,-7.011,3.352,True
+2019,San Martín,Total,ods611_minimo_12h,25.632,2.479,6744,cal_cloro_adecuado,9.671,aceptable,2025,18.621,2.465,6238,cal_cloro_adecuado,13.239,aceptable,-7.011,3.496,True
+2019,San Martín,Rural,ods611_minimo,1.191,0.778,2280,cal_cloro_adecuado,65.35,referencial (CV>15%),2025,0.252,0.255,2118,cal_cloro_adecuado,100.957,referencial (CV>15%),-0.939,0.819,False
+2019,San Martín,Rural,ods611_minimo_20h,1.191,0.778,2280,cal_cloro_adecuado,65.35,referencial (CV>15%),2025,0.252,0.255,2118,cal_cloro_adecuado,100.957,referencial (CV>15%),-0.939,0.819,False
+2019,San Martín,Rural,ods611_minimo_12h,1.191,0.778,2280,cal_cloro_adecuado,65.35,referencial (CV>15%),2025,0.252,0.255,2118,cal_cloro_adecuado,100.957,referencial (CV>15%),-0.939,0.819,False
+2019,San Martín,Urbano,ods611_minimo,36.984,3.612,4464,cal_cloro_adecuado,9.767,aceptable,2025,25.657,3.408,4120,cal_cloro_adecuado,13.284,aceptable,-11.326,4.966,True
+2019,San Martín,Urbano,ods611_minimo_20h,36.984,3.612,4464,cal_cloro_adecuado,9.767,aceptable,2025,25.657,3.408,4120,cal_cloro_adecuado,13.284,aceptable,-11.326,4.966,True
+2019,San Martín,Urbano,ods611_minimo_12h,36.984,3.612,4464,cal_cloro_adecuado,9.767,aceptable,2025,25.657,3.408,4120,cal_cloro_adecuado,13.284,aceptable,-11.326,4.966,True
+2019,Tacna,Total,ods611_minimo_directo,31.957,3.412,3372,disp_24h,10.676,aceptable,2025,54.308,4.776,3490,disp_24h,8.794,aceptable,22.351,5.869,True
+2019,Tacna,Total,ods611_minimo,27.489,3.261,3372,distinto en urbano y rural,11.863,aceptable,2025,50.43,4.706,3490,distinto en urbano y rural,9.332,aceptable,22.94,5.725,True
+2019,Tacna,Total,ods611_minimo_directo_20h,32.692,3.434,3372,disp_20h,10.504,aceptable,2025,55.401,4.739,3490,disp_20h,8.554,aceptable,22.709,5.853,True
+2019,Tacna,Total,ods611_minimo_20h,28.224,3.285,3372,distinto en urbano y rural,11.64,aceptable,2025,51.404,4.665,3490,distinto en urbano y rural,9.075,aceptable,23.181,5.705,True
+2019,Tacna,Total,ods611_minimo_directo_12h,58.302,3.896,3372,disp_12h,6.683,aceptable,2025,59.221,3.265,3490,cal_cloro_adecuado,5.513,aceptable,0.919,5.083,False
+2019,Tacna,Total,ods611_minimo_12h,53.537,3.77,3372,distinto en urbano y rural,7.042,aceptable,2025,59.221,3.277,3490,cal_cloro_adecuado,5.533,aceptable,5.684,4.995,False
+2019,Tacna,Rural,ods611_minimo,8.079,4.045,1031,cal_cloro_adecuado,50.073,referencial (CV>15%),2025,17.452,5.703,1078,cal_cloro_adecuado,32.68,referencial (CV>15%),9.373,6.992,False
+2019,Tacna,Rural,ods611_minimo_20h,8.079,4.045,1031,cal_cloro_adecuado,50.073,referencial (CV>15%),2025,17.452,5.703,1078,cal_cloro_adecuado,32.68,referencial (CV>15%),9.373,6.992,False
+2019,Tacna,Rural,ods611_minimo_12h,8.079,4.045,1031,cal_cloro_adecuado,50.073,referencial (CV>15%),2025,17.452,5.703,1078,cal_cloro_adecuado,32.68,referencial (CV>15%),9.373,6.992,False
+2019,Tacna,Urbano,ods611_minimo,30.212,3.675,2341,disp_24h,12.163,aceptable,2025,54.846,5.281,2412,disp_24h,9.629,aceptable,24.633,6.434,True
+2019,Tacna,Urbano,ods611_minimo_20h,31.05,3.703,2341,disp_20h,11.925,aceptable,2025,55.951,5.234,2412,disp_20h,9.355,aceptable,24.901,6.411,True
+2019,Tacna,Urbano,ods611_minimo_12h,59.914,4.262,2341,disp_12h,7.113,aceptable,2025,64.814,3.636,2412,cal_cloro_adecuado,5.61,aceptable,4.9,5.602,False
+2019,Tumbes,Total,ods611_minimo_directo,11.192,1.99,4529,disp_24h,17.781,referencial (CV>15%),2025,8.573,2.141,4192,disp_24h,24.974,referencial (CV>15%),-2.619,2.923,False
+2019,Tumbes,Total,ods611_minimo,11.027,1.988,4529,distinto en urbano y rural,18.024,referencial (CV>15%),2025,8.465,2.137,4192,distinto en urbano y rural,25.244,referencial (CV>15%),-2.562,2.918,False
+2019,Tumbes,Total,ods611_minimo_directo_20h,11.591,1.992,4529,disp_20h,17.185,referencial (CV>15%),2025,9.333,2.266,4192,disp_20h,24.282,referencial (CV>15%),-2.258,3.017,False
+2019,Tumbes,Total,ods611_minimo_20h,11.384,1.987,4529,distinto en urbano y rural,17.459,referencial (CV>15%),2025,9.223,2.262,4192,distinto en urbano y rural,24.531,referencial (CV>15%),-2.161,3.011,False
+2019,Tumbes,Total,ods611_minimo_directo_12h,17.698,2.483,4529,disp_12h,14.029,aceptable,2025,12.288,1.89,4192,cal_cloro_adecuado,15.378,referencial (CV>15%),-5.41,3.12,False
+2019,Tumbes,Total,ods611_minimo_12h,17.397,2.479,4529,distinto en urbano y rural,14.25,aceptable,2025,12.288,1.888,4192,cal_cloro_adecuado,15.363,referencial (CV>15%),-5.109,3.116,False
+2019,Tumbes,Rural,ods611_minimo,7.173,2.658,1736,cal_cloro_adecuado,37.058,referencial (CV>15%),2025,6.834,3.064,1683,cal_cloro_adecuado,44.838,referencial (CV>15%),-0.339,4.056,False
+2019,Tumbes,Rural,ods611_minimo_20h,7.173,2.658,1736,cal_cloro_adecuado,37.058,referencial (CV>15%),2025,6.834,3.064,1683,cal_cloro_adecuado,44.838,referencial (CV>15%),-0.339,4.056,False
+2019,Tumbes,Rural,ods611_minimo_12h,7.173,2.658,1736,cal_cloro_adecuado,37.058,referencial (CV>15%),2025,6.834,3.064,1683,cal_cloro_adecuado,44.838,referencial (CV>15%),-0.339,4.056,False
+2019,Tumbes,Urbano,ods611_minimo,11.159,2.054,2793,disp_24h,18.405,referencial (CV>15%),2025,8.491,2.17,2509,disp_24h,25.559,referencial (CV>15%),-2.668,2.988,False
+2019,Tumbes,Urbano,ods611_minimo_20h,11.528,2.054,2793,disp_20h,17.815,referencial (CV>15%),2025,9.26,2.298,2509,disp_20h,24.812,referencial (CV>15%),-2.268,3.082,False
+2019,Tumbes,Urbano,ods611_minimo_12h,17.749,2.563,2793,disp_12h,14.438,aceptable,2025,12.375,1.917,2509,cal_cloro_adecuado,15.492,referencial (CV>15%),-5.374,3.2,False
+2019,Ucayali,Total,ods611_minimo_directo,19.552,2.74,5236,cal_cloro_adecuado,14.013,aceptable,2025,15.239,3.031,5656,cal_cloro_adecuado,19.888,referencial (CV>15%),-4.313,4.086,False
+2019,Ucayali,Total,ods611_minimo,19.552,2.701,5236,cal_cloro_adecuado,13.816,aceptable,2025,15.239,2.993,5656,cal_cloro_adecuado,19.641,referencial (CV>15%),-4.313,4.032,False
+2019,Ucayali,Total,ods611_minimo_directo_20h,19.552,2.74,5236,cal_cloro_adecuado,14.013,aceptable,2025,15.239,3.031,5656,cal_cloro_adecuado,19.888,referencial (CV>15%),-4.313,4.086,False
+2019,Ucayali,Total,ods611_minimo_20h,19.552,2.701,5236,cal_cloro_adecuado,13.816,aceptable,2025,15.239,2.993,5656,cal_cloro_adecuado,19.641,referencial (CV>15%),-4.313,4.032,False
+2019,Ucayali,Total,ods611_minimo_directo_12h,19.552,2.74,5236,cal_cloro_adecuado,14.013,aceptable,2025,15.239,3.031,5656,cal_cloro_adecuado,19.888,referencial (CV>15%),-4.313,4.086,False
+2019,Ucayali,Total,ods611_minimo_12h,19.552,2.701,5236,cal_cloro_adecuado,13.816,aceptable,2025,15.239,2.993,5656,cal_cloro_adecuado,19.641,referencial (CV>15%),-4.313,4.032,False
+2019,Ucayali,Rural,ods611_minimo,0.0,0.0,2136,cal_cloro_adecuado,,aceptable,2025,2.269,1.603,2500,cal_cloro_adecuado,70.621,referencial (CV>15%),2.269,1.603,False
+2019,Ucayali,Rural,ods611_minimo_20h,0.0,0.0,2136,cal_cloro_adecuado,,aceptable,2025,2.269,1.603,2500,cal_cloro_adecuado,70.621,referencial (CV>15%),2.269,1.603,False
+2019,Ucayali,Rural,ods611_minimo_12h,0.0,0.0,2136,cal_cloro_adecuado,,aceptable,2025,2.269,1.603,2500,cal_cloro_adecuado,70.621,referencial (CV>15%),2.269,1.603,False
+2019,Ucayali,Urbano,ods611_minimo,23.886,3.3,3100,cal_cloro_adecuado,13.816,aceptable,2025,17.509,3.506,3156,cal_cloro_adecuado,20.022,referencial (CV>15%),-6.377,4.815,False
+2019,Ucayali,Urbano,ods611_minimo_20h,23.886,3.3,3100,cal_cloro_adecuado,13.816,aceptable,2025,17.509,3.506,3156,cal_cloro_adecuado,20.022,referencial (CV>15%),-6.377,4.815,False
+2019,Ucayali,Urbano,ods611_minimo_12h,23.886,3.3,3100,cal_cloro_adecuado,13.816,aceptable,2025,17.509,3.506,3156,cal_cloro_adecuado,20.022,referencial (CV>15%),-6.377,4.815,False
+2019,Áncash,Total,ods611_minimo_directo,26.975,2.444,5778,cal_cloro_adecuado,9.059,aceptable,2025,19.968,2.62,4984,cal_cloro_adecuado,13.12,aceptable,-7.007,3.583,False
+2019,Áncash,Total,ods611_minimo,18.617,2.495,5778,distinto en urbano y rural,13.403,aceptable,2025,17.688,2.664,4984,distinto en urbano y rural,15.059,referencial (CV>15%),-0.929,3.65,False
+2019,Áncash,Total,ods611_minimo_directo_20h,26.975,2.444,5778,cal_cloro_adecuado,9.059,aceptable,2025,19.968,2.62,4984,cal_cloro_adecuado,13.12,aceptable,-7.007,3.583,False
+2019,Áncash,Total,ods611_minimo_20h,18.777,2.513,5778,distinto en urbano y rural,13.382,aceptable,2025,17.688,2.664,4984,distinto en urbano y rural,15.059,referencial (CV>15%),-1.089,3.662,False
+2019,Áncash,Total,ods611_minimo_directo_12h,26.975,2.444,5778,cal_cloro_adecuado,9.059,aceptable,2025,19.968,2.62,4984,cal_cloro_adecuado,13.12,aceptable,-7.007,3.583,False
+2019,Áncash,Total,ods611_minimo_12h,22.117,2.635,5778,distinto en urbano y rural,11.916,aceptable,2025,19.968,2.602,4984,cal_cloro_adecuado,13.03,aceptable,-2.149,3.703,False
+2019,Áncash,Rural,ods611_minimo,0.635,0.546,2044,cal_cloro_adecuado,86.031,referencial (CV>15%),2025,0.99,0.716,1858,cal_cloro_adecuado,72.359,referencial (CV>15%),0.355,0.901,False
+2019,Áncash,Rural,ods611_minimo_20h,0.635,0.546,2044,cal_cloro_adecuado,86.031,referencial (CV>15%),2025,0.99,0.716,1858,cal_cloro_adecuado,72.359,referencial (CV>15%),0.355,0.901,False
+2019,Áncash,Rural,ods611_minimo_12h,0.635,0.546,2044,cal_cloro_adecuado,86.031,referencial (CV>15%),2025,0.99,0.716,1858,cal_cloro_adecuado,72.359,referencial (CV>15%),0.355,0.901,False
+2019,Áncash,Urbano,ods611_minimo,28.903,3.91,3734,disp_24h,13.528,aceptable,2025,25.823,3.946,3126,disp_24h,15.281,referencial (CV>15%),-3.08,5.555,False
+2019,Áncash,Urbano,ods611_minimo_20h,29.154,3.938,3734,disp_20h,13.506,aceptable,2025,25.823,3.946,3126,disp_20h,15.281,referencial (CV>15%),-3.331,5.574,False
+2019,Áncash,Urbano,ods611_minimo_12h,34.404,4.131,3734,disp_12h,12.007,aceptable,2025,29.214,3.854,3126,cal_cloro_adecuado,13.192,aceptable,-5.191,5.649,False

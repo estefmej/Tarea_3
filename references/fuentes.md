@@ -38,3 +38,9 @@
 - Serie 2018–2023 (MVCS-DGPRCS, presentación de abril 2025): 40.5, 41.5, 39.6, 38.5, 36.5, 34.5; en 2023, 42.1 urbano y 3.0 rural. 2020 y 2021 se calcularon con factor de expansión calibrado:
   https://intranet.mesadeconcertacion.org.pe/storage/documentos/2025-05-05/ppt-agenda-de-accion-por-el-agua-ods-60.pdf
 - Nota: el ODS 6.1.1 en los documentos del MVCS se registra en validar.py con el código ods611_jmp por compatibilidad; compáralo con tu ods611_minimo y, si no coincide, prueba con ods611_conjunto.
+
+## INEI – Acceso a los servicios básicos en el Perú (ENAPRES), contraste
+- Año móvil julio 2025 – junio 2026 (preliminar), con la columna de julio 2024 – junio 2025: Cuadro 1.1 (hogares con red pública) y Cuadro 1.5 (hogares con cloro adecuado).
+  https://www.gob.pe/institucion/inei/informes-publicaciones/8546395-acceso-a-los-servicios-basicos-en-el-peru-ano-movil-julio-2025-junio-2026
+- Edición anual 2024 (enero–diciembre): https://www.gob.pe/institucion/inei/informes-publicaciones/6847826-acceso-a-los-servicios-basicos-en-el-peru-2024
+- Ojo: estas cifras son **% de hogares**. El cloro adecuado usa como denominador los hogares con prueba realizada, con cualquier fuente de agua. Con esa definición, los microdatos reproducen la edición anual de 2023 (urbano 43,3) y de 2024 (nacional 37,3; red pública 90,4). Los indicadores del 6.1.1 de este proyecto son % de personas.
