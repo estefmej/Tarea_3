@@ -2,6 +2,7 @@
 datos/originales/*
 !datos/originales/registro_descargas.csv
 datos/procesados/base_*.csv.gz
+datos/procesados/hogares_*.csv.gz
 datos/prueba/
 __pycache__/
 *.pyc

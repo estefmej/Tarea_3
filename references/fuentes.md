@@ -44,3 +44,5 @@
   https://www.gob.pe/institucion/inei/informes-publicaciones/8546395-acceso-a-los-servicios-basicos-en-el-peru-ano-movil-julio-2025-junio-2026
 - Edición anual 2024 (enero–diciembre): https://www.gob.pe/institucion/inei/informes-publicaciones/6847826-acceso-a-los-servicios-basicos-en-el-peru-2024
 - Ojo: estas cifras son **% de hogares**. El cloro adecuado usa como denominador los hogares con prueba realizada, con cualquier fuente de agua. Con esa definición, los microdatos reproducen la edición anual de 2023 (urbano 43,3) y de 2024 (nacional 37,3; red pública 90,4). Los indicadores del 6.1.1 de este proyecto son % de personas.
+- Edición anual 2025 (enero–diciembre): Cuadro 2.1 (red pública) y Cuadro 6.1 (cloro). Réplica en hogares con `red_publica_hogares` y `cloro_adecuado_hogares`, que salen de `datos/procesados/hogares_<año>.csv.gz`:
+  https://www.gob.pe/institucion/inei/informes-publicaciones/8107295-acceso-a-los-servicios-basicos-en-el-peru-2025

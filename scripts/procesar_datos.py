@@ -139,10 +139,18 @@ def procesar(anio, config_dir=None):
     out["cloro_adecuado_en_red"] = (medido & adec).astype(int)
     out["cloro_inadecuado_en_red"] = (medido & inad).astype(int)
     out["sin_cloro_en_red"] = (medido & sin).astype(int)
+    # Medida del INEI ("Acceso a los servicios básicos"): % de HOGARES con cloro
+    # adecuado entre los hogares con prueba realizada, con cualquier fuente de agua.
+    out["den_medido_hogar"] = (adec | inad | sin).astype(int)
+    out["cloro_adecuado_hogar"] = adec.astype(int)
 
     sin_area = out["area"].isna() | out["departamento"].isna()
     log["excluidos_sin_area_o_ubigeo"] = int(sin_area.sum())
     out = out[~sin_area & (out["factor_hogar"] > 0)]
+
+    # Base de hogares (sin pasar a personas) para replicar las cifras del INEI en hogares
+    PROC.mkdir(parents=True, exist_ok=True)
+    out.assign(peso=out["factor_hogar"]).to_csv(PROC / f"hogares_{anio}.csv.gz", index=False)
 
     # --- Peso de personas ------------------------------------------------------
     p = cfg.get("personas", {})

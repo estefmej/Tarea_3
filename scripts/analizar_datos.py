@@ -69,6 +69,24 @@ def dominios(b):
             yield dep, a, ga
 
 
+# Indicadores en % de HOGARES (peso = factor del hogar), para replicar al INEI
+HOGARES = [("red_publica", "uno", "red_publica_hogares"),
+           ("cloro_adecuado_hogar", "den_medido_hogar", "cloro_adecuado_hogares")]
+
+
+def estimar_hogares(h, anio):
+    filas = []
+    for dom, area, g in dominios(h):
+        for y, x, nombre in HOGARES:
+            r, se, n = razon(g, y, x)
+            filas.append(dict(anio=anio, dominio=dom, area=area, indicador=nombre,
+                              valor=100 * r, ee=100 * se, n_muestra=n))
+    res = pd.DataFrame(filas)
+    res["cv"] = res["ee"] / res["valor"] * 100
+    res["confiabilidad"] = np.where(res["cv"] > 15, "referencial (CV>15%)", "aceptable")
+    return res
+
+
 def estimar(b, anio):
     filas, mins = [], {}
     for dom, area, g in dominios(b):
@@ -200,6 +218,10 @@ def main():
         raise SystemExit("No hay bases procesadas. Corre primero scripts/procesar_datos.py")
     res = pd.concat([estimar(pd.read_csv(f, low_memory=False), int(f.split("_")[-1][:4]))
                      for f in bases], ignore_index=True)
+    hog = sorted(glob.glob(str(PROC / "hogares_*.csv.gz")))
+    if hog:
+        res = pd.concat([res] + [estimar_hogares(pd.read_csv(f, low_memory=False), int(f.split("_")[-1][:4]))
+                                 for f in hog], ignore_index=True)
     a1 = a.final or int(res.anio.max())
     comp = comparar(res, a.base, a1)
     val = validar(res)

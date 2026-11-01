@@ -40,3 +40,21 @@ Generado automáticamente. Verifica cada cifra e interprétala antes de usarla.
 - INEI boletín agua (ENAPRES) 2023 Rural sin_cloro_en_red: oficial 88.8 vs propio 88.4 (-0.4 pp) → OK
 - JMP 2025 (SDG 6 Data) 2024 Total ods611_minimo: oficial 49.0 vs propio 35.5 (-13.5 pp) → contraste
 - JMP 2025 2024 Rural ods611_minimo: oficial 23.0 vs propio 3.9 (-19.1 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Total red_publica_hogares: oficial 90.6 vs propio 90.7 (+0.1 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Total cloro_adecuado_hogares: oficial 37.3 vs propio 38.4 (+1.1 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Urbano red_publica_hogares: oficial 93.1 vs propio 93.0 (-0.1 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Urbano cloro_adecuado_hogares: oficial 46.0 vs propio 47.4 (+1.4 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Rural red_publica_hogares: oficial 80.4 vs propio 81.2 (+0.8 pp) → contraste
+- INEI Acceso a los servicios básicos - año móvil jul 2025-jun 2026 (ENAPRES) 2025 Rural cloro_adecuado_hogares: oficial 3.7 vs propio 3.3 (-0.4 pp) → contraste
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Total red_publica_hogares: oficial 90.4 vs propio 90.4 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Total cloro_adecuado_hogares: oficial 37.3 vs propio 37.3 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Urbano red_publica_hogares: oficial 93.2 vs propio 93.2 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Urbano cloro_adecuado_hogares: oficial 45.8 vs propio 45.8 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Rural red_publica_hogares: oficial 79.3 vs propio 79.4 (+0.1 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2024 (ENAPRES, ene-dic) 2024 Rural cloro_adecuado_hogares: oficial 4.0 vs propio 4.0 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Total red_publica_hogares: oficial 90.7 vs propio 90.7 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Total cloro_adecuado_hogares: oficial 38.4 vs propio 38.4 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Urbano red_publica_hogares: oficial 93.0 vs propio 93.0 (+0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Urbano cloro_adecuado_hogares: oficial 47.4 vs propio 47.4 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Rural red_publica_hogares: oficial 81.2 vs propio 81.2 (-0.0 pp) → OK
+- INEI Acceso a los servicios básicos en el Perú 2025 (ENAPRES, ene-dic) 2025 Rural cloro_adecuado_hogares: oficial 3.3 vs propio 3.3 (+0.0 pp) → OK
