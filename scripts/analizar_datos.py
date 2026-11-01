@@ -304,6 +304,13 @@ def main():
     if hog:
         res = pd.concat([res] + [estimar_hogares(pd.read_csv(f, low_memory=False), int(f.split("_")[-1][:4]))
                                  for f in hog], ignore_index=True)
+    # Población expandida (personas) del dominio, área y año: la usa el dashboard para el
+    # tamaño de las burbujas y para el KPI de personas sin agua segura. Se asigna también a
+    # las filas de indicadores en hogares (es la población, no el número de hogares).
+    pob = pd.DataFrame([dict(anio=int(f.split("_")[-1][:4]), dominio=dom, area=area, poblacion=g["peso"].sum())
+                        for f in bases
+                        for dom, area, g in dominios(pd.read_csv(f, usecols=["departamento", "area", "peso"]))])
+    res = res.merge(pob, on=["anio", "dominio", "area"], how="left")
     a1 = a.final or int(res.anio.max())
     comp = comparar(res, a.base, a1)
     val = validar(res)

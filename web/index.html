@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>¿Tener red pública garantiza agua segura en el Perú?</title>
+<meta name="description" content="Dashboard del ODS 6.1.1 en el Perú con microdatos de la ENAPRES (INEI), 2019–2025: red pública, continuidad y cloro por área y departamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F6F5; --panel:#FFFFFF; --ink:#16313F; --ink-2:#4A5F6A; --ink-3:#7B8C94;
+  --rule:#D5DFE1; --tint:#E6EEEF;
+  --red:#3A78B5; --cont:#D9982B; --cloro:#1E9AA0; --ods:#16313F;
+  --down:#B5483F; --up:#4E8B3A;
+  --m0:#E3EEF0; --m1:#B8D7DD; --m2:#86BBC6; --m3:#4F98AA; --m4:#23748A; --m5:#0B4F64;
+  --nodata:#CBD3D5;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1B21; --panel:#15242B; --ink:#E4EDEF; --ink-2:#AFC0C6; --ink-3:#7E9199;
+    --rule:#2A3D45; --tint:#1C2E36;
+    --red:#6FA4DA; --cont:#E8AE4C; --cloro:#3CC2C2; --ods:#E4EDEF;
+    --down:#E07A6E; --up:#86C26E;
+    --m0:#1D3A45; --m1:#245466; --m2:#2C6F82; --m3:#3B8FA0; --m4:#63B3BF; --m5:#A6DCDF;
+    --nodata:#33444B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1B21; --panel:#15242B; --ink:#E4EDEF; --ink-2:#AFC0C6; --ink-3:#7E9199;
+  --rule:#2A3D45; --tint:#1C2E36;
+  --red:#6FA4DA; --cont:#E8AE4C; --cloro:#3CC2C2; --ods:#E4EDEF;
+  --down:#E07A6E; --up:#86C26E;
+  --m0:#1D3A45; --m1:#245466; --m2:#2C6F82; --m3:#3B8FA0; --m4:#63B3BF; --m5:#A6DCDF;
+  --nodata:#33444B; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 132px)}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.55;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--cloro)}
+:focus-visible{outline:2px solid var(--cloro);outline-offset:2px;border-radius:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+
+/* barra superior */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--rule)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--paper)}
+.bar-in{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;padding:10px 22px;max-width:1140px;margin:0 auto}
+.brand{font-weight:700;font-stretch:80%;font-size:18px;letter-spacing:-.01em;white-space:nowrap;text-decoration:none}
+.brand span{color:var(--cloro)}
+nav.sec{display:flex;gap:16px;font-size:14px;flex-wrap:wrap}
+nav.sec a{text-decoration:none;color:var(--ink-2)}
+nav.sec a:hover{color:var(--ink)}
+.ctrls{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-left:auto}
+.ctrl{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-2)}
+select,button{font:inherit;font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:5px 8px;cursor:pointer}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.seg button{border:0;border-radius:0;border-right:1px solid var(--rule);background:var(--panel)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* inicio */
+header.hero{padding:56px 0 34px}
+.hero h1{font-stretch:72%;font-weight:750;font-size:clamp(38px,6.4vw,74px);line-height:.98;letter-spacing:-.02em;margin:0 0 22px;max-width:15ch}
+.hero .lede{max-width:62ch;color:var(--ink-2);font-size:18px;margin:0 0 18px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 28px;margin:0;padding:14px 0 0;border-top:1px solid var(--rule);font-size:14px;max-width:880px}
+.facts dt{color:var(--ink-3)}
+.facts dd{margin:0 0 6px}
+.levels{margin-top:40px}
+.levels h2{font-size:15px;font-weight:600;margin:0 0 14px;color:var(--ink-2)}
+.lvl{display:grid;grid-template-columns:minmax(150px,230px) 1fr 64px;align-items:center;gap:14px;margin-bottom:10px}
+.lvl .lab{font-size:15px}
+.lvl .tube{height:30px;background:var(--tint);border-radius:3px;position:relative;overflow:hidden}
+.lvl .fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:3px 0 0 3px;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.lvl .num{font-weight:700;font-size:22px;font-stretch:80%;text-align:right}
+.lvl.ods .lab{font-weight:700}
+.levels .note{font-size:14px;color:var(--ink-2);max-width:70ch;margin-top:12px}
+
+/* secciones */
+section.blk{padding:46px 0 10px;border-top:1px solid var(--rule)}
+section.blk>h2{font-stretch:78%;font-weight:720;font-size:clamp(26px,3.4vw,36px);line-height:1.08;letter-spacing:-.01em;margin:0 0 8px;max-width:28ch}
+.sub{color:var(--ink-2);max-width:72ch;margin:0 0 20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.kpi{padding:16px 18px 16px 0;border-right:1px solid var(--rule);margin-right:18px}
+.kpi:last-child{border-right:0}
+.kpi .k-lab{font-size:14px;color:var(--ink-2);min-height:42px}
+.kpi .k-val{font-stretch:75%;font-weight:750;font-size:42px;line-height:1.05;margin:4px 0}
+.kpi .k-det{font-size:13px;color:var(--ink-3)}
+.ctx{font-size:14px;color:var(--ink-2);margin:10px 0 0}
+.tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:10px;background:var(--tint);color:var(--ink-2)}
+.tag.down{color:var(--down)} .tag.up{color:var(--up)}
+
+.chart-head{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.legend i.sq{border-radius:2px}
+.legend i.ln{width:18px;height:0;border-top:2px dashed var(--ods);border-radius:0;vertical-align:3px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.axis text{fill:var(--ink-3);font-size:12px}
+.axis line,.axis path{stroke:var(--rule)}
+.grid line{stroke:var(--rule);stroke-dasharray:2 3}
+.gapband{fill:var(--tint)}
+.gaptxt{fill:var(--ink-3);font-size:11px}
+.tt{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.4;box-shadow:0 4px 14px rgba(10,30,40,.12);opacity:0;transition:opacity .12s;max-width:260px;z-index:5}
+.tt b{font-weight:700}
+.split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+.side h3{font-size:15px;margin:0 0 10px}
+.dots{display:flex;align-items:center;gap:10px;margin-top:12px}
+.dots .track{position:relative;flex:1;display:flex;justify-content:space-between}
+.dots .track::before{content:"";position:absolute;left:8px;right:8px;top:8px;border-top:1px solid var(--rule)}
+.dots .yr{position:relative;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;padding:0;font-size:12px;color:var(--ink-3)}
+.dots .yr span.d{width:16px;height:16px;border-radius:50%;border:2px solid var(--ink-3);background:var(--paper)}
+.dots .yr[aria-pressed="true"]{color:var(--ink);font-weight:700}
+.dots .yr[aria-pressed="true"] span.d{background:var(--ink);border-color:var(--ink)}
+.circles{display:flex;flex-direction:column;gap:14px}
+.circ{display:flex;align-items:center;gap:14px}
+.circ .c{border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:750;font-stretch:78%;transition:all .4s}
+.circ .t{font-size:14px;color:var(--ink-2)}
+.mleg{display:flex;gap:2px;margin-top:16px;font-size:11px;color:var(--ink-3)}
+.mleg div{flex:1;text-align:center}
+.mleg span{display:block;height:10px;margin-bottom:3px}
+.hatch-note{font-size:12px;color:var(--ink-3);margin-top:8px}
+.detail{margin-top:18px;font-size:14px;border-top:1px solid var(--rule);padding-top:10px;min-height:96px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.two h3{font-size:16px;margin:0 0 4px}
+.two p.s{font-size:14px;color:var(--ink-2);margin:0 0 10px}
+
+/* hallazgos y método */
+.finds{display:grid;gap:26px;max-width:860px}
+.find h3{font-stretch:82%;font-weight:720;font-size:22px;line-height:1.2;margin:0 0 6px}
+.find p{margin:0;color:var(--ink-2)}
+.find .k{color:var(--ink);font-weight:700}
+.meth{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px 40px}
+.meth h3{font-size:17px;margin:0 0 6px}
+.meth p,.meth li{font-size:15px;color:var(--ink-2)}
+.meth ul{padding-left:18px;margin:0}
+.meth li{margin-bottom:6px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;width:100%}
+th,td{text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{color:var(--ink-3);font-weight:600}
+.dl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:20px 0 6px}
+.dl button{background:var(--ink);color:var(--paper);border-color:var(--ink);padding:8px 14px}
+footer{padding:36px 0 60px;color:var(--ink-3);font-size:13px;border-top:1px solid var(--rule);margin-top:40px}
+.err{padding:20px;border:1px solid var(--down);color:var(--down);border-radius:6px;margin:20px 0}
+@media (max-width:860px){
+  .split,.two{grid-template-columns:1fr}
+  .ctrls{margin-left:0}
+  nav.sec{display:none}
+  .lvl{grid-template-columns:120px 1fr 52px}
+  .kpi{border-right:0;border-bottom:1px solid var(--rule);margin-right:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#inicio">Agua segura <span>Perú</span></a>
+    <nav class="sec" aria-label="Secciones">
+      <a href="#indicadores">Indicadores</a><a href="#evolucion">Evolución</a><a href="#mapa">Mapa</a>
+      <a href="#departamentos">Departamentos</a><a href="#hallazgos">Hallazgos</a><a href="#metodologia">Metodología</a>
+    </nav>
+    <div class="ctrls" role="group" aria-label="Filtros">
+      <label class="ctrl">Año <select id="f-anio"></select></label>
+      <span class="ctrl">Área
+        <span class="seg" id="f-area">
+          <button type="button" data-v="Total" aria-pressed="true">Total</button><button type="button" data-v="Urbano" aria-pressed="false">Urbano</button><button type="button" data-v="Rural" aria-pressed="false">Rural</button>
+        </span></span>
+      <label class="ctrl">Indicador <select id="f-ind"></select></label>
+      <label class="ctrl">Ámbito <select id="f-amb"></select></label>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+<header class="hero" id="inicio">
+  <h1>¿Tener red pública garantiza agua segura en el Perú?</h1>
+  <p class="lede">El indicador ODS 6.1.1 mide quién tiene agua gestionada de forma segura: acceso a la red, servicio continuo y agua apta para el consumo. Este tablero reconstruye el indicador con los microdatos de la ENAPRES e identifica cuál de los tres criterios frena el avance en cada área y departamento.</p>
+  <dl class="facts">
+    <div><dt>Pregunta</dt><dd>¿Qué criterio limita el ODS 6.1.1 y cómo cambió entre 2019 y 2025?</dd></div>
+    <div><dt>Cobertura</dt><dd>Nacional, urbano y rural; 24 departamentos y el Callao</dd></div>
+    <div><dt>Período</dt><dd>2019 y 2022–2025 (2020 y 2021 no son comparables)</dd></div>
+    <div><dt>Fuente</dt><dd>INEI, ENAPRES (microdatos); cálculo propio con la metodología del MVCS</dd></div>
+  </dl>
+  <div class="levels" id="levels" aria-live="polite"></div>
+</header>
+
+<div id="msg"></div>
+
+<section class="blk" id="indicadores" aria-labelledby="h-ind">
+  <h2 id="h-ind">Indicadores clave</h2>
+  <p class="sub" id="kpi-ctx"></p>
+  <div class="kpis" id="kpis"></div>
+</section>
+
+<section class="blk" id="evolucion" aria-labelledby="h-evo">
+  <h2 id="h-evo">Cada año, el cloro define el resultado</h2>
+  <p class="sub">Cada burbuja es un año; su tamaño indica cuántas personas cumplen el criterio. La línea punteada es el ODS 6.1.1, que toma el criterio más bajo. Usa el ámbito y el área de la barra superior.</p>
+  <div class="chart-head">
+    <button type="button" id="play-evo" aria-label="Reproducir la evolución">▶ Reproducir</button>
+    <div class="legend">
+      <span><i style="background:var(--red)"></i>Red pública</span>
+      <span><i style="background:var(--cont)"></i>Agua las 24 horas</span>
+      <span><i style="background:var(--cloro)"></i>Cloro adecuado</span>
+      <span><i class="ln"></i>ODS 6.1.1</span>
+    </div>
+  </div>
+  <div class="chart" id="c-evo"></div>
+</section>
+
+<section class="blk" id="mapa" aria-labelledby="h-map">
+  <h2 id="h-map">Un mismo país, realidades muy distintas</h2>
+  <p class="sub">El mapa muestra el indicador elegido por departamento. Haz clic en un departamento para ver su evolución arriba. Las zonas rayadas tienen estimaciones referenciales (CV mayor a 15%).</p>
+  <div class="split">
+    <div>
+      <div class="chart" id="c-map"></div>
+      <div class="dots" id="dots"><button type="button" id="play-map" aria-label="Reproducir los años en el mapa">▶</button><div class="track" id="track"></div></div>
+    </div>
+    <div class="side">
+      <h3 id="side-t"></h3>
+      <div class="circles" id="circles"></div>
+      <div class="mleg" id="mleg"></div>
+      <p class="hatch-note">Escala fija en todos los años del indicador elegido.</p>
+      <div class="detail" id="detail">Pasa el cursor o toca un departamento para ver sus cifras.</div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="departamentos" aria-labelledby="h-dep">
+  <h2 id="h-dep">Las caídas vinieron del cloro; las mejoras, de la continuidad</h2>
+  <p class="sub" id="dep-sub"></p>
+  <div class="two">
+    <div>
+      <h3>Cambio en continuidad y en cloro por departamento</h3>
+      <p class="s">Tamaño = población. Color = criterio que limita el ODS 6.1.1 en el año elegido.</p>
+      <div class="legend" style="margin-bottom:6px">
+        <span><i style="background:var(--cloro)"></i>Limita el cloro</span>
+        <span><i style="background:var(--cont)"></i>Limita la continuidad</span>
+        <span><i style="background:var(--ink-3)"></i>Distinto en urbano y rural</span>
+      </div>
+      <div class="chart" id="c-sc"></div>
+    </div>
+    <div>
+      <h3 id="db-t"></h3>
+      <p class="s">Círculo vacío = 2019; círculo lleno = año elegido. * = referencial (CV &gt; 15%).</p>
+      <div class="chart" id="c-db"></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="hallazgos" aria-labelledby="h-hal">
+  <h2 id="h-hal">Tres hallazgos</h2>
+  <div class="finds">
+    <article class="find"><h3>El Perú retrocedió en agua segura: 2,7 millones de personas más sin ella</h3>
+      <p>El ODS 6.1.1 cayó de <span class="k">41,5% en 2019 a 36,6% en 2025</span> (−5,0 puntos, significativo al 95%). Las personas sin agua gestionada de forma segura pasaron de 19,0 a 21,7 millones. El punto más bajo fue 2023 (34,5%); la recuperación posterior no alcanza el nivel prepandemia.</p></article>
+    <article class="find"><h3>El cloro es el cuello de botella, en la ciudad y en el campo</h3>
+      <p>En las ciudades, la caída de 7,5 puntos se explica íntegramente por el cloro (<span class="k">51,8% → 44,3%</span>); la continuidad no cambió de forma significativa. En el campo, la cobertura de red (+4,8) y la continuidad (+4,2) mejoraron, pero el agua con cloro adecuado sigue en torno al 3%: <span class="k">6,2 de los 6,4 millones</span> de habitantes rurales no tienen agua segura.</p></article>
+    <article class="find"><h3>Las caídas vinieron del cloro; las mejoras, de la continuidad</h3>
+      <p>En 2025 el indicador va de 73,1% en el Callao a 14,1% en Huancavelica (entre estimaciones confiables). Cinco departamentos explican cerca de dos tercios de la caída nacional; <span class="k">Arequipa, con el 4% de la población, explica una quinta parte</span>: su cloro cayó de 69,7% a 44,5% mientras su continuidad se mantuvo estable. Los únicos avances significativos, en el Callao (+20,4) y Tacna (+22,9), vinieron de la continuidad.</p></article>
+  </div>
+</section>
+
+<section class="blk" id="metodologia" aria-labelledby="h-met">
+  <h2 id="h-met">Cómo se construyó</h2>
+  <div class="meth">
+    <div>
+      <h3>Metodología</h3>
+      <p>Se sigue la definición del Ministerio de Vivienda (MVCS): el ODS 6.1.1 es el menor de tres indicadores, calculado por separado en urbano y rural y promediado por población.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Criterio</th><th>Pregunta ENAPRES</th><th>Cumple si</th></tr></thead>
+        <tbody>
+          <tr><td>Red pública</td><td>P129A (2019), P129G (2022–2023), P135 (2024–2025)</td><td>Códigos 1, 2 o 3</td></tr>
+          <tr><td>Agua las 24 horas</td><td>P130 y P130A (2019, 2022), P130Z y P130ZA (2023), P138 y P138_A (2024–2025)</td><td>Todos los días y 24 horas</td></tr>
+          <tr><td>Cloro adecuado</td><td>P129D (2019–2023), P166 (2024–2025)</td><td>Cloro residual libre ≥ 0,5 mg/L</td></tr>
+        </tbody></table></div>
+      <p>Resultados en % de personas: el dato del hogar se traslada a los residentes habituales (capítulo 200) con su factor de expansión. Errores estándar con el diseño muestral (conglomerado; estrato aproximado como departamento × área).</p>
+    </div>
+    <div>
+      <h3>Validación</h3>
+      <p>Las cifras reproducen las publicaciones oficiales: el ODS 6.1.1 del MVCS (2019, 2022 y 2023), los boletines del INEI en hogares (2024 y 2025) y el cloro de Arequipa, el Callao y Tacna, con diferencias de 0,1 puntos o menos.</p>
+      <h3 style="margin-top:18px">Fuentes</h3>
+      <ul>
+        <li><a href="https://proyectos.inei.gob.pe/microdatos/">INEI, microdatos de la ENAPRES</a></li>
+        <li><a href="https://www.mef.gob.pe/contenidos/inv_publica/docs/pmi/brecha/formato/29_FORMATO_MVCS.pdf">MVCS/MEF, fichas técnicas de indicadores de brecha</a></li>
+        <li><a href="https://cdn.www.gob.pe/uploads/document/file/2648841/Plan%20Nacional%20de%20Saneamiento%202022-2026%20vf.pdf.pdf">MVCS, Plan Nacional de Saneamiento 2022–2026</a></li>
+        <li><a href="https://www.inei.gob.pe/biblioteca-virtual/boletines/formas-de-acceso-al-agua-y-saneamiento-basico-9343/">INEI, boletines de acceso al agua y saneamiento</a></li>
+        <li><a href="https://washdata.org/">JMP OMS/UNICEF (contraste internacional)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Limitaciones</h3>
+      <ul>
+        <li>El cloro indica desinfección, no ausencia de contaminación fecal; solo se mide si el hogar acepta la prueba.</li>
+        <li>La continuidad es declarada por el informante.</li>
+        <li>La red pública rural incluye sistemas comunales aunque el agua no se trate.</li>
+        <li>2020 y 2021 se excluyen: entrevistas telefónicas, sin medición de cloro.</li>
+        <li>Desde 2024 existe el código "red pública casa del vecino" (2,7% urbano en 2025); se excluye por coherencia con 2019. Incluirlo cambiaría el ODS urbano en solo 0,9 puntos.</li>
+        <li>Doce departamentos tienen estimaciones referenciales (CV &gt; 15%). La mejora de Tacna depende de un 2019 bajo y de una serie irregular.</li>
+        <li>El JMP reporta cifras más altas (49% en 2024) porque mide la calidad con E. coli y la disponibilidad de otra forma.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="dl">
+    <button type="button" id="dl-btn">Descargar datos filtrados (CSV)</button>
+    <span class="ctx" id="dl-ctx"></span>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Tarea 3 del curso Python Intermedio. Datos del INEI (ENAPRES), elaboración propia. <a href="https://github.com/">Repositorio del proyecto</a></div></footer>
+<div class="tt" id="tt" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+/* ===== Configuración: nombres de indicadores en data/indicadores.json ===== */
+const CONFIG = {
+  datos: "data/indicadores.json",
+  mapaLocal: "data/peru_departamentos.topo.json",
+  mapaCDN: "https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/per.topo.json",
+  anioBase: 2019,
+  ind: {
+    ods:   {key: "ods611_minimo",      label: "Agua segura (ODS 6.1.1)", corto: "ODS 6.1.1",        color: "--ods"},
+    red:   {key: "red_publica",        label: "Red pública",             corto: "Red pública",      color: "--red"},
+    cont:  {key: "disp_24h",           label: "Agua las 24 horas",       corto: "Agua 24 horas",    color: "--cont"},
+    cloro: {key: "cal_cloro_adecuado", label: "Cloro adecuado",          corto: "Cloro adecuado",   color: "--cloro"}
+  },
+  limitante: {cal_cloro_adecuado: "Cloro adecuado", disp_24h: "Agua las 24 horas", red_publica: "Red pública", acc_en_vivienda: "Red en la vivienda"}
+};
+const CRIT = ["red", "cont", "cloro"];
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt = (v, d = 1) => v == null || isNaN(v) ? "—" : v.toLocaleString("es-ES", {useGrouping: true, minimumFractionDigits: d, maximumFractionDigits: d});
+const pp = v => (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v)) + " pts";
+const norm = s => (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\bprovince\b/g, "").trim();
+const tt = document.getElementById("tt");
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+let D = {idx: new Map(), anios: [], deps: [], hasPob: false, rows: []};
+let S = {anio: null, area: "Total", ind: "ods", ambito: "Nacional"};
+let GEO = null;
+
+function key(a, dom, area, ind) { return `${a}|${dom}|${area}|${ind}`; }
+function get(a, dom, area, k) { return D.idx.get(key(a, dom, area, CONFIG.ind[k] ? CONFIG.ind[k].key : k)); }
+function val(a, dom, area, k) { const r = get(a, dom, area, k); return r ? r.valor : null; }
+function referencial(r) { return r && r.cv != null && r.cv > 15; }
+function cambio(a0, a1, dom, area, k) {
+  const r0 = get(a0, dom, area, k), r1 = get(a1, dom, area, k);
+  if (!r0 || !r1) return null;
+  const d = r1.valor - r0.valor, se = Math.sqrt((r0.ee || 0) ** 2 + (r1.ee || 0) ** 2);
+  return {d, se, sig: se > 0 && Math.abs(d) > 1.96 * se, r0, r1};
+}
+function limLabel(c) { return CONFIG.limitante[c] || (c ? "Distinto en urbano y rural" : "—"); }
+function limColor(c) { return c === CONFIG.ind.cloro.key ? css("--cloro") : c === CONFIG.ind.cont.key ? css("--cont") : c === CONFIG.ind.red.key ? css("--red") : css("--ink-3"); }
+function showTT(ev, html) {
+  tt.innerHTML = html; tt.style.opacity = 1;
+  const pad = 14, w = tt.offsetWidth, h = tt.offsetHeight;
+  let x = ev.pageX + pad, y = ev.pageY + pad;
+  if (x + w > window.scrollX + innerWidth - 8) x = ev.pageX - w - pad;
+  if (y + h > window.scrollY + innerHeight - 8) y = ev.pageY - h - pad;
+  tt.style.left = x + "px"; tt.style.top = y + "px";
+}
+function hideTT() { tt.style.opacity = 0; }
+
+/* ===== Carga ===== */
+async function cargar() {
+  try {
+    const r = await fetch(CONFIG.datos);
+    if (!r.ok) throw new Error(`No se encontró ${CONFIG.datos} (HTTP ${r.status}).`);
+    D.rows = await r.json();
+  } catch (e) {
+    document.getElementById("msg").innerHTML = `<div class="err">No se pudieron cargar los datos: ${e.message} Corre scripts/analizar_datos.py y abre la página desde un servidor (GitHub Pages o <code>python -m http.server</code>), no con doble clic.</div>`;
+    return;
+  }
+  for (const r of D.rows) D.idx.set(key(r.anio, r.dominio, r.area, r.indicador), r);
+  D.anios = [...new Set(D.rows.filter(r => r.indicador === CONFIG.ind.ods.key).map(r => +r.anio))].sort();
+  D.deps = [...new Set(D.rows.map(r => r.dominio))].filter(d => d !== "Nacional").sort((a, b) => a.localeCompare(b, "es"));
+  D.hasPob = D.rows.some(r => r.poblacion != null);
+  S.anio = D.anios[D.anios.length - 1];
+  try { GEO = await cargarMapa(); } catch (e) { GEO = null; }
+  initControles(); render(); niveles();
+  let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(render, 150); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+}
+async function cargarMapa() {
+  for (const url of [CONFIG.mapaLocal, CONFIG.mapaCDN]) {
+    try { const r = await fetch(url); if (r.ok) { const t = await r.json(); const k = Object.keys(t.objects)[0]; return topojson.feature(t, t.objects[k]).features; } } catch (e) {}
+  }
+  throw new Error("mapa");
+}
+
+/* ===== Controles ===== */
+function initControles() {
+  const fa = document.getElementById("f-anio");
+  fa.innerHTML = D.anios.map(a => `<option ${a === S.anio ? "selected" : ""}>${a}</option>`).join("");
+  fa.onchange = () => { S.anio = +fa.value; render(); };
+  const fi = document.getElementById("f-ind");
+  fi.innerHTML = Object.entries(CONFIG.ind).map(([k, v]) => `<option value="${k}">${v.label}</option>`).join("");
+  fi.onchange = () => { S.ind = fi.value; render(); };
+  const fm = document.getElementById("f-amb");
+  fm.innerHTML = `<option>Nacional</option>` + D.deps.map(d => `<option>${d}</option>`).join("");
+  fm.onchange = () => { S.ambito = fm.value; render(); };
+  document.querySelectorAll("#f-area button").forEach(b => b.onclick = () => {
+    document.querySelectorAll("#f-area button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    S.area = b.dataset.v; render();
+  });
+  document.getElementById("track").innerHTML = D.anios.map(a => `<button type="button" class="yr" data-a="${a}" aria-pressed="false"><span class="d"></span>${a}</button>`).join("");
+  document.querySelectorAll("#track .yr").forEach(b => b.onclick = () => setAnio(+b.dataset.a));
+  jugar("play-map"); jugar("play-evo");
+  document.getElementById("dl-btn").onclick = descargar;
+}
+function setAnio(a) { S.anio = a; document.getElementById("f-anio").value = a; render(); }
+function setAmbito(d) { S.ambito = d; document.getElementById("f-amb").value = d; render(); }
+function jugar(id) {
+  const b = document.getElementById(id); let timer = null;
+  const label = id === "play-map" ? ["▶", "❚❚"] : ["▶ Reproducir", "❚❚ Pausar"];
+  b.onclick = () => {
+    if (timer) { clearInterval(timer); timer = null; b.textContent = label[0]; return; }
+    let i = 0; setAnio(D.anios[0]); b.textContent = label[1];
+    timer = setInterval(() => { i++; if (i >= D.anios.length) { clearInterval(timer); timer = null; b.textContent = label[0]; return; } setAnio(D.anios[i]); }, reduceMotion ? 1600 : 1100);
+  };
+}
+
+/* ===== Render general ===== */
+function render() {
+  if (!D.rows.length) return;
+  document.querySelectorAll("#track .yr").forEach(b => b.setAttribute("aria-pressed", +b.dataset.a === S.anio));
+  kpis(); evolucion(); mapa(); dispersion(); pesas();
+  document.getElementById("dl-ctx").textContent = `${CONFIG.ind[S.ind].label}, ${S.area.toLowerCase()}, ${S.anio}, todos los ámbitos.`;
+}
+
+/* ===== Niveles del inicio ===== */
+function niveles() {
+  const a = D.anios[D.anios.length - 1], el = document.getElementById("levels");
+  const items = [...CRIT, "ods"].map(k => ({k, v: val(a, "Nacional", "Total", k)}));
+  el.innerHTML = `<h2>De cada 100 personas en el Perú en ${a}</h2>` + items.map(({k, v}) =>
+    `<div class="lvl ${k === "ods" ? "ods" : ""}"><div class="lab">${k === "ods" ? "Tienen agua segura (ODS 6.1.1)" : {red: "Tienen red pública", cont: "Reciben agua las 24 horas", cloro: "Reciben agua con cloro adecuado"}[k]}</div>
+     <div class="tube"><div class="fill" data-w="${v}" style="background:var(${CONFIG.ind[k].color})"></div></div><div class="num">${v == null ? "—" : Math.round(v)}</div></div>`).join("") +
+    `<p class="note">El ODS toma el criterio más bajo. Casi todos tienen red, pero el cloro deja fuera a la mayoría: el cuello de botella no es la tubería, sino la calidad del agua.</p>`;
+  requestAnimationFrame(() => el.querySelectorAll(".fill").forEach(f => f.style.width = (+f.dataset.w || 0) + "%"));
+}
+
+/* ===== KPIs ===== */
+function kpis() {
+  const {anio: a, area, ind, ambito: dom} = S, base = CONFIG.anioBase, I = CONFIG.ind[ind];
+  const r = get(a, dom, area, ind), c = a !== base ? cambio(base, a, dom, area, ind) : null, o = get(a, dom, area, "ods");
+  const deps = D.deps.map(d => ({d, r: get(a, d, area, ind)})).filter(x => x.r && !referencial(x.r));
+  const max = d3.max(deps, x => x.r.valor), min = d3.min(deps, x => x.r.valor);
+  const top = deps.find(x => x.r.valor === max), low = deps.find(x => x.r.valor === min);
+  const out = [];
+  out.push(`<div class="kpi"><div class="k-lab">${I.label}</div><div class="k-val">${fmt(r && r.valor)}%</div><div class="k-det">${r ? `CV ${fmt(r.cv)}%${referencial(r) ? " · referencial" : ""}` : "Sin dato"}</div></div>`);
+  out.push(`<div class="kpi"><div class="k-lab">Cambio frente a ${base}</div><div class="k-val" style="color:${c ? (c.d < 0 ? css("--down") : css("--up")) : "inherit"}">${c ? pp(c.d) : "—"}</div><div class="k-det">${c ? (c.sig ? "Significativo al 95%" : "No significativo al 95%") : "Elige un año posterior a " + base}</div></div>`);
+  out.push(`<div class="kpi"><div class="k-lab">Criterio que limita el ODS 6.1.1</div><div class="k-val" style="font-size:30px;line-height:1.15;color:${limColor(o && o.criterio_limitante)}">${limLabel(o && o.criterio_limitante)}</div><div class="k-det">El criterio más bajo define el indicador</div></div>`);
+  out.push(`<div class="kpi"><div class="k-lab">Departamento con mayor y menor valor</div><div class="k-val" style="font-size:24px;line-height:1.25">${top ? `${top.d} ${fmt(top.r.valor, 0)}%<br>${low.d} ${fmt(low.r.valor, 0)}%` : "—"}</div><div class="k-det">Solo estimaciones con CV ≤ 15%</div></div>`);
+  if (D.hasPob && o && o.poblacion) {
+    const sin = o.poblacion * (100 - o.valor) / 100 / 1e6;
+    out.push(`<div class="kpi"><div class="k-lab">Personas sin agua segura</div><div class="k-val">${fmt(sin)} M</div><div class="k-det">de ${fmt(o.poblacion / 1e6)} millones en el ámbito</div></div>`);
+  }
+  document.getElementById("kpis").innerHTML = out.join("");
+  document.getElementById("kpi-ctx").textContent = `${dom === "Nacional" ? "Perú" : dom}, ${area === "Total" ? "total" : "área " + area.toLowerCase()}, ${a}. Cambia los filtros de la barra superior para actualizar las cifras.`;
+}
+
+/* ===== Burbujas en el tiempo ===== */
+function evolucion() {
+  const el = document.getElementById("c-evo"), W = el.clientWidth || 900, H = Math.max(320, Math.min(440, W * .48));
+  const m = {t: 16, r: W < 600 ? 14 : 150, b: 34, l: 44};
+  el.innerHTML = "";
+  const svg = d3.select(el).append("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
+    .attr("aria-label", `Evolución de los tres criterios y del ODS 6.1.1 en ${S.ambito}, ${S.area}`);
+  const x = d3.scaleLinear().domain([2018.4, 2025.6]).range([m.l, W - m.r]);
+  const y = d3.scaleLinear().domain([0, 100]).range([H - m.b, m.t]);
+  svg.append("rect").attr("class", "gapband").attr("x", x(2019.6)).attr("width", x(2021.4) - x(2019.6)).attr("y", m.t).attr("height", H - m.b - m.t);
+  svg.append("text").attr("class", "gaptxt").attr("x", (x(2019.6) + x(2021.4)) / 2).attr("y", m.t + 14).attr("text-anchor", "middle").text("2020–2021");
+  svg.append("text").attr("class", "gaptxt").attr("x", (x(2019.6) + x(2021.4)) / 2).attr("y", m.t + 28).attr("text-anchor", "middle").text("no comparable");
+  svg.append("g").attr("class", "grid").selectAll("line").data([25, 50, 75]).join("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y).attr("y2", y);
+  svg.append("g").attr("class", "axis").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues(D.anios).tickFormat(d3.format("d")).tickSizeOuter(0));
+  svg.append("g").attr("class", "axis").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(d => d + "%").tickSize(0)).call(g => g.select(".domain").remove());
+  const pts = [];
+  for (const k of CRIT) for (const a of D.anios) { const r = get(a, S.ambito, S.area, k); if (r) pts.push({k, a, r}); }
+  const pobs = pts.map(p => p.r.poblacion ? p.r.poblacion * p.r.valor / 100 : null).filter(v => v != null);
+  const rs = D.hasPob && pobs.length ? d3.scaleSqrt().domain([0, d3.max(pobs)]).range([3, W < 600 ? 14 : 22]) : () => 10;
+  const on = p => p.a <= S.anio;
+  svg.append("g").selectAll("circle").data(pts).join("circle")
+    .attr("cx", p => x(p.a)).attr("cy", p => y(p.r.valor))
+    .attr("r", p => rs(p.r.poblacion ? p.r.poblacion * p.r.valor / 100 : 0))
+    .attr("fill", p => css(CONFIG.ind[p.k].color))
+    .attr("fill-opacity", p => !on(p) ? 0.08 : p.a === S.anio ? 0.95 : 0.4)
+    .attr("stroke", p => p.a === S.anio ? css("--panel") : "none").attr("stroke-width", 1.5)
+    .style("cursor", "pointer")
+    .on("mousemove", (ev, p) => showTT(ev, `<b>${CONFIG.ind[p.k].label}</b>, ${p.a}<br>${fmt(p.r.valor)}% ${p.r.poblacion ? `(${fmt(p.r.poblacion * p.r.valor / 1e8)} M personas)` : ""}<br>CV ${fmt(p.r.cv)}%${referencial(p.r) ? " · referencial" : ""}`))
+    .on("mouseleave", hideTT).on("click", (ev, p) => setAnio(p.a));
+  const ods = D.anios.map(a => ({a, r: get(a, S.ambito, S.area, "ods")})).filter(p => p.r && p.a <= S.anio);
+  const line = d3.line().x(p => x(p.a)).y(p => y(p.r.valor));
+  const pre = ods.filter(p => p.a <= 2019), post = ods.filter(p => p.a >= 2022);
+  const g = svg.append("g").attr("fill", "none").attr("stroke", css("--ods")).attr("stroke-width", 2);
+  if (post.length > 1) g.append("path").attr("d", line(post)).attr("stroke-dasharray", "6 4");
+  if (pre.length && post.length) g.append("path").attr("d", line([pre[pre.length - 1], post[0]])).attr("stroke-dasharray", "1 4").attr("stroke-opacity", .6);
+  svg.append("g").selectAll("circle").data(ods).join("circle").attr("cx", p => x(p.a)).attr("cy", p => y(p.r.valor)).attr("r", 3.5).attr("fill", css("--ods"));
+  if (W >= 600) {
+    const lab = [...CRIT, "ods"].map(k => ({k, r: get(S.anio, S.ambito, S.area, k)})).filter(o => o.r);
+    lab.forEach(o => o.y = y(o.r.valor));
+    lab.sort((p, q) => p.y - q.y);
+    for (let i = 1; i < lab.length; i++) if (lab[i].y - lab[i - 1].y < 40) lab[i].y = lab[i - 1].y + 40;
+    const lg = svg.append("g").attr("transform", `translate(${W - m.r + 26},0)`);
+    lab.forEach(o => {
+      lg.append("text").attr("y", o.y - 3).attr("font-size", 12).attr("font-weight", 600).attr("fill", css(CONFIG.ind[o.k].color)).text(CONFIG.ind[o.k].corto);
+      lg.append("text").attr("y", o.y + 13).attr("font-size", 15).attr("font-weight", 700).attr("fill", css("--ink")).text(`${fmt(o.r.valor)}% en ${S.anio}`);
+    });
+  }
+}
+
+/* ===== Mapa ===== */
+function rangoInd(k) {
+  const vs = D.rows.filter(r => r.indicador === CONFIG.ind[k].key && r.dominio !== "Nacional").map(r => r.valor);
+  return [Math.floor(d3.min(vs) / 10) * 10, Math.ceil(d3.max(vs) / 10) * 10];
+}
+function mapa() {
+  const el = document.getElementById("c-map"), I = CONFIG.ind[S.ind];
+  const [lo, hi] = rangoInd(S.ind), ramp = ["--m0", "--m1", "--m2", "--m3", "--m4", "--m5"].map(css);
+  const col = d3.scaleQuantize().domain([lo, hi]).range(ramp);
+  document.getElementById("side-t").textContent = `${I.label}, ${S.anio}`;
+  const st = (hi - lo) / 6;
+  document.getElementById("mleg").innerHTML = ramp.map((c, i) => `<div><span style="background:${c}"></span>${Math.round(lo + st * i)}</div>`).join("") + `<div><span style="background:${css("--nodata")}"></span>s/d</div>`;
+  const circ = ["Nacional|Total", "Nacional|Urbano", "Nacional|Rural"].map(s => { const [d, a] = s.split("|"); return {a, r: get(S.anio, d, a, S.ind)}; });
+  document.getElementById("circles").innerHTML = circ.map(({a, r}) => {
+    const v = r ? r.valor : 0, sz = Math.round(46 + v * .5), c = r ? col(Math.max(lo, Math.min(hi, v))) : css("--nodata");
+    const dark = ramp.indexOf(c) >= 3;
+    return `<div class="circ"><div class="c" style="width:${sz}px;height:${sz}px;background:${c};color:${dark ? css("--paper") : css("--ink")};font-size:${sz > 80 ? 20 : 16}px">${r ? fmt(v, 0) + "%" : "—"}</div><div class="t">${a === "Total" ? "Perú" : a}</div></div>`;
+  }).join("");
+  el.innerHTML = "";
+  if (!GEO) { el.innerHTML = `<div class="err">No se pudo cargar el mapa de departamentos. Revisa la conexión o agrega ${CONFIG.mapaLocal}.</div>`; return; }
+  const W = el.clientWidth || 600, H = W * 1.25;
+  const svg = d3.select(el).append("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img").attr("aria-label", `Mapa del Perú por departamento: ${I.label}, ${S.anio}, ${S.area}`);
+  const defs = svg.append("defs");
+  const pat = defs.append("pattern").attr("id", "hatch").attr("width", 6).attr("height", 6).attr("patternUnits", "userSpaceOnUse").attr("patternTransform", "rotate(45)");
+  pat.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6).attr("stroke", css("--paper")).attr("stroke-width", 2).attr("stroke-opacity", .75);
+  const proj = d3.geoMercator().fitSize([W, H], {type: "FeatureCollection", features: GEO}), path = d3.geoPath(proj);
+  const byName = new Map(D.deps.map(d => [norm(d), d]));
+  const dep = f => byName.get(norm(f.properties.name));
+  const rec = f => { const d = dep(f); return d ? get(S.anio, d, S.area, S.ind) : null; };
+  const g = svg.append("g");
+  g.selectAll("path.base").data(GEO).join("path").attr("class", "base").attr("d", path)
+    .attr("fill", f => { const r = rec(f); return r ? col(Math.max(lo, Math.min(hi, r.valor))) : css("--nodata"); })
+    .attr("stroke", css("--paper")).attr("stroke-width", .8);
+  g.selectAll("path.h").data(GEO.filter(f => referencial(rec(f)))).join("path").attr("class", "h").attr("d", path).attr("fill", "url(#hatch)").attr("pointer-events", "none");
+  g.selectAll("path.sel").data(GEO.filter(f => dep(f) === S.ambito)).join("path").attr("class", "sel").attr("d", path).attr("fill", "none").attr("stroke", css("--ink")).attr("stroke-width", 2.2).attr("pointer-events", "none");
+  g.selectAll("path.hit").data(GEO).join("path").attr("class", "hit").attr("d", path).attr("fill", "transparent").style("cursor", "pointer")
+    .on("mousemove", (ev, f) => { const d = dep(f), r = rec(f); detalle(d); showTT(ev, `<b>${d || f.properties.name}</b><br>${r ? `${fmt(r.valor)}%${referencial(r) ? " (referencial, CV " + fmt(r.cv) + "%)" : ""}` : "Sin dato"}`); })
+    .on("mouseleave", hideTT)
+    .on("click", (ev, f) => { const d = dep(f); if (d) { setAmbito(d === S.ambito ? "Nacional" : d); } });
+  detalle(S.ambito !== "Nacional" ? S.ambito : null);
+}
+function detalle(d) {
+  const el = document.getElementById("detail");
+  if (!d) { el.innerHTML = "Pasa el cursor o toca un departamento para ver sus cifras."; return; }
+  const o = get(S.anio, d, S.area, "ods"), c = cambio(CONFIG.anioBase, S.anio, d, S.area, "ods");
+  el.innerHTML = `<b>${d}</b>, ${S.area.toLowerCase()}, ${S.anio}<br>` +
+    CRIT.map(k => { const r = get(S.anio, d, S.area, k); return `<span style="color:${css(CONFIG.ind[k].color)}">●</span> ${CONFIG.ind[k].label}: ${fmt(r && r.valor)}%`; }).join("<br>") +
+    `<br><b>ODS 6.1.1: ${fmt(o && o.valor)}%</b>${o && referencial(o) ? " (referencial)" : ""}` +
+    (c && S.anio !== CONFIG.anioBase ? `<br>ODS 6.1.1, cambio desde ${CONFIG.anioBase}: ${pp(c.d)} ${c.sig ? "(significativo)" : "(no significativo)"}` : "");
+}
+
+/* ===== Dispersión de cambios ===== */
+function dispersion() {
+  const el = document.getElementById("c-sc"); el.innerHTML = "";
+  const a0 = CONFIG.anioBase, a1 = S.anio;
+  document.getElementById("dep-sub").textContent = a1 === a0
+    ? `Elige un año posterior a ${a0} en la barra superior para comparar los cambios.`
+    : `Cambios entre ${a0} y ${a1} (${S.area.toLowerCase()}). Hacia la derecha mejoró la continuidad; hacia abajo cayó el cloro. Haz clic en un departamento para ver su evolución.`;
+  if (a1 === a0) return;
+  const pts = D.deps.map(d => {
+    const cc = cambio(a0, a1, d, S.area, "cont"), cl = cambio(a0, a1, d, S.area, "cloro"), o = get(a1, d, S.area, "ods");
+    return cc && cl ? {d, x: cc.d, y: cl.d, o, ref: referencial(cc.r1) || referencial(cl.r1) || referencial(cc.r0) || referencial(cl.r0), pob: o && o.poblacion} : null;
+  }).filter(Boolean);
+  const W = el.clientWidth || 500, H = Math.max(320, W * .82), m = {t: 14, r: 14, b: 40, l: 46};
+  const svg = d3.select(el).append("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img").attr("aria-label", `Cambio en continuidad frente a cambio en cloro por departamento, ${a0}–${a1}`);
+  const ext = v => { const e = d3.max(pts, v) || 10; return Math.ceil(e / 5) * 5; };
+  const ex = Math.max(ext(p => Math.abs(p.x)), 10), ey = Math.max(ext(p => Math.abs(p.y)), 10);
+  const x = d3.scaleLinear().domain([-ex, ex]).range([m.l, W - m.r]), y = d3.scaleLinear().domain([-ey, ey]).range([H - m.b, m.t]);
+  const r = D.hasPob ? d3.scaleSqrt().domain([0, d3.max(pts, p => p.pob || 0)]).range([4, 26]) : () => 7;
+  svg.append("g").attr("class", "axis").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat(d => (d > 0 ? "+" : "") + d));
+  svg.append("g").attr("class", "axis").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d => (d > 0 ? "+" : "") + d));
+  svg.append("line").attr("x1", x(0)).attr("x2", x(0)).attr("y1", m.t).attr("y2", H - m.b).attr("stroke", css("--ink-3"));
+  svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(0)).attr("y2", y(0)).attr("stroke", css("--ink-3"));
+  svg.append("text").attr("class", "gaptxt").attr("x", W - m.r).attr("y", H - 6).attr("text-anchor", "end").text("Cambio en agua las 24 horas (pts) →");
+  svg.append("text").attr("class", "gaptxt").attr("transform", `translate(12,${m.t}) rotate(-90)`).attr("text-anchor", "end").text("Cambio en cloro adecuado (pts) →");
+  const sorted = pts.slice().sort((p, q) => (q.pob || 0) - (p.pob || 0));
+  const g = svg.append("g").selectAll("g").data(sorted).join("g").attr("transform", p => `translate(${x(p.x)},${y(p.y)})`).style("cursor", "pointer");
+  g.append("circle").attr("r", p => r(p.pob || 0)).attr("fill", p => limColor(p.o && p.o.criterio_limitante))
+    .attr("fill-opacity", p => p.ref ? .3 : .8).attr("stroke", p => p.d === S.ambito ? css("--ink") : css("--panel"))
+    .attr("stroke-width", p => p.d === S.ambito ? 2.5 : 1).attr("stroke-dasharray", p => p.ref ? "2 2" : null);
+  const cand = pts.slice().sort((p, q) => Math.hypot(q.x, q.y) - Math.hypot(p.x, p.y)).slice(0, 7);
+  const sel = pts.find(p => p.d === S.ambito); if (sel && !cand.includes(sel)) cand.unshift(sel);
+  const placed = [], big = new Set();
+  for (const p of cand) {
+    const w = p.d.length * 6.4, cx = x(p.x), cy = y(p.y) - r(p.pob || 0) - 8;
+    const box = {x0: cx - w / 2, x1: cx + w / 2, y0: cy - 10, y1: cy + 2};
+    if (!placed.some(b => !(box.x1 < b.x0 || box.x0 > b.x1 || box.y1 < b.y0 || box.y0 > b.y1))) { placed.push(box); big.add(p.d); }
+  }
+  g.filter(p => big.has(p.d)).append("text").attr("y", p => -r(p.pob || 0) - 4).attr("text-anchor", "middle").attr("font-size", 11).attr("font-weight", 600).attr("fill", css("--ink")).text(p => p.d);
+  g.on("mousemove", (ev, p) => showTT(ev, `<b>${p.d}</b>${p.ref ? " (referencial)" : ""}<br>Agua 24 h: ${pp(p.x)}<br>Cloro adecuado: ${pp(p.y)}<br>Limita en ${a1}: ${limLabel(p.o && p.o.criterio_limitante)}`))
+    .on("mouseleave", hideTT).on("click", (ev, p) => setAmbito(p.d));
+}
+
+/* ===== Ranking 2019 vs año ===== */
+function pesas() {
+  const el = document.getElementById("c-db"); el.innerHTML = "";
+  const a0 = CONFIG.anioBase, a1 = S.anio, I = CONFIG.ind[S.ind];
+  document.getElementById("db-t").textContent = `${I.label} por departamento, ${a0} y ${a1}`;
+  const rows = D.deps.map(d => ({d, r0: get(a0, d, S.area, S.ind), r1: get(a1, d, S.area, S.ind)})).filter(o => o.r1).sort((p, q) => q.r1.valor - p.r1.valor);
+  const W = el.clientWidth || 500, rh = 21, m = {t: 22, r: 40, b: 8, l: 116}, H = m.t + rows.length * rh + m.b;
+  const svg = d3.select(el).append("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img").attr("aria-label", `${I.label} por departamento, ${a0} y ${a1}`);
+  const top = d3.max(rows, o => Math.max(o.r1.valor, o.r0 ? o.r0.valor : 0)) || 100;
+  const x = d3.scaleLinear().domain([0, Math.min(100, Math.ceil((top + 6) / 10) * 10)]).range([m.l, W - m.r]), y = (i) => m.t + i * rh + rh / 2;
+  svg.append("g").attr("class", "axis").attr("transform", `translate(0,${m.t - 4})`).call(d3.axisTop(x).ticks(4).tickFormat(d => d + "%").tickSize(0)).call(g => g.select(".domain").remove());
+  const g = svg.append("g").selectAll("g").data(rows).join("g").attr("transform", (o, i) => `translate(0,${y(i)})`).style("cursor", "pointer")
+    .on("mousemove", (ev, o) => { const c = cambio(a0, a1, o.d, S.area, S.ind); showTT(ev, `<b>${o.d}</b><br>${a0}: ${fmt(o.r0 && o.r0.valor)}%<br>${a1}: ${fmt(o.r1.valor)}%${c ? `<br>${pp(c.d)} ${c.sig ? "(significativo)" : "(no significativo)"}` : ""}`); })
+    .on("mouseleave", hideTT).on("click", (ev, o) => setAmbito(o.d));
+  g.append("rect").attr("x", 0).attr("width", W).attr("y", -rh / 2).attr("height", rh).attr("fill", o => o.d === S.ambito ? css("--tint") : "transparent");
+  g.append("text").attr("x", m.l - 8).attr("dy", ".35em").attr("text-anchor", "end").attr("font-size", 12).attr("fill", css("--ink")).attr("font-weight", o => o.d === S.ambito ? 700 : 400)
+    .text(o => o.d + (referencial(o.r1) || referencial(o.r0) ? " *" : ""));
+  const dir = o => !o.r0 || a0 === a1 ? css("--ink-3") : o.r1.valor < o.r0.valor ? css("--down") : css("--up");
+  g.filter(o => o.r0 && a0 !== a1).append("line").attr("x1", o => x(o.r0.valor)).attr("x2", o => x(o.r1.valor)).attr("stroke", dir).attr("stroke-width", 2);
+  g.filter(o => o.r0 && a0 !== a1).append("circle").attr("cx", o => x(o.r0.valor)).attr("r", 4.5).attr("fill", css("--panel")).attr("stroke", dir).attr("stroke-width", 1.6);
+  g.append("circle").attr("cx", o => x(o.r1.valor)).attr("r", 5).attr("fill", dir).attr("fill-opacity", o => referencial(o.r1) ? .45 : 1);
+  g.append("text").attr("x", o => x(Math.max(o.r1.valor, o.r0 ? o.r0.valor : 0)) + 9).attr("dy", ".35em").attr("font-size", 11).attr("fill", css("--ink-2")).text(o => fmt(o.r1.valor, 0));
+}
+
+/* ===== Descarga ===== */
+function descargar() {
+  const k = CONFIG.ind[S.ind].key;
+  const rows = D.rows.filter(r => r.indicador === k && r.area === S.area && +r.anio === S.anio);
+  const cols = ["anio", "dominio", "area", "indicador", "valor", "ee", "cv", "confiabilidad", "criterio_limitante", "n_muestra"];
+  const esc = v => v == null ? "" : /[",\n;]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v;
+  const csv = "\ufeff" + [cols.join(";"), ...rows.map(r => cols.map(c => esc(typeof r[c] === "number" ? String(Math.round(r[c] * 100) / 100).replace(".", ",") : r[c])).join(";"))].join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
+  a.download = `agua_segura_${S.ind}_${S.area}_${S.anio}.csv`.toLowerCase();
+  document.body.appendChild(a); a.click(); a.remove();
+}
+cargar();
+</script>
+</body>
+</html>
