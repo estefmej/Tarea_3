@@ -145,6 +145,17 @@ En 2025 el indicador va de 73,1% en el Callao a 14,1% en Huancavelica (entre dep
 
 - Dashboard: <https://estefmej.github.io/Tarea_3/web/> (también abre desde <https://estefmej.github.io/Tarea_3/>, que redirige a `web/`)
 - Reel (Google Drive): <https://drive.google.com/file/d/1ivPMWhHdh0Z4U1zqrKlihEIdyMfynvKO/view?usp=drive_link>
+- Repositorio: <https://github.com/estefmej/Tarea_3>
+
+### Vista del dashboard
+
+Inicio, con la pregunta y las barras «De cada 100 personas» (2025): casi todos tienen red, pero el cloro adecuado define el ODS 6.1.1.
+
+![Inicio del dashboard con las barras «De cada 100 personas en el Perú en 2025»](docs/img/dashboard_inicio.png)
+
+Mapa por departamento del ODS 6.1.1 en 2025, con los círculos de Perú, urbano y rural; las zonas rayadas son estimaciones referenciales (CV mayor a 15 %).
+
+![Mapa por departamento del ODS 6.1.1 en 2025](docs/img/dashboard_mapa.png)
 
 **Recursos del reel** (no se suben al repositorio; se usan bajo la licencia de contenido de Pixabay):
 
@@ -208,4 +219,11 @@ El guion con las cifras y su fuente en `datos/procesados/` está en `reel/guion.
 
 ## 8. Uso de inteligencia artificial
 
-[Ajustar a lo que realmente hiciste.] Se usó Claude (claude.ai y Claude Code) para buscar fuentes y fichas metodológicas, escribir y depurar los scripts de procesamiento y análisis, y diseñar el dashboard. Las variables, cifras e interpretaciones fueron verificadas contra el diccionario de la ENAPRES y contra las publicaciones oficiales del MVCS y del INEI.
+| Herramienta | Para qué se usó |
+|---|---|
+| Claude (claude.ai) | Elegir el tema, buscar las fuentes y la metodología del indicador (fichas del MVCS y del INEI), y diseñar el guion del reel y el dashboard. |
+| Claude Code | Escribir y correr los scripts de descarga, procesamiento, análisis y validación; construir el dashboard; tomar las capturas del dashboard con Playwright y armar el reel (voz por escena, subtítulos, mezcla con la música y video). |
+| Qwen3-TTS 1.7B (Alibaba, Apache 2.0) | Narrar el reel con una voz clonada a partir de mi propia grabación. Cada escena se comparó con la grabación con un modelo de similitud de voz (WavLM) y se regeneró si el timbre se alejaba. |
+| Whisper large-v3-turbo (OpenAI, MIT) | Generar los subtítulos con sus tiempos y controlar que la narración dijera el guion (WER por escena). |
+
+Verifiqué las cifras contra las publicaciones del MVCS y del INEI (ver «Validación» en la sección 3) y revisé el guion del reel contra `datos/procesados/` antes de narrarlo. El video indica que la voz fue generada con IA. La música («Science Documentary», Lexin_Music) y la foto de la escena 1 (JonasKIM) son de Pixabay y se usan bajo su licencia de contenido; los enlaces están en la sección 6.
