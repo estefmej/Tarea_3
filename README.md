@@ -143,7 +143,7 @@ En 2025 el indicador va de 73,1% en el Callao a 14,1% en Huancavelica (entre dep
 
 ## 6. Enlaces
 
-- Dashboard: [enlace]
+- Dashboard: <https://estefmej.github.io/Tarea_3/web/> (también abre desde <https://estefmej.github.io/Tarea_3/>, que redirige a `web/`)
 - Publicación en LinkedIn: [enlace]
 
 ## 7. Cómo reproducir el proyecto
