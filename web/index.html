@@ -457,10 +457,10 @@ function kpis() {
   out.push(`<div class="kpi"><div class="k-lab">${I.label}</div><div class="k-val">${fmt(r && r.valor)}%</div><div class="k-det">${r ? `CV ${fmt(r.cv)}%${referencial(r) ? " · referencial" : ""}` : "Sin dato"}</div></div>`);
   out.push(`<div class="kpi"><div class="k-lab">Cambio frente a ${base}</div><div class="k-val" style="color:${c ? (c.d < 0 ? css("--down") : css("--up")) : "inherit"}">${c ? pp(c.d) : "—"}</div><div class="k-det">${c ? (c.sig ? "Significativo al 95%" : "No significativo al 95%") : "Elige un año posterior a " + base}</div></div>`);
   out.push(`<div class="kpi"><div class="k-lab">Criterio que limita el ODS 6.1.1</div><div class="k-val" style="font-size:30px;line-height:1.15;color:${limColor(o && o.criterio_limitante)}">${limLabel(o && o.criterio_limitante)}</div><div class="k-det">El criterio más bajo define el indicador</div></div>`);
-  out.push(`<div class="kpi"><div class="k-lab">Departamento con mayor y menor valor</div><div class="k-val" style="font-size:24px;line-height:1.25">${top ? `${top.d} ${fmt(top.r.valor, 0)}%<br>${low.d} ${fmt(low.r.valor, 0)}%` : "—"}</div><div class="k-det">Solo estimaciones con CV ≤ 15%</div></div>`);
+  out.push(`<div class="kpi"><div class="k-lab">${I.label}: departamento con mayor y menor valor</div><div class="k-val" style="font-size:24px;line-height:1.25">${top ? `${top.d} ${fmt(top.r.valor, 0)}%<br>${low.d} ${fmt(low.r.valor, 0)}%` : "—"}</div><div class="k-det">Solo estimaciones con CV ≤ 15%</div></div>`);
   if (D.hasPob && o && o.poblacion) {
     const sin = o.poblacion * (100 - o.valor) / 100 / 1e6;
-    out.push(`<div class="kpi"><div class="k-lab">Personas sin agua segura</div><div class="k-val">${fmt(sin)} M</div><div class="k-det">de ${fmt(o.poblacion / 1e6)} millones en el ámbito</div></div>`);
+    out.push(`<div class="kpi"><div class="k-lab">Personas sin agua segura (ODS 6.1.1)</div><div class="k-val">${fmt(sin)} M</div><div class="k-det">de ${fmt(o.poblacion / 1e6)} millones en el ámbito</div></div>`);
   }
   document.getElementById("kpis").innerHTML = out.join("");
   document.getElementById("kpi-ctx").textContent = `${dom === "Nacional" ? "Perú" : dom}, ${area === "Total" ? "total" : "área " + area.toLowerCase()}, ${a}. Cambia los filtros de la barra superior para actualizar las cifras.`;
