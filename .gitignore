@@ -7,3 +7,13 @@ datos/prueba/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Reel: entorno, salidas intermedias y grabaciones de voz (no se suben)
+reel/.venv/
+reel/salidas/
+reel/fuentes/
+reel/mi_voz.*
+reel/voz_buena_ejemplo.wav
+# Música y foto de Pixabay: se usan en el video, pero la licencia no permite redistribuir los archivos sueltos
+reel/recursos/musica.mp3
+reel/recursos/foto_escena1.jpg

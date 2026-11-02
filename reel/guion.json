@@ -1,0 +1,83 @@
+{
+  "titulo": "Agua segura en el Perú · ODS 6.1.1",
+  "escenas": [
+    {
+      "frase": "Nueve de cada diez peruanos tienen agua por red pública. Pero tener red, ¿significa tener agua segura?",
+      "cifra": "9 de 10",
+      "etiqueta": "tienen red pública (2025)",
+      "visual": "Foto (caño con agua) a pantalla completa con capa oscura y la cifra; luego las barras «De cada 100 personas»",
+      "cifra_en_texto": true,
+      "fuente_dato": "indicadores.csv: red_publica, Nacional, Total, 2025 = 90,44 % (CV 0,4 %)",
+      "foto": {
+        "archivo": "foto_escena1.jpg",
+        "foco_x": 0.36,
+        "hasta": 0.5,
+        "credito": "JonasKIM · Pixabay (licencia de contenido de Pixabay): https://pixabay.com/photos/faucet-sink-tap-tap-water-flow-3240211/"
+      },
+      "wer": 0.0,
+      "similitud_voz": 0.939
+    },
+    {
+      "frase": "No necesariamente. El agua segura exige red, servicio todo el día y cloro adecuado, y solo treinta y siete de cada cien peruanos la tienen.",
+      "cifra": "36,6 %",
+      "etiqueta": "ODS 6.1.1, Perú 2025",
+      "visual": "KPIs del dashboard (Nacional, Total, 2025, ODS 6.1.1)",
+      "cifra_en_texto": true,
+      "fuente_dato": "indicadores.csv: ods611_minimo, Nacional, Total, 2025 = 36,58 % (CV 1,8 %); 37 en la voz es el redondeo; la voz nombra los tres criterios del indicador (red, servicio 24 h, cloro adecuado)",
+      "wer": 0.0,
+      "similitud_voz": 0.95
+    },
+    {
+      "frase": "Y en lugar de mejorar, retrocedemos: desde dos mil diecinueve, dos millones setecientas mil personas más quedaron sin agua segura. Hoy son veintiún millones setecientas mil.",
+      "cifra": "21,7 M",
+      "etiqueta": "sin agua segura (+2,7 M desde 2019)",
+      "visual": "Burbujas animadas 2019 → 2025 (Nacional, Total)",
+      "cifra_en_texto": true,
+      "fuente_dato": "poblacion_sin_agua_segura_2019_2025.csv: Total 2025 = 21,69 M; diferencia = +2,74 M (EE 0,30 M, significativa al 95 %)",
+      "wer": 0.0,
+      "similitud_voz": 0.933
+    },
+    {
+      "frase": "¿Qué falla? No es la tubería, es el cloro: en las ciudades, el agua con cloro adecuado bajó de cincuenta y dos a cuarenta y cuatro por ciento.",
+      "cifra": "51,8 → 44,3 %",
+      "etiqueta": "cloro adecuado, zonas urbanas",
+      "visual": "Barras «De cada 100 personas» con el cloro resaltado y luego burbujas animadas (Nacional, Urbano) con la serie del cloro resaltada",
+      "cifra_en_texto": true,
+      "fuente_dato": "comparacion_2019_2025.csv: cal_cloro_adecuado, Nacional, Urbano = 51,83 → 44,29 % (−7,54 pp, EE 1,13, significativo); red pública nacional sin cambio significativo (−0,34 pp)",
+      "wer": 0.0,
+      "similitud_voz": 0.939
+    },
+    {
+      "frase": "En el campo es aún peor: hay más redes y más horas de servicio, pero solo tres de cada cien personas reciben agua con cloro adecuado.",
+      "cifra": "3,1 %",
+      "etiqueta": "cloro adecuado, zona rural 2025",
+      "visual": "Mapa de cloro adecuado rural 2025 con el círculo rural resaltado (tarjeta clara)",
+      "cifra_en_texto": true,
+      "fuente_dato": "comparacion_2019_2025.csv, Nacional, Rural: red_publica 75,64 → 80,47 % (+4,83 pp, sig.); disp_24h 58,86 → 63,09 % (+4,24 pp, sig.); cal_cloro_adecuado 2025 = 3,06 % (CV 13,2 %, aceptable)",
+      "wer": 0.038,
+      "similitud_voz": 0.943
+    },
+    {
+      "frase": "Y la caída no es pareja: Arequipa, con el cuatro por ciento de la población, explica una quinta parte. El Cayao, en cambio, mejoró con un servicio más continuo.",
+      "cifra": "1/5",
+      "etiqueta": "de la caída nacional viene de Arequipa",
+      "visual": "Dispersión de departamentos (2025, Total) con Arequipa y el Callao marcados",
+      "cifra_en_texto": true,
+      "fuente_dato": "descomposicion_ods611_2019_2025.csv: Arequipa peso 4,1 %, 19,7 % del efecto tasa; comparacion_2019_2025.csv: Callao ods611 52,69 → 73,06 % (+20,36 pp, sig.), limitado por disp_24h, cloro sin cambio (+0,11 pp)",
+      "frase_subtitulos": "Y la caída no es pareja: Arequipa, con el cuatro por ciento de la población, explica una quinta parte. El Callao, en cambio, mejoró con un servicio más continuo.",
+      "nota_pronunciacion": "La voz lee «Cayao» para que diga bien «Callao»; pantalla y subtítulos usan «Callao».",
+      "wer": 0.0,
+      "similitud_voz": 0.944
+    },
+    {
+      "frase": "La red ya llegó; ahora falta que el agua sea segura. Explora el tablero interactivo para conocer más.",
+      "cifra": "",
+      "etiqueta": "Explora el dashboard",
+      "visual": "Pantalla final: repositorio, aviso de voz generada con IA, fuente y créditos de música y foto",
+      "cifra_en_texto": true,
+      "fuente_dato": "sin cifras",
+      "wer": 0.0,
+      "similitud_voz": 0.918
+    }
+  ]
+}

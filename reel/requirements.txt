@@ -1,0 +1,20 @@
+# Entorno del reel (aparte del proyecto principal): Python 3.12
+#   uv venv --python 3.12 reel/.venv
+#   uv pip install --python reel/.venv/Scripts/python -r reel/requirements.txt   (Windows; en Mac/Linux: .venv/bin/python)
+#   reel/.venv/Scripts/python -m playwright install chromium
+# Versiones con las que se generó el reel. qwen-tts necesita transformers 4.57.3.
+qwen-tts==0.1.1
+transformers==4.57.3
+torch==2.15.0
+torchaudio==2.11.1
+huggingface-hub==0.36.2
+faster-whisper==1.2.1
+numpy==2.5.4
+pillow==12.3.0
+imageio-ffmpeg==0.7.0
+soundfile==0.14.0
+jiwer==4.0.0
+num2words==0.5.14
+playwright==1.64.1
+# Opcional: solo para comparar con VoxCPM2 (pruebas_acento.py)
+voxcpm==2.0.3

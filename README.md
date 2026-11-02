@@ -144,7 +144,12 @@ En 2025 el indicador va de 73,1% en el Callao a 14,1% en Huancavelica (entre dep
 ## 6. Enlaces
 
 - Dashboard: <https://estefmej.github.io/Tarea_3/web/> (también abre desde <https://estefmej.github.io/Tarea_3/>, que redirige a `web/`)
-- Publicación en LinkedIn: [enlace]
+- Reel (Google Drive): <https://drive.google.com/file/d/1ivPMWhHdh0Z4U1zqrKlihEIdyMfynvKO/view?usp=drive_link>
+
+**Recursos del reel** (no se suben al repositorio; se usan bajo la licencia de contenido de Pixabay):
+
+- Música: «Science Documentary», Lexin_Music (Aleksey Chistilin) · Pixabay Music: <https://pixabay.com/music/build-up-scenes-science-documentary-169621/>
+- Foto de la escena 1: JonasKIM · Pixabay: <https://pixabay.com/photos/faucet-sink-tap-tap-water-flow-3240211/>
 
 ## 7. Cómo reproducir el proyecto
 
@@ -172,6 +177,34 @@ python scripts/exportar_tablas.py --base 2019 --final 2025
 ```
 
 Los microdatos no se suben al repositorio por su tamaño; se descargan con el paso 1.
+
+### Cómo generar el reel
+
+El reel sigue el flujo de la Sesión 15 del curso (guion → voz clonada con Qwen3-TTS → subtítulos con Whisper → video con Pillow y ffmpeg) y va en un entorno propio, `reel/.venv`, con las versiones de `reel/requirements.txt`. La primera corrida descarga los modelos (Qwen3-TTS 1.7B, Whisper large-v3-turbo y WavLM para medir la similitud de voz).
+
+```bash
+cd reel
+uv venv --python 3.12 .venv
+uv pip install --python .venv/Scripts/python -r requirements.txt
+.venv/Scripts/python -m playwright install chromium
+
+# Insumos que no están en el repositorio: mi_voz.m4a (grabación de la autora),
+# recursos/musica.mp3 y recursos/foto_escena1.jpg (Pixabay; enlaces en la sección 6)
+
+# 1) Narración por escena con la voz clonada; regenera con otra semilla las escenas que se alejan del timbre
+.venv/Scripts/python voces.py --tts Qwen/Qwen3-TTS-12Hz-1.7B-Base --margen 0.03
+# (opcional) más versiones de algunas escenas y elección de la mejor
+.venv/Scripts/python regenerar.py --tts Qwen/Qwen3-TTS-12Hz-1.7B-Base --buenas 2 3 --escenas 7 --semillas 101 202 --carpeta salidas/pruebas
+.venv/Scripts/python regenerar.py --carpeta salidas/pruebas --elegir 7:101
+
+# 2) Capturas del dashboard publicado (vista de celular a 3x, con los resaltados de cada escena)
+.venv/Scripts/python capturar.py
+
+# 3) Subtítulos, mezcla con la música (-14 dB respecto de la voz) y video 1080x1920
+.venv/Scripts/python hacer_reel.py
+```
+
+El guion con las cifras y su fuente en `datos/procesados/` está en `reel/guion.json`; el resultado queda en `reel/reel.mp4` y `reel/subtitulos.srt`. Los audios intermedios se guardan en `reel/salidas/`, que no se sube. En la narración, la voz lee «Cayao» para pronunciar bien «Callao»; los subtítulos lo escriben correctamente.
 
 ## 8. Uso de inteligencia artificial
 
